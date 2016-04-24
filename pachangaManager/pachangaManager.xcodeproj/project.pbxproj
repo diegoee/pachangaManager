@@ -416,7 +416,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pachangaManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = es.um.ios.pachangaManager;
+				PRODUCT_BUNDLE_IDENTIFIER = pachangaManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -428,7 +428,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pachangaManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = es.um.ios.pachangaManager;
+				PRODUCT_BUNDLE_IDENTIFIER = pachangaManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -498,6 +498,7 @@
 				F1114EDF1CC9556B004D4719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1114EE01CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +507,7 @@
 				F1114EE21CC9556B004D4719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1114EE31CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +516,7 @@
 				F1114EE51CC9556B004D4719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
