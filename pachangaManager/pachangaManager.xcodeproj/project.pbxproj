@@ -11,10 +11,11 @@
 		F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114EB71CC9556B004D4719 /* AppDelegate.m */; };
 		F1114EBB1CC9556B004D4719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114EBA1CC9556B004D4719 /* ViewController.m */; };
 		F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1114EBC1CC9556B004D4719 /* Main.storyboard */; };
-		F1114EC01CC9556B004D4719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1114EBF1CC9556B004D4719 /* Assets.xcassets */; };
 		F1114EC31CC9556B004D4719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1114EC11CC9556B004D4719 /* LaunchScreen.storyboard */; };
 		F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */; };
 		F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */; };
+		F14C559A1CCD2F83001501E3 /* Default-568h%402x.png in Resources */ = {isa = PBXBuildFile; fileRef = F14C55991CCD2F83001501E3 /* Default-568h%402x.png */; };
+		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		F1114EB91CC9556B004D4719 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F1114EBA1CC9556B004D4719 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F1114EBD1CC9556B004D4719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F1114EBF1CC9556B004D4719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1114EC21CC9556B004D4719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1114EC41CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1114EC91CC9556B004D4719 /* pachangaManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pachangaManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,8 @@
 		F1114ED41CC9556B004D4719 /* pachangaManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pachangaManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerUITests.m; sourceTree = "<group>"; };
 		F1114EDA1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14C55991CCD2F83001501E3 /* Default-568h%402x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h%402x.png"; path = "assets/Default-568h%402x.png"; sourceTree = SOURCE_ROOT; };
+		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		F1114EA71CC9556B004D4719 = {
 			isa = PBXGroup;
 			children = (
+				F14C559B1CCD2F8A001501E3 /* assets */,
 				F1114EB21CC9556B004D4719 /* pachangaManager */,
 				F1114ECC1CC9556B004D4719 /* pachangaManagerTests */,
 				F1114ED71CC9556B004D4719 /* pachangaManagerUITests */,
@@ -106,9 +109,9 @@
 				F1114EB91CC9556B004D4719 /* ViewController.h */,
 				F1114EBA1CC9556B004D4719 /* ViewController.m */,
 				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
-				F1114EBF1CC9556B004D4719 /* Assets.xcassets */,
 				F1114EC11CC9556B004D4719 /* LaunchScreen.storyboard */,
 				F1114EC41CC9556B004D4719 /* Info.plist */,
+				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
 				F1114EB31CC9556B004D4719 /* Supporting Files */,
 			);
 			path = pachangaManager;
@@ -138,6 +141,14 @@
 				F1114EDA1CC9556B004D4719 /* Info.plist */,
 			);
 			path = pachangaManagerUITests;
+			sourceTree = "<group>";
+		};
+		F14C559B1CCD2F8A001501E3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F14C55991CCD2F83001501E3 /* Default-568h%402x.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14C559A1CCD2F83001501E3 /* Default-568h%402x.png in Resources */,
+				F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */,
 				F1114EC31CC9556B004D4719 /* LaunchScreen.storyboard in Resources */,
-				F1114EC01CC9556B004D4719 /* Assets.xcassets in Resources */,
 				F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pachangaManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = pachangaManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
