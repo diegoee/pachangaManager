@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
-                                    <segue destination="Ih2-tM-RHd" kind="push" id="va1-Ft-J1c"/>
+                                    <segue destination="SaO-90-58D" kind="modal" id="NQv-0u-SnC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ElW-Gw-a7c">
@@ -70,7 +70,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pachangas"/>
                                 <connections>
-                                    <segue destination="r2V-c0-Isf" kind="push" id="I84-jm-7t6"/>
+                                    <segue destination="r2V-c0-Isf" kind="modal" id="Akl-BX-B3F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0aj-eG-tMZ">
@@ -78,7 +78,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Usuarios"/>
                                 <connections>
-                                    <segue destination="mXi-ii-jPg" kind="push" id="bRu-mL-ZjL"/>
+                                    <segue destination="mXi-ii-jPg" kind="modal" id="Gay-Xa-j1v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="geO-hY-ROR">
@@ -86,17 +86,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Competiciones"/>
                                 <connections>
-                                    <segue destination="uCj-bj-o9J" kind="push" id="IYA-9Z-7zB"/>
+                                    <segue destination="uCj-bj-o9J" kind="modal" id="Yv2-sK-Gxq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="I1V-bv-JGB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWO-DT-7eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="508"/>
+            <point key="canvasLocation" x="108" y="516"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="xBc-Bp-4Jh">
@@ -118,7 +117,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mostrar"/>
                                 <connections>
-                                    <segue destination="B4x-xo-ksk" kind="push" id="ulJ-Xz-zD9"/>
+                                    <segue destination="B4x-xo-ksk" kind="modal" id="E32-7m-bPr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z1R-3o-yHH">
@@ -126,17 +125,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Crear"/>
                                 <connections>
-                                    <segue destination="SgA-iS-vkh" kind="push" id="D18-xN-kFR"/>
+                                    <segue destination="SgA-iS-vkh" kind="modal" id="5hQ-KM-2TC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9Kk-ia-fYy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5Y-RE-DM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="1068"/>
+            <point key="canvasLocation" x="751" y="1052"/>
         </scene>
         <!--View Controller Competicion-->
         <scene sceneID="4k5-tL-ilM">
@@ -180,11 +178,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NDq-6N-3VS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZZ-No-IJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371" y="848"/>
+            <point key="canvasLocation" x="1279" y="784"/>
         </scene>
         <!--View Controller Pachanga Mostrar-->
         <scene sceneID="4BJ-6P-Aie">
@@ -204,11 +201,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cED-zb-LqQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sai-Wo-rPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371" y="1500"/>
+            <point key="canvasLocation" x="1279" y="1440"/>
         </scene>
         <!--View Controller Usuarios-->
         <scene sceneID="pqz-tG-cp3">
@@ -228,30 +224,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cRu-Ky-EGp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q82-kj-wbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="388"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="22n-Qe-0YM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ih2-tM-RHd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="tgJ-rr-0AZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8JT-bF-N2h">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="SaO-90-58D" kind="relationship" relationship="rootViewController" id="4oj-oi-7Zj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ty-5s-LUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-372" y="508"/>
+            <point key="canvasLocation" x="751" y="428"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
