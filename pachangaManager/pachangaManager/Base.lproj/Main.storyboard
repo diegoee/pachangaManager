@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Log In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerLogIn" customModule="LogIn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -17,7 +17,7 @@
                                 <rect key="frame" x="107" y="200" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="4R9-CM-2EL">
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="107" y="133" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -60,7 +60,7 @@
         <!--View Controller-->
         <scene sceneID="v0i-Z5-6kM">
             <objects>
-                <viewController id="SaO-90-58D" sceneMemberID="viewController">
+                <viewController id="SaO-90-58D" customClass="ViewController" customModule="Inicio" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9U-lf-BTF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="156" y="508"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Pachanga-->
         <scene sceneID="xBc-Bp-4Jh">
             <objects>
-                <viewController id="r2V-c0-Isf" sceneMemberID="viewController">
+                <viewController id="r2V-c0-Isf" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tai-Jo-66x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@
                                 <rect key="frame" x="118" y="84" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FZm-nE-YdQ">
@@ -124,7 +124,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z1R-3o-yHH">
                                 <rect key="frame" x="112" y="166" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Editar"/>
+                                <state key="normal" title="Crear"/>
                                 <connections>
                                     <segue destination="SgA-iS-vkh" kind="push" id="D18-xN-kFR"/>
                                 </connections>
@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="751" y="1068"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Competicion-->
         <scene sceneID="4k5-tL-ilM">
             <objects>
-                <viewController id="uCj-bj-o9J" sceneMemberID="viewController">
+                <viewController id="uCj-bj-o9J" customClass="ViewControllerCompeticion" customModule="Competiciones" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMS-zv-k3r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,7 +150,7 @@
                                 <rect key="frame" x="103" y="73" width="115" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -162,19 +162,19 @@
             </objects>
             <point key="canvasLocation" x="751" y="-278"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Pachanga Crear-->
         <scene sceneID="e93-ba-0E7">
             <objects>
-                <viewController id="SgA-iS-vkh" sceneMemberID="viewController">
+                <viewController id="SgA-iS-vkh" customClass="ViewControllerPachangaCrear" customModule="PachangaCrear" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oxp-e6-yYY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wNA-9q-IkO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wNA-9q-IkO">
                                 <rect key="frame" x="138" y="74" width="45" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -186,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="1371" y="848"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Pachanga Mostrar-->
         <scene sceneID="4BJ-6P-Aie">
             <objects>
-                <viewController id="B4x-xo-ksk" sceneMemberID="viewController">
+                <viewController id="B4x-xo-ksk" customClass="ViewControllerPachangaMostrar" customModule="PachangaMostrar" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lx2-DG-rZ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +198,7 @@
                                 <rect key="frame" x="130" y="77" width="60" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -210,19 +210,19 @@
             </objects>
             <point key="canvasLocation" x="1371" y="1500"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Usuarios-->
         <scene sceneID="pqz-tG-cp3">
             <objects>
-                <viewController id="mXi-ii-jPg" sceneMemberID="viewController">
+                <viewController id="mXi-ii-jPg" customClass="ViewControllerUsuarios" customModule="Usuarios" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F3e-Y7-k3Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Mz-6g-9qI">
-                                <rect key="frame" x="126" y="20" width="68" height="21"/>
+                                <rect key="frame" x="126" y="73" width="68" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -254,5 +254,5 @@
             <point key="canvasLocation" x="-372" y="508"/>
         </scene>
     </scenes>
-    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

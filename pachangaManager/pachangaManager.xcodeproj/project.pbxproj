@@ -14,6 +14,12 @@
 		F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */; };
 		F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */; };
 		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
+		F1C175D71CD136790052AE5E /* ViewControllerPachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C175D61CD136790052AE5E /* ViewControllerPachanga.m */; };
+		F1C175DA1CD136AB0052AE5E /* ViewControllerCompeticion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C175D91CD136AB0052AE5E /* ViewControllerCompeticion.m */; };
+		F1C175DD1CD136C70052AE5E /* ViewControllerUsuarios.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C175DC1CD136C70052AE5E /* ViewControllerUsuarios.m */; };
+		F1C175E01CD136F50052AE5E /* ViewControllerPachangaCrear.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C175DF1CD136F50052AE5E /* ViewControllerPachangaCrear.m */; };
+		F1C175E31CD1370D0052AE5E /* ViewControllerPachangaMostrar.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C175E21CD1370D0052AE5E /* ViewControllerPachangaMostrar.m */; };
+		F1C175E61CD1375B0052AE5E /* ViewControllerLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C175E51CD1375B0052AE5E /* ViewControllerLogIn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,18 @@
 		F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerUITests.m; sourceTree = "<group>"; };
 		F1114EDA1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F1C175D51CD136790052AE5E /* ViewControllerPachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPachanga.h; sourceTree = "<group>"; };
+		F1C175D61CD136790052AE5E /* ViewControllerPachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPachanga.m; sourceTree = "<group>"; };
+		F1C175D81CD136AB0052AE5E /* ViewControllerCompeticion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCompeticion.h; sourceTree = "<group>"; };
+		F1C175D91CD136AB0052AE5E /* ViewControllerCompeticion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCompeticion.m; sourceTree = "<group>"; };
+		F1C175DB1CD136C70052AE5E /* ViewControllerUsuarios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerUsuarios.h; sourceTree = "<group>"; };
+		F1C175DC1CD136C70052AE5E /* ViewControllerUsuarios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerUsuarios.m; sourceTree = "<group>"; };
+		F1C175DE1CD136F50052AE5E /* ViewControllerPachangaCrear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPachangaCrear.h; sourceTree = "<group>"; };
+		F1C175DF1CD136F50052AE5E /* ViewControllerPachangaCrear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPachangaCrear.m; sourceTree = "<group>"; };
+		F1C175E11CD1370D0052AE5E /* ViewControllerPachangaMostrar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPachangaMostrar.h; sourceTree = "<group>"; };
+		F1C175E21CD1370D0052AE5E /* ViewControllerPachangaMostrar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPachangaMostrar.m; sourceTree = "<group>"; };
+		F1C175E41CD1375B0052AE5E /* ViewControllerLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLogIn.h; sourceTree = "<group>"; };
+		F1C175E51CD1375B0052AE5E /* ViewControllerLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLogIn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +119,24 @@
 			children = (
 				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
 				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
+				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
+				F1114EC41CC9556B004D4719 /* Info.plist */,
+				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
+				F1114EB31CC9556B004D4719 /* Supporting Files */,
 				F1114EB91CC9556B004D4719 /* ViewController.h */,
 				F1114EBA1CC9556B004D4719 /* ViewController.m */,
-				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
-				F1114EC41CC9556B004D4719 /* Info.plist */,
-				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
-				F1114EB31CC9556B004D4719 /* Supporting Files */,
+				F1C175D81CD136AB0052AE5E /* ViewControllerCompeticion.h */,
+				F1C175D91CD136AB0052AE5E /* ViewControllerCompeticion.m */,
+				F1C175E41CD1375B0052AE5E /* ViewControllerLogIn.h */,
+				F1C175E51CD1375B0052AE5E /* ViewControllerLogIn.m */,
+				F1C175D51CD136790052AE5E /* ViewControllerPachanga.h */,
+				F1C175D61CD136790052AE5E /* ViewControllerPachanga.m */,
+				F1C175DE1CD136F50052AE5E /* ViewControllerPachangaCrear.h */,
+				F1C175DF1CD136F50052AE5E /* ViewControllerPachangaCrear.m */,
+				F1C175E11CD1370D0052AE5E /* ViewControllerPachangaMostrar.h */,
+				F1C175E21CD1370D0052AE5E /* ViewControllerPachangaMostrar.m */,
+				F1C175DB1CD136C70052AE5E /* ViewControllerUsuarios.h */,
+				F1C175DC1CD136C70052AE5E /* ViewControllerUsuarios.m */,
 			);
 			path = pachangaManager;
 			sourceTree = "<group>";
@@ -267,8 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1114EBB1CC9556B004D4719 /* ViewController.m in Sources */,
+				F1C175E61CD1375B0052AE5E /* ViewControllerLogIn.m in Sources */,
+				F1C175DA1CD136AB0052AE5E /* ViewControllerCompeticion.m in Sources */,
+				F1C175D71CD136790052AE5E /* ViewControllerPachanga.m in Sources */,
 				F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */,
+				F1C175E31CD1370D0052AE5E /* ViewControllerPachangaMostrar.m in Sources */,
 				F1114EB51CC9556B004D4719 /* main.m in Sources */,
+				F1C175DD1CD136C70052AE5E /* ViewControllerUsuarios.m in Sources */,
+				F1C175E01CD136F50052AE5E /* ViewControllerPachangaCrear.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

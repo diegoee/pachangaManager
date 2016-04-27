@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ViewControllerLogIn.h
 //  pachangaManager
 //
-//  Created by Diego Espínola Espigares on 21/4/16.
+//  Created by Diego Espínola Espigares on 27/4/16.
 //  Copyright © 2016 Juan Angel y Diego Espínola. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewControllerLogIn : UIViewController
 
 @end
-
