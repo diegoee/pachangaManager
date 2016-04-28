@@ -9,7 +9,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewControllerLogIn" customModule="LogIn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
-                                    <segue destination="SaO-90-58D" kind="modal" id="NQv-0u-SnC"/>
+                                    <segue destination="GMO-ay-y7S" kind="modal" id="jUS-o5-zvn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ElW-Gw-a7c">
@@ -48,20 +48,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-888" y="508"/>
+            <point key="canvasLocation" x="396" y="658"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="v0i-Z5-6kM">
             <objects>
                 <viewController id="SaO-90-58D" customClass="ViewController" customModule="Inicio" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I9U-lf-BTF">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="I9U-lf-BTF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -70,7 +70,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pachangas"/>
                                 <connections>
-                                    <segue destination="r2V-c0-Isf" kind="modal" id="Akl-BX-B3F"/>
+                                    <segue destination="r2V-c0-Isf" kind="push" id="Akl-BX-B3F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0aj-eG-tMZ">
@@ -78,7 +78,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Usuarios"/>
                                 <connections>
-                                    <segue destination="mXi-ii-jPg" kind="modal" id="Gay-Xa-j1v"/>
+                                    <segue destination="mXi-ii-jPg" kind="push" id="Gay-Xa-j1v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="geO-hY-ROR">
@@ -86,22 +86,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Competiciones"/>
                                 <connections>
-                                    <segue destination="uCj-bj-o9J" kind="modal" id="Yv2-sK-Gxq"/>
+                                    <segue destination="uCj-bj-o9J" kind="push" id="Yv2-sK-Gxq"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zO2-mP-5GI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWO-DT-7eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="516"/>
+            <point key="canvasLocation" x="1264" y="658"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="xBc-Bp-4Jh">
             <objects>
                 <viewController id="r2V-c0-Isf" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tai-Jo-66x">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Tai-Jo-66x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -117,7 +118,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mostrar"/>
                                 <connections>
-                                    <segue destination="B4x-xo-ksk" kind="modal" id="E32-7m-bPr"/>
+                                    <segue destination="B4x-xo-ksk" kind="push" id="E32-7m-bPr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z1R-3o-yHH">
@@ -125,22 +126,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Crear"/>
                                 <connections>
-                                    <segue destination="SgA-iS-vkh" kind="modal" id="5hQ-KM-2TC"/>
+                                    <segue destination="SgA-iS-vkh" kind="push" id="5hQ-KM-2TC"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CZt-31-5ik"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5Y-RE-DM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="1052"/>
+            <point key="canvasLocation" x="1815" y="1052"/>
         </scene>
         <!--View Controller Competicion-->
         <scene sceneID="4k5-tL-ilM">
             <objects>
                 <viewController id="uCj-bj-o9J" customClass="ViewControllerCompeticion" customModule="Competiciones" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YMS-zv-k3r">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="YMS-zv-k3r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -152,19 +154,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hgC-dK-HAy"/>
+                    <navigationItem key="navigationItem" id="WtY-gm-JaJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsb-dw-KgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="-278"/>
+            <point key="canvasLocation" x="1815" y="-190"/>
         </scene>
         <!--View Controller Pachanga Crear-->
         <scene sceneID="e93-ba-0E7">
             <objects>
                 <viewController id="SgA-iS-vkh" customClass="ViewControllerPachangaCrear" customModule="PachangaCrear" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Oxp-e6-yYY">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Oxp-e6-yYY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -176,18 +178,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="i3c-0P-Frx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZZ-No-IJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="784"/>
+            <point key="canvasLocation" x="2343" y="784"/>
         </scene>
         <!--View Controller Pachanga Mostrar-->
         <scene sceneID="4BJ-6P-Aie">
             <objects>
                 <viewController id="B4x-xo-ksk" customClass="ViewControllerPachangaMostrar" customModule="PachangaMostrar" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lx2-DG-rZ5">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Lx2-DG-rZ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -199,18 +202,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gAX-q8-8EP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sai-Wo-rPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="1440"/>
+            <point key="canvasLocation" x="2337" y="1408"/>
         </scene>
         <!--View Controller Usuarios-->
         <scene sceneID="pqz-tG-cp3">
             <objects>
                 <viewController id="mXi-ii-jPg" customClass="ViewControllerUsuarios" customModule="Usuarios" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F3e-Y7-k3Q">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="F3e-Y7-k3Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -221,13 +225,37 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="UNV-OA-LHm">
+                                <rect key="frame" x="150" y="427" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.93849887460000003" blue="0.0" alpha="0.22490026599999999" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vHr-4h-2Ww"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q82-kj-wbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="428"/>
+            <point key="canvasLocation" x="1815" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NTU-dv-Pdv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GMO-ay-y7S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZF9-88-rtW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SaO-90-58D" kind="relationship" relationship="rootViewController" id="KcX-c9-nVT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGd-Sv-OnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="658"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
