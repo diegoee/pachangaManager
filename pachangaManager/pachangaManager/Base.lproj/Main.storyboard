@@ -16,7 +16,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KYk-7h-TLQ">
                                 <rect key="frame" x="107" y="200" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,7 +49,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ElW-Gw-a7c">
                                 <rect key="frame" x="107" y="133" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3810" y="-2158"/>
+            <point key="canvasLocation" x="-6554" y="-4254"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="v0i-Z5-6kM">
@@ -114,7 +114,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INICIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hMj-lf-YhW">
                                 <rect key="frame" x="118" y="512" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWO-DT-7eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2922" y="-2158"/>
+            <point key="canvasLocation" x="-5666" y="-4254"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="xBc-Bp-4Jh">
@@ -165,7 +165,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H97-fM-z5a">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5Y-RE-DM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2421" y="-1332"/>
+            <point key="canvasLocation" x="-5165" y="-3428"/>
         </scene>
         <!--View Controller Pachanga Crear-->
         <scene sceneID="e93-ba-0E7">
@@ -190,7 +190,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AÑADIR USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Aq-DS-pWI">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -202,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZZ-No-IJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1889" y="-1674"/>
+            <point key="canvasLocation" x="-4633" y="-3770"/>
         </scene>
         <!--View Controller Pachanga Mostrar-->
         <scene sceneID="4BJ-6P-Aie">
@@ -215,7 +215,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTAR USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l36-Mk-2wD">
                                 <rect key="frame" x="67" y="512" width="186" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sai-Wo-rPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1889" y="-944"/>
+            <point key="canvasLocation" x="-4633" y="-3040"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NTU-dv-Pdv">
@@ -258,7 +258,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGd-Sv-OnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3360" y="-2158"/>
+            <point key="canvasLocation" x="-6104" y="-4254"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="8Ps-7u-afH">
@@ -297,7 +297,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPETICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WKl-Cg-8hy">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -309,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79m-zy-rQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2421" y="-2882"/>
+            <point key="canvasLocation" x="-5165" y="-4978"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="DtS-V6-rcV">
@@ -348,7 +348,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR PACHANGA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fIF-U1-Pjc">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -356,7 +356,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I3a-sL-knq">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -368,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGM-a5-cjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1326" y="-2620"/>
+            <point key="canvasLocation" x="-4070" y="-4716"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="5en-He-i0n">
@@ -407,7 +407,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" MOSTRAR COMPETICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aoa-yl-Pcz">
                                 <rect key="frame" x="48" y="512" width="225" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -415,7 +415,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pachangas:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dvA-xN-HD7">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -427,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxI-Ca-lwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1857" y="-3288"/>
+            <point key="canvasLocation" x="-4601" y="-5384"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="6zu-I5-qOj">
@@ -466,7 +466,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR COMPETICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="85F-eW-Z7P">
                                 <rect key="frame" x="63" y="512" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -474,7 +474,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pachangas:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P8e-X9-tBk">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -486,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cth-c7-OHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1857" y="-2620"/>
+            <point key="canvasLocation" x="-4601" y="-4716"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="ugp-RC-zkx">
@@ -525,7 +525,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOSTRAR PACHANGA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P31-OG-1za">
                                 <rect key="frame" x="72" y="512" width="176" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -533,7 +533,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6LA-9V-U2d">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -545,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yb-Rv-t2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1326" y="-1674"/>
+            <point key="canvasLocation" x="-4070" y="-3770"/>
         </scene>
         <!--View Controller Pachanga-->
         <scene sceneID="z9q-uh-Qjt">
@@ -584,7 +584,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PACHANGAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="srD-WA-3pK">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -596,7 +596,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAa-4X-MEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2421" y="-2130"/>
+            <point key="canvasLocation" x="-5165" y="-4226"/>
         </scene>
         <!--View Controller Pachanga Mostrar-->
         <scene sceneID="Cer-bQ-nyh">
@@ -609,7 +609,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOSTRAR USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ChN-Om-tW6">
                                 <rect key="frame" x="67" y="512" width="186" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="DA64DE35-F126-4706-84AC-24647AF8E89F" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -621,11 +621,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVm-eO-sCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1326" y="-944"/>
+            <point key="canvasLocation" x="-4070" y="-3040"/>
         </scene>
     </scenes>
     <resources>
-        <image name="DA64DE35-F126-4706-84AC-24647AF8E89F" width="256" height="256">
+        <image name="D72210DA-EFB8-4442-A673-A8721ECEAD2C" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -5069,10 +5069,10 @@ AAAAAAAEDtA
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fhy-ZB-pCB"/>
         <segue reference="wJ2-yZ-sXS"/>
-        <segue reference="doE-Kx-gmT"/>
-        <segue reference="hao-Jg-AEq"/>
+        <segue reference="E32-7m-bPr"/>
+        <segue reference="JmZ-Q3-roS"/>
+        <segue reference="QsM-7R-o0e"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
