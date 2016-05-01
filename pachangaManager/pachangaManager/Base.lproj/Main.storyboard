@@ -9,14 +9,14 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewControllerLogIn" customModule="LogIn" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KYk-7h-TLQ">
                                 <rect key="frame" x="107" y="200" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,7 +49,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ElW-Gw-a7c">
                                 <rect key="frame" x="107" y="133" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,25 +68,12 @@
         <scene sceneID="v0i-Z5-6kM">
             <objects>
                 <viewController id="SaO-90-58D" customClass="ViewController" customModule="Inicio" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="I9U-lf-BTF">
+                    <view key="view" contentMode="scaleToFill" id="I9U-lf-BTF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TFU-jw-HpU">
-                                <rect key="frame" x="112" y="134" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Pachangas">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="v1F-KU-BFs" kind="push" id="1G3-yn-pv0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0aj-eG-tMZ">
-                                <rect key="frame" x="112" y="96" width="97" height="30"/>
+                                <rect key="frame" x="112" y="474" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -98,8 +85,29 @@
                                     <segue destination="r2V-c0-Isf" kind="push" id="oxh-TI-C0H"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INICIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hMj-lf-YhW">
+                                <rect key="frame" x="118" y="512" width="84" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TFU-jw-HpU">
+                                <rect key="frame" x="111" y="436" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Pachangas">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v1F-KU-BFs" kind="push" id="1G3-yn-pv0"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="geO-hY-ROR">
-                                <rect key="frame" x="109" y="172" width="103" height="33"/>
+                                <rect key="frame" x="109" y="395" width="103" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -111,14 +119,13 @@
                                     <segue destination="n2j-sW-gYm" kind="push" id="t9T-dm-9YE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INICIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hMj-lf-YhW">
-                                <rect key="frame" x="118" y="512" width="84" height="36"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Calendario con notificaciones y próximos eventos deportivos" textAlignment="natural" id="duE-K1-SDe">
+                                <rect key="frame" x="20" y="86" width="280" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -132,7 +139,7 @@
         <scene sceneID="xBc-Bp-4Jh">
             <objects>
                 <viewController id="r2V-c0-Isf" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Tai-Jo-66x">
+                    <view key="view" contentMode="scaleToFill" id="Tai-Jo-66x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -165,7 +172,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H97-fM-z5a">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -183,14 +190,14 @@
         <scene sceneID="e93-ba-0E7">
             <objects>
                 <viewController id="SgA-iS-vkh" customClass="ViewControllerPachangaCrear" customModule="PachangaCrear" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Oxp-e6-yYY">
+                    <view key="view" contentMode="scaleToFill" id="Oxp-e6-yYY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AÑADIR USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Aq-DS-pWI">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -208,14 +215,14 @@
         <scene sceneID="4BJ-6P-Aie">
             <objects>
                 <viewController id="B4x-xo-ksk" customClass="ViewControllerPachangaMostrar" customModule="PachangaMostrar" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="Lx2-DG-rZ5">
+                    <view key="view" contentMode="scaleToFill" id="Lx2-DG-rZ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTAR USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l36-Mk-2wD">
                                 <rect key="frame" x="67" y="512" width="186" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,12 +271,12 @@
         <scene sceneID="8Ps-7u-afH">
             <objects>
                 <viewController id="n2j-sW-gYm" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="k9u-k1-9qK">
+                    <view key="view" contentMode="scaleToFill" id="k9u-k1-9qK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SWs-S5-V1i">
-                                <rect key="frame" x="112" y="128" width="97" height="30"/>
+                                <rect key="frame" x="112" y="474" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -282,7 +289,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JYF-OT-Km8">
-                                <rect key="frame" x="112" y="166" width="97" height="30"/>
+                                <rect key="frame" x="112" y="436" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -297,11 +304,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPETICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WKl-Cg-8hy">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="358" id="5hh-7b-iRF">
+                                <rect key="frame" x="20" y="70" width="280" height="358"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5hh-7b-iRF" id="Arq-VZ-Vfq">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="357"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -315,7 +330,7 @@
         <scene sceneID="DtS-V6-rcV">
             <objects>
                 <viewController id="guZ-5b-5Wc" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="8I9-Hj-JB4">
+                    <view key="view" contentMode="scaleToFill" id="8I9-Hj-JB4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -348,7 +363,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR PACHANGA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fIF-U1-Pjc">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -356,7 +371,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I3a-sL-knq">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -374,7 +389,7 @@
         <scene sceneID="5en-He-i0n">
             <objects>
                 <viewController id="ueR-dL-HZ6" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="9IH-QP-eVz">
+                    <view key="view" contentMode="scaleToFill" id="9IH-QP-eVz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -407,7 +422,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" MOSTRAR COMPETICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aoa-yl-Pcz">
                                 <rect key="frame" x="48" y="512" width="225" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -415,7 +430,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pachangas:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dvA-xN-HD7">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -433,7 +448,7 @@
         <scene sceneID="6zu-I5-qOj">
             <objects>
                 <viewController id="nVu-kO-eS9" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="vKE-fd-Z0Y">
+                    <view key="view" contentMode="scaleToFill" id="vKE-fd-Z0Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -466,7 +481,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR COMPETICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="85F-eW-Z7P">
                                 <rect key="frame" x="63" y="512" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -474,7 +489,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pachangas:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P8e-X9-tBk">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -492,7 +507,7 @@
         <scene sceneID="ugp-RC-zkx">
             <objects>
                 <viewController id="hy4-s4-ggK" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="n4p-km-CZU">
+                    <view key="view" contentMode="scaleToFill" id="n4p-km-CZU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -525,7 +540,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOSTRAR PACHANGA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P31-OG-1za">
                                 <rect key="frame" x="72" y="512" width="176" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -533,7 +548,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6LA-9V-U2d">
                                 <rect key="frame" x="63" y="84" width="194" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -551,7 +566,7 @@
         <scene sceneID="z9q-uh-Qjt">
             <objects>
                 <viewController id="v1F-KU-BFs" customClass="ViewControllerPachanga" customModule="Pachanga" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="wlR-bi-qfa">
+                    <view key="view" contentMode="scaleToFill" id="wlR-bi-qfa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -584,7 +599,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PACHANGAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="srD-WA-3pK">
                                 <rect key="frame" x="80" y="512" width="160" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -602,14 +617,14 @@
         <scene sceneID="Cer-bQ-nyh">
             <objects>
                 <viewController id="8r1-2F-SJr" customClass="ViewControllerPachangaMostrar" customModule="PachangaMostrar" sceneMemberID="viewController">
-                    <view key="view" alpha="0.20000000298023224" contentMode="scaleToFill" id="bZK-TR-5EQ">
+                    <view key="view" contentMode="scaleToFill" id="bZK-TR-5EQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOSTRAR USUARIOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ChN-Om-tW6">
                                 <rect key="frame" x="67" y="512" width="186" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" patternImage="D72210DA-EFB8-4442-A673-A8721ECEAD2C" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" colorSpace="pattern"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -625,7 +640,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="D72210DA-EFB8-4442-A673-A8721ECEAD2C" width="256" height="256">
+        <image name="0097B3B0-A98A-4E07-BDC9-99A93932CFE0" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -5004,7 +5019,7 @@ ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAAQNHk1NACoABAAIdXiB
 AgAAAREABAAAAAIABADGARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAgAAAARcABAAAAAIA
 BAC+ARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAQABADOh3MABwAADEgABADWAAAAAAAIAAgA
 CAAIAAIAAAACAAAAAAAIAAIACAABAAEAAQABAAAMSExpbm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYA
-MQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAA
+MQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAEAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQA
 AABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAA
 AAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gA
@@ -5069,9 +5084,9 @@ AAAAAAAEDtA
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wJ2-yZ-sXS"/>
         <segue reference="E32-7m-bPr"/>
         <segue reference="JmZ-Q3-roS"/>
+        <segue reference="Hwc-z7-mya"/>
         <segue reference="QsM-7R-o0e"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
