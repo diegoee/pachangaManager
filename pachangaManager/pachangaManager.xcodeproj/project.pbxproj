@@ -101,12 +101,11 @@
 			children = (
 				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
 				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
-				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
-				F1114EC41CC9556B004D4719 /* Info.plist */,
-				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
-				F1114EB31CC9556B004D4719 /* Supporting Files */,
 				F1114EB91CC9556B004D4719 /* ViewController.h */,
 				F1114EBA1CC9556B004D4719 /* ViewController.m */,
+				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
+				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
+				F1114EB31CC9556B004D4719 /* Supporting Files */,
 			);
 			path = pachangaManager;
 			sourceTree = "<group>";
@@ -114,6 +113,7 @@
 		F1114EB31CC9556B004D4719 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1114EC41CC9556B004D4719 /* Info.plist */,
 				F1114EB41CC9556B004D4719 /* main.m */,
 			);
 			name = "Supporting Files";
