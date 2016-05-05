@@ -14,6 +14,7 @@
 		F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */; };
 		F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */; };
 		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
+		F19E54391CDBA8F600016A60 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F19E54381CDBA8F600016A60 /* Competicion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerUITests.m; sourceTree = "<group>"; };
 		F1114EDA1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F19E54371CDBA8F600016A60 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
+		F19E54381CDBA8F600016A60 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 			children = (
 				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
 				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
+				F19E54371CDBA8F600016A60 /* Competicion.h */,
+				F19E54381CDBA8F600016A60 /* Competicion.m */,
 				F1114EB91CC9556B004D4719 /* ViewController.h */,
 				F1114EBA1CC9556B004D4719 /* ViewController.m */,
 				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19E54391CDBA8F600016A60 /* Competicion.m in Sources */,
 				F1114EBB1CC9556B004D4719 /* ViewController.m in Sources */,
 				F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */,
 				F1114EB51CC9556B004D4719 /* main.m in Sources */,
