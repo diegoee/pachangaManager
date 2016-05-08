@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Competicion.h"
 
 @interface CrearCompeticionViewController : UIViewController
+
+@property (strong, nonatomic) Competicion *competicionNueva;
+@property (strong, nonatomic) NSArray *pickerData;
+@property (strong, nonatomic) NSString *resultPickerData;
+@property (weak, nonatomic) IBOutlet UITextField *nombreEdit;
+@property (weak, nonatomic) IBOutlet UIPickerView *deporteSel;
+
 
 @end

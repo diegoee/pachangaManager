@@ -10,9 +10,9 @@
 
 @interface MostrarCompeticionViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *labelNombre;
-@property (weak, nonatomic) IBOutlet UILabel *labelDeporte;
-@property (weak, nonatomic) NSString *datoNombre;
-@property (weak, nonatomic) NSString *datoDeporte;
+@property (strong, nonatomic) IBOutlet UILabel *labelNombre;
+@property (strong, nonatomic) IBOutlet UILabel *labelDeporte;
+@property (strong, nonatomic) NSString *datoNombre;
+@property (strong, nonatomic) NSString *datoDeporte;
 
 @end

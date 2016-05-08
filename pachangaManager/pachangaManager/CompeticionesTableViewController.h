@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Competicion.h"
 
 @interface CompeticionesTableViewController : UITableViewController
 
-@property NSMutableArray *array;
+-(IBAction)GuadarCompeticion:(UIStoryboardSegue *)segue;
+
+@property (strong,nonatomic) Competicion* addCompeticion;
+@property NSMutableArray *competiciones;
+
 @property (retain, nonatomic) UIAlertView *alert;
+
 
 @end

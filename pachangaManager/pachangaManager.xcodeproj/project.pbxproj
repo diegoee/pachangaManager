@@ -12,9 +12,9 @@
 		F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1114EBC1CC9556B004D4719 /* Main.storyboard */; };
 		F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */; };
 		F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */; };
+		F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1180B621CDF7E6000E5F070 /* Competicion.m */; };
 		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
 		F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */; };
-		F1ECFE2E1CDF657C00185AAD /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE2D1CDF657C00185AAD /* AddViewController.m */; };
 		F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */; };
 		F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */; };
 		F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */; };
@@ -50,11 +50,11 @@
 		F1114ED41CC9556B004D4719 /* pachangaManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pachangaManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerUITests.m; sourceTree = "<group>"; };
 		F1114EDA1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1180B611CDF7E6000E5F070 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
+		F1180B621CDF7E6000E5F070 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
 		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesTableViewController.h; sourceTree = "<group>"; };
 		F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesTableViewController.m; sourceTree = "<group>"; };
-		F1ECFE2C1CDF657C00185AAD /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
-		F1ECFE2D1CDF657C00185AAD /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearCompeticionViewController.h; sourceTree = "<group>"; };
 		F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearCompeticionViewController.m; sourceTree = "<group>"; };
 		F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InicioViewController.h; sourceTree = "<group>"; };
@@ -113,10 +113,10 @@
 			children = (
 				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
 				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
-				F1ECFE2C1CDF657C00185AAD /* AddViewController.h */,
-				F1ECFE2D1CDF657C00185AAD /* AddViewController.m */,
 				F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */,
 				F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */,
+				F1180B611CDF7E6000E5F070 /* Competicion.h */,
+				F1180B621CDF7E6000E5F070 /* Competicion.m */,
 				F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */,
 				F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */,
 				F1ECFE381CDF6E7D00185AAD /* MostrarCompeticionViewController.h */,
@@ -288,7 +288,7 @@
 			files = (
 				F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */,
 				F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */,
-				F1ECFE2E1CDF657C00185AAD /* AddViewController.m in Sources */,
+				F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */,
 				F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */,
 				F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */,
 				F1114EB51CC9556B004D4719 /* main.m in Sources */,
