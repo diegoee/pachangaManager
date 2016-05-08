@@ -6,42 +6,41 @@
 //  Copyright © 2016 Juan Angel y Diego Espínola. All rights reserved.
 //
 
-#import "TableViewControllerCompeticion.h"
-
+#import "CompeticionesTableViewController.h"
+#import "MostrarCompeticionViewController.h"
+#import "AddViewController.h"
+/*
 @interface TableViewControllerCompeticion ()
 
 @end
-
-@implementation TableViewControllerCompeticion
+*/
+@implementation CompeticionesTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
   
     self.alert = [[UIAlertView alloc] initWithTitle:@"Cargando..." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
     [self.alert show];
-    self.array = [NSMutableArray arrayWithObjects:@"array1",@"array2", nil];
+    self.array = [NSMutableArray arrayWithObjects:@"SolteroVsCasados",@"Master1000 Madrid", nil];
     [self.alert dismissWithClickedButtonIndex:0 animated:NO];
+    NSLog(@"CompeticionesTableViewController: viewDidLoad");
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-    
-    
+    // Dispose of any resources that can be recreated.   
     
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return [self.array count];
 }
 
@@ -54,7 +53,7 @@
     }
     
     cell.textLabel.text = [self.array objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = [NSString stringWithFormat:(@"Detalle de la celda: %@"),[self.array objectAtIndex:indexPath.row] ];
+    cell.detailTextLabel.text = [NSString stringWithFormat:(@"Deporte: %@"),[self.array objectAtIndex:indexPath.row] ];
     return cell;
 }
 
@@ -102,16 +101,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    /*
-    
+    // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:@"segueDetalle"])
     {
         UITableViewCell *cell = (UITableViewCell*) sender;
         // Get reference to the destination view controller
-        DetalleViewController *vc = [segue destinationViewController];
+        MostrarCompeticionViewController *vc = [segue destinationViewController];
         
         // Pass any objects to the view controller here, like...
-        vc.datos = [NSString stringWithString:cell.textLabel.text];
+        vc.datoNombre = [NSString stringWithString:cell.textLabel.text];
+        vc.datoDeporte = [NSString stringWithString:cell.detailTextLabel.text];
+        
     }
     
     if ([[segue identifier] isEqualToString:@"segueAdd"])
@@ -121,7 +121,6 @@
         // Pass any objects to the view controller here, like...
         vc.tableController = self;
     }
-     */
     
 }
 

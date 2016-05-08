@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewControllerCompeticion : UITableViewController
+@interface CompeticionesTableViewController : UITableViewController
 
 @property NSMutableArray *array;
 @property (retain, nonatomic) UIAlertView *alert;

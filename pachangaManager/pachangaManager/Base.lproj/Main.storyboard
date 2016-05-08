@@ -8,7 +8,7 @@
         <!--INICIO-->
         <scene sceneID="v0i-Z5-6kM">
             <objects>
-                <viewController id="SaO-90-58D" customClass="ViewController" customModule="Inicio" sceneMemberID="viewController">
+                <viewController id="SaO-90-58D" customClass="InicioViewController" customModule="Inicio" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9U-lf-BTF" customClass="ViewContorl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
         <!--CREAR COMPETICION-->
         <scene sceneID="6zu-I5-qOj">
             <objects>
-                <viewController id="nVu-kO-eS9" customClass="ViewControllerPachanga" sceneMemberID="viewController">
+                <viewController id="nVu-kO-eS9" customClass="CrearCompeticionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vKE-fd-Z0Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cth-c7-OHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8124" y="-9645"/>
+            <point key="canvasLocation" x="-8047" y="-9979"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Lrh-sK-GlU">
@@ -110,7 +110,7 @@
         <!--COMPETICIONES-->
         <scene sceneID="aFJ-UG-jxA">
             <objects>
-                <tableViewController id="ZEV-03-4LA" customClass="MainTableTableViewController" sceneMemberID="viewController">
+                <tableViewController id="ZEV-03-4LA" customClass="CompeticionesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ttr-jx-9uo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,6 +139,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TCu-Qh-sYK" kind="push" identifier="segueDetalle" id="VTv-JN-7oT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -148,6 +151,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="COMPETICIONES" id="Sgn-An-xB5">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="S8B-CG-TD2"/>
                         <barButtonItem key="rightBarButtonItem" title="Crear" id="dMQ-wL-0sz">
                             <connections>
                                 <segue destination="nVu-kO-eS9" kind="push" id="QhU-B9-9UN"/>
@@ -159,6 +163,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spi-2G-k1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-8539" y="-9645"/>
+        </scene>
+        <!--COMPETICION-->
+        <scene sceneID="tki-uO-baR">
+            <objects>
+                <viewController id="TCu-Qh-sYK" customClass="MostrarCompeticionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PJ-qf-1lq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deporte:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HGe-Bm-eqo">
+                                <rect key="frame" x="20" y="102" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lmK-e2-msh">
+                                <rect key="frame" x="20" y="73" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="COMPETICION" id="dWn-Gf-3O2">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="mua-P2-KOU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="labelDeporte" destination="HGe-Bm-eqo" id="UxF-71-gEE"/>
+                        <outlet property="labelNombre" destination="lmK-e2-msh" id="xe2-7m-aLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zn2-id-S3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8047" y="-9370"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

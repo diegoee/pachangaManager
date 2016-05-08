@@ -6,17 +6,18 @@
 //  Copyright © 2016 Juan Angel y Diego Espínola. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "InicioViewController.h"
+/*
 @interface ViewController ()
 
 @end
-
-@implementation ViewController
+*/
+@implementation InicioViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"InicioViewController: viewDidLoad");
 }
 
 - (void)didReceiveMemoryWarning {
