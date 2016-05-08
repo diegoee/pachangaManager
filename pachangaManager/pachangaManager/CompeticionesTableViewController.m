@@ -9,7 +9,6 @@
 #import "CompeticionesTableViewController.h"
 #import "MostrarCompeticionViewController.h"
 #import "CrearCompeticionViewController.h"
-//#import "AddViewController.h"
 #import "Competicion.h"
 /*
 @interface TableViewControllerCompeticion ()
@@ -26,6 +25,7 @@
     self.alert = [[UIAlertView alloc] initWithTitle:@"Cargando..." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
     self.competiciones = [[NSMutableArray alloc] init];
     [self.alert dismissWithClickedButtonIndex:0 animated:NO];
+    self.tempIndexTable= [[NSIndexPath alloc] init];;
     NSLog(@"CompeticionesTableViewController: viewDidLoad");
     
 }
@@ -65,17 +65,30 @@
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*
+    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-            // Delete the row from the data source
-        [self.competiciones removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirmar:" message:@"¿Borrar Competición?" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel",nil];
+        [alert show];
+        self.tempIndexTable=indexPath;
+        //NSLog([NSString stringWithFormat:@"Table Competicion Index:%d", self.tempIndexTable]);
     }
-    */
 }
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    // the user clicked OK
+    
+    NSLog([NSString stringWithFormat:@"buttonIndex:%d", buttonIndex]);
+
+    if (buttonIndex == 0) {
+        if ([self.competiciones count] == 0) {
+        }else{
+            //NSLog(@"IN");
+            [self.competiciones removeObjectAtIndex:self.tempIndexTable.row];
+            [self.tableView deleteRowsAtIndexPaths:@[self.tempIndexTable] withRowAnimation:UITableViewRowAnimationFade];
+        }
+    }
+}
+
 
 
 

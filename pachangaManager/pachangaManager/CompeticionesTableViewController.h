@@ -18,5 +18,7 @@
 
 @property (retain, nonatomic) UIAlertView *alert;
 
+@property (strong,nonatomic) NSIndexPath* tempIndexTable;
+
 
 @end
