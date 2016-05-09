@@ -16,9 +16,4 @@
 @property (strong,nonatomic) Competicion* addCompeticion;
 @property NSMutableArray *competiciones;
 
-@property (retain, nonatomic) UIAlertView *alert;
-
-@property (strong,nonatomic) NSIndexPath* tempIndexTable;
-
-
 @end

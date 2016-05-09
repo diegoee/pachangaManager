@@ -22,10 +22,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.alert = [[UIAlertView alloc] initWithTitle:@"Cargando..." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
+    //self.alert = [[UIAlertView alloc] initWithTitle:@"Cargando..." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Cargando"
+                                  message:nil
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    //[self presentViewController:alert animated:YES completion:nil];
+    
+    
+    [self presentViewController:alert animated:YES completion:nil];
     self.competiciones = [[NSMutableArray alloc] init];
-    [self.alert dismissWithClickedButtonIndex:0 animated:NO];
-    self.tempIndexTable= [[NSIndexPath alloc] init];;
+    //[self.alert dismissWithClickedButtonIndex:0 animated:NO];
+    //[self presentViewController:alert animated:NO completion:nil];
+    [alert dismissViewControllerAnimated:YES completion:^{}];
     NSLog(@"CompeticionesTableViewController: viewDidLoad");
     
 }
@@ -67,30 +78,35 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirmar:" message:@"¿Borrar Competición?" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel",nil];
-        [alert show];
-        self.tempIndexTable=indexPath;
-        //NSLog([NSString stringWithFormat:@"Table Competicion Index:%d", self.tempIndexTable]);
+        
+        UIAlertController * view=   [UIAlertController
+                                     alertControllerWithTitle:@"Confirmar:"
+                                     message:@"¿Borrar Competición?"
+                                     preferredStyle:UIAlertControllerStyleActionSheet];
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [self.competiciones removeObjectAtIndex:indexPath.row];
+                                 [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+                                 [view dismissViewControllerAnimated:YES completion:nil];
+                                 
+                             }];
+        UIAlertAction* cancel = [UIAlertAction
+                                 actionWithTitle:@"Cancel"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     [view dismissViewControllerAnimated:YES completion:nil];
+                                     
+                                 }];
+        
+        [view addAction:ok];
+        [view addAction:cancel];
+        [self presentViewController:view animated:YES completion:nil];
     }
 }
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    // the user clicked OK
-    
-    NSLog([NSString stringWithFormat:@"buttonIndex:%d", buttonIndex]);
-
-    if (buttonIndex == 0) {
-        if ([self.competiciones count] == 0) {
-        }else{
-            //NSLog(@"IN");
-            [self.competiciones removeObjectAtIndex:self.tempIndexTable.row];
-            [self.tableView deleteRowsAtIndexPaths:@[self.tempIndexTable] withRowAnimation:UITableViewRowAnimationFade];
-        }
-    }
-}
-
-
-
 
 /*
 // Override to support rearranging the table view.
