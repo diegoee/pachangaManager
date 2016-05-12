@@ -15,6 +15,8 @@
 		F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1180B621CDF7E6000E5F070 /* Competicion.m */; };
 		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
 		F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */; };
+		F1B4FA621CE53299004A156A /* JugadoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B4FA611CE53299004A156A /* JugadoresViewController.m */; };
+		F1B4FA651CE53413004A156A /* JugadoresTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B4FA641CE53413004A156A /* JugadoresTableViewCell.m */; };
 		F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */; };
 		F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */; };
 		F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */; };
@@ -55,6 +57,10 @@
 		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesTableViewController.h; sourceTree = "<group>"; };
 		F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesTableViewController.m; sourceTree = "<group>"; };
+		F1B4FA601CE53299004A156A /* JugadoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadoresViewController.h; sourceTree = "<group>"; };
+		F1B4FA611CE53299004A156A /* JugadoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadoresViewController.m; sourceTree = "<group>"; };
+		F1B4FA631CE53413004A156A /* JugadoresTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadoresTableViewCell.h; sourceTree = "<group>"; };
+		F1B4FA641CE53413004A156A /* JugadoresTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadoresTableViewCell.m; sourceTree = "<group>"; };
 		F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearCompeticionViewController.h; sourceTree = "<group>"; };
 		F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearCompeticionViewController.m; sourceTree = "<group>"; };
 		F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InicioViewController.h; sourceTree = "<group>"; };
@@ -124,6 +130,10 @@
 				F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */,
 				F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */,
 				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
+				F1B4FA601CE53299004A156A /* JugadoresViewController.h */,
+				F1B4FA611CE53299004A156A /* JugadoresViewController.m */,
+				F1B4FA631CE53413004A156A /* JugadoresTableViewCell.h */,
+				F1B4FA641CE53413004A156A /* JugadoresTableViewCell.m */,
 				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
 				F1114EB31CC9556B004D4719 /* Supporting Files */,
 			);
@@ -290,9 +300,11 @@
 				F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */,
 				F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */,
 				F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */,
+				F1B4FA651CE53413004A156A /* JugadoresTableViewCell.m in Sources */,
 				F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */,
 				F1114EB51CC9556B004D4719 /* main.m in Sources */,
 				F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */,
+				F1B4FA621CE53299004A156A /* JugadoresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
