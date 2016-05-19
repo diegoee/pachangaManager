@@ -76,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qi1-vF-JkA">
-                                <rect key="frame" x="0.0" y="71" width="320" height="445"/>
+                                <rect key="frame" x="0.0" y="71" width="320" height="397"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -106,11 +106,24 @@
                                         <connections>
                                             <outlet property="deporte" destination="my5-pX-mjp" id="L5f-e6-UW9"/>
                                             <outlet property="nombre" destination="i5j-SX-zOR" id="arV-7C-I7H"/>
-                                            <segue destination="JfY-d4-IzE" kind="push" id="bOi-CU-ZCu"/>
+                                            <segue destination="JfY-d4-IzE" kind="push" identifier="segueDetalleCompeticion" id="bOi-CU-ZCu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Px-sC-d5W">
+                                <rect key="frame" x="20" y="476" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="COMP. MOSTRAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JfY-d4-IzE" kind="push" id="ab4-wX-JxU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -119,7 +132,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="4a7-ka-Yaa"/>
                         <barButtonItem key="rightBarButtonItem" title="Crear" id="3ys-h6-MM9">
                             <connections>
-                                <segue destination="n6g-ns-5jN" kind="push" id="Obv-eG-uu4"/>
+                                <segue destination="n6g-ns-5jN" kind="push" identifier="segueAddCompeticion" id="Obv-eG-uu4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -129,13 +142,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXQ-gz-Key" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rMr-mG-1jo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-10309" y="-10613"/>
         </scene>
         <!--COMP. CREAR-->
         <scene sceneID="lUv-4P-zJ0">
             <objects>
-                <viewController id="n6g-ns-5jN" customClass="CompeticionesViewController" customModule="Inicio" sceneMemberID="viewController">
+                <viewController id="n6g-ns-5jN" customClass="CompeticionesCrearViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DRC-a9-GfG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,6 +169,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rMr-mG-1jo" kind="unwind" unwindAction="GuadarCompeticion:" id="dRB-dJ-Jdt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deporte:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MWE-0g-laR">
                                 <rect key="frame" x="20" y="137" width="280" height="21"/>
@@ -182,6 +199,10 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="dXJ-lc-V3m"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="deporteSel" destination="mtH-OX-Yye" id="fsz-zK-dZT"/>
+                        <outlet property="nombreEdit" destination="IsE-Rq-zqd" id="tNW-Wq-w7I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfg-px-7QF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,13 +211,27 @@
         <!--COMP. MOSTRAR-->
         <scene sceneID="ohw-4i-DBk">
             <objects>
-                <viewController id="JfY-d4-IzE" customClass="CompeticionesViewController" customModule="Inicio" sceneMemberID="viewController">
+                <viewController id="JfY-d4-IzE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQm-CU-Si4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deporte:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SnY-u6-W2e">
+                                <rect key="frame" x="20" y="102" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GNr-in-Lrm">
+                                <rect key="frame" x="20" y="73" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W0f-Zz-EhX">
-                                <rect key="frame" x="20" y="71" width="280" height="37"/>
+                                <rect key="frame" x="20" y="131" width="280" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -229,10 +264,49 @@
         <!--PACH. CREAR-->
         <scene sceneID="JYG-JC-qng">
             <objects>
-                <viewController id="rfR-Nc-Hkb" customClass="CompeticionesViewController" customModule="Inicio" sceneMemberID="viewController">
+                <viewController id="rfR-Nc-Hkb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Dn-Dd-WiK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" id="BXf-g4-zTR">
+                                <rect key="frame" x="20" y="99" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uqh-Hq-COT">
+                                <rect key="frame" x="20" y="460" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4m0-9Q-3k1">
+                                <rect key="frame" x="20" y="137" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la Pachanga:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tm7-Pm-IMZ">
+                                <rect key="frame" x="20" y="70" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="FWB-wm-db1">
+                                <rect key="frame" x="20" y="166" width="280" height="286"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="485390958.56783497">
+                                    <!--2016-05-19 22:49:18 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
@@ -248,7 +322,7 @@
         <!--PACH. MOSTRAR-->
         <scene sceneID="95J-ia-z4x">
             <objects>
-                <viewController id="Ub6-xJ-PRB" customClass="CompeticionesViewController" customModule="Inicio" sceneMemberID="viewController">
+                <viewController id="Ub6-xJ-PRB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JF8-yJ-KpM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,7 +346,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="PACH. MOSTRAR" id="zNu-wc-yhm">
                         <barButtonItem key="backBarButtonItem" title="Back" id="AhP-BF-FCm"/>
-                        <barButtonItem key="rightBarButtonItem" title="Crear" id="1E4-wd-BaT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Añadir" id="1E4-wd-BaT"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -283,7 +357,7 @@
         <!--JUGA. MOSTRAR-->
         <scene sceneID="sPn-va-NjR">
             <objects>
-                <viewController id="XlV-fk-xwa" customClass="CompeticionesViewController" customModule="Inicio" sceneMemberID="viewController">
+                <viewController id="XlV-fk-xwa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vFc-TR-IOu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,5 +374,8 @@
             <point key="canvasLocation" x="-8997" y="-10613"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bOi-CU-ZCu"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

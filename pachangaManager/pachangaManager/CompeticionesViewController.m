@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Cargando"
+                                  message:nil
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"CompeticionModelo"];
     // Add Sort Descriptors
@@ -33,6 +41,7 @@
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
+    [alert dismissViewControllerAnimated:YES completion:^{}];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -157,5 +166,41 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)GuadarCompeticion:(UIStoryboardSegue *)segue {
+    //[self.competiciones addObject:addCompeticion];
+    //[self.tableView reloadData];
+}
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"segueDetalleCompeticion"])
+    {
+        /*
+        UITableViewCell *cell = (UITableViewCell*) sender;
+        // Get reference to the destination view controller
+        MostrarCompeticionViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        vc.datoNombre = [NSString stringWithString:cell.textLabel.text];
+        vc.datoDeporte = [NSString stringWithString:cell.detailTextLabel.text];
+        */
+        
+    }
+    
+    if ([[segue identifier] isEqualToString:@"segueAddCompeticion"])
+    {
+        /*
+        CompeticionCrearViewController *v2 = [segue destinationViewController];
+        v2.competicionNueva = [[Competicion alloc]init];
+        NSLog(@"CompeticionesTableViewController: segueAddCompeticion");
+         */
+    }
+    
+}
+
 
 @end

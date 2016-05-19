@@ -13,8 +13,10 @@
 
 @interface CompeticionesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
+-(IBAction)GuadarCompeticion:(UIStoryboardSegue *)segue;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end

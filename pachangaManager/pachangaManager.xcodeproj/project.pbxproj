@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F106308A1CEE70FE00FEFEB9 /* CompeticionesCrearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10630891CEE70FE00FEFEB9 /* CompeticionesCrearViewController.m */; };
 		F1114EB51CC9556B004D4719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114EB41CC9556B004D4719 /* main.m */; };
 		F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114EB71CC9556B004D4719 /* AppDelegate.m */; };
 		F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1114EBC1CC9556B004D4719 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10630881CEE70FE00FEFEB9 /* CompeticionesCrearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesCrearViewController.h; sourceTree = "<group>"; };
+		F10630891CEE70FE00FEFEB9 /* CompeticionesCrearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesCrearViewController.m; sourceTree = "<group>"; };
 		F1114EB01CC9556B004D4719 /* pachangaManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pachangaManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1114EB41CC9556B004D4719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1114EB61CC9556B004D4719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,13 +130,15 @@
 			children = (
 				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
 				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
+				F1A3A2F81CEE22D80065F0B6 /* Modelo */,
 				F1A3A2DC1CEE1B8F0065F0B6 /* DataManager.h */,
 				F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */,
 				F1543D5C1CEE675500D70DEE /* CompeticionesViewController.h */,
 				F1543D5D1CEE675500D70DEE /* CompeticionesViewController.m */,
 				F1543D5F1CEE67B000D70DEE /* CompeticionesTableViewCell.h */,
 				F1543D601CEE67B000D70DEE /* CompeticionesTableViewCell.m */,
-				F1A3A2F81CEE22D80065F0B6 /* Modelo */,
+				F10630881CEE70FE00FEFEB9 /* CompeticionesCrearViewController.h */,
+				F10630891CEE70FE00FEFEB9 /* CompeticionesCrearViewController.m */,
 				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
 				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
 				F1114EB31CC9556B004D4719 /* Supporting Files */,
@@ -325,6 +330,7 @@
 				F1A3A2F61CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m in Sources */,
 				F1A3A2F71CEE22730065F0B6 /* JugadorModelo.m in Sources */,
 				F1A3A2F21CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m in Sources */,
+				F106308A1CEE70FE00FEFEB9 /* CompeticionesCrearViewController.m in Sources */,
 				F1A3A2E51CEE205F0065F0B6 /* Modelo.xcdatamodeld in Sources */,
 				F1A3A2F31CEE22730065F0B6 /* PachangaModelo.m in Sources */,
 				F1543D5E1CEE675500D70DEE /* CompeticionesViewController.m in Sources */,
