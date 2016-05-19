@@ -16,17 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:@"Cargando"
-                                  message:nil
-                                  preferredStyle:UIAlertControllerStyleAlert];
-    
-    [self presentViewController:alert animated:YES completion:nil];
-    
-    
     // Initialize Fetch Request
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Jugador"];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"CompeticionModelo"];
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
     // Initialize Fetched Results Controller
@@ -42,11 +33,6 @@
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
-    
-    [alert dismissViewControllerAnimated:YES completion:^{}];
-    NSLog(@"CompeticionesTableViewController: viewDidLoad");
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,28 +56,26 @@
     CompeticionModelo *competicion = [self.fetchedResultsController objectAtIndexPath:indexPath];
     // Establecemos el texto del label de la celda con el nombre del jugador
     [cell.nombre setText:competicion.nombre];
-    [cell.deporte setText:competicion.deporte];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath {
-    CompeticionesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jugadorCell"
+    CompeticionesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"competicionesTableViewCell"
                                                         forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
--(void) saveJugadorWithNombre:(NSString*) name correo:(NSString*)correo telefono:(NSString*)
-phone {
+-(void) saveJugadorWithNombre:(NSString*) name deporte:(NSString*)
+sport {
     // Inicializamos el tipo de entidad
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador"
                                               inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
     // Inicializamos al jugador con el tipo de entidad
     // Y lo insertamos en el contexto
-    Jugador *jugador =[[Jugador alloc] initWithEntity:entity insertIntoManagedObjectContext:
+    CompeticionModelo *competicion =[[CompeticionModelo alloc] initWithEntity:entity insertIntoManagedObjectContext:
                        [[DataManager sharedDataManager] managedObjectContext]];
-    jugador.nombre = name;
-    jugador.correo = correo;
-    jugador.telefono = phone;
+    competicion.nombre = name;
+    competicion.deporte = sport;
     // Guardamos
     NSError *error = nil;
     // Asignamos el nombre
@@ -126,7 +110,7 @@ phone {
             break;
         }
         case NSFetchedResultsChangeUpdate: {
-            [self configureCell:(JugadorCell *)[self.tableView
+            [self configureCell:(CompeticionesTableViewCell *)[self.tableView
                                                 cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
         }
@@ -141,8 +125,8 @@ phone {
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Jugador *person = [self getJugadorWithIndexPath:indexPath];
-        [person.managedObjectContext deleteObject:person];
+        CompeticionModelo *comp = [self getJugadorWithIndexPath:indexPath];
+        [comp.managedObjectContext deleteObject:comp];
         NSError *deleteError = nil;
         if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
             NSLog(@"Unable to save managed object context.");
@@ -153,120 +137,25 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the
     } }
 
--(Jugador*) getJugadorWithIndexPath:(NSIndexPath*) indexPath {
+-(CompeticionModelo *) getJugadorWithIndexPath:(NSIndexPath*) indexPath {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"CompeticionModelo" inManagedObjectContext:
                                    [[DataManager sharedDataManager] managedObjectContext]];
     [fetchRequest setEntity:entity];
-    Jugador *person = (Jugador *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
-    return person;
+    CompeticionModelo *comp = (CompeticionModelo *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
+    return comp;
 }
+
+
 
 /*
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
- 
- // Configure the cell...
- 
- return cell;
- }
- */
+#pragma mark - Navigation
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
-- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef) person {
-    NSString *name = [self getNombreWithPerson:(ABRecordRef) person];
-    NSString *phone = [self getTelefonoWithPerson:(ABRecordRef) person];
-    NSString *mail = [self getCorreoWithPerson:(ABRecordRef) person];
-    [self saveJugadorWithNombre:name correo:mail telefono:phone];
-    return NO;
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
-
-- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker
-                         didSelectPerson:(ABRecordRef)person {
-    [self peoplePickerNavigationController:peoplePicker
-        shouldContinueAfterSelectingPerson:person];
-}
-
--(NSString*) getCorreoWithPerson:(ABRecordRef) person {
-    NSString *correo = @"[None]";
-    ABMultiValueRef email = ABRecordCopyValue(person, kABPersonEmailProperty);
-    if (ABMultiValueGetCount(email) > 0) {
-        CFStringRef emailField = ABMultiValueCopyValueAtIndex(email, 0);
-        correo = (__bridge_transfer NSString *)emailField;
-    }
-    CFRelease(email);
-    return correo;
-}
-
-- (NSString*) getTelefonoWithPerson:(ABRecordRef) person {
-    NSString* phone = @"[None]";
-    ABMultiValueRef phoneNumbers = ABRecordCopyValue(person, kABPersonPhoneProperty);
-    if (ABMultiValueGetCount(phoneNumbers) > 0)
-        phone = (__bridge_transfer NSString*) ABMultiValueCopyValueAtIndex(phoneNumbers, 0);
-    CFRelease(phoneNumbers);
-    return phone;
-}
-
-- (NSString*) getNombreWithPerson:(ABRecordRef) person {
-    NSString *firstName = (__bridge_transfer NSString *)ABRecordCopyValue(person,
-                                                                          kABPersonFirstNameProperty);
-    NSString *middleName = (__bridge_transfer NSString*)ABRecordCopyValue(person,
-                                                                          kABPersonMiddleNameProperty);
-    NSString *lastName = (__bridge_transfer NSString *)ABRecordCopyValue(person,
-                                                                         kABPersonLastNameProperty);
-    return [NSString stringWithFormat:@"%@%@%@",(firstName?firstName:@""),(middleName?[NSString
-                                                                                       stringWithFormat:@" %@", middleName]:@""),(lastName?[NSString stringWithFormat:@" %@",
-                                                                                                                                            lastName]:@"")];
-}
-
-- (IBAction)addJugador:(UIButton *)sender {
-    ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc]
-                                                  init];
-    picker.peoplePickerDelegate = self;
-    [self presentViewController:picker animated:YES completion:nil];
-}
+*/
 
 @end

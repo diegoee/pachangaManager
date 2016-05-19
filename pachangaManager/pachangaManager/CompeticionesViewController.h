@@ -7,19 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AddressBookUI/AddressBookUI.h>
+#import "CompeticionesTableViewCell.h"
 #import "DataManager.h"
-#import "JugadorModelo.h"
+#import "CompeticionModelo.h"
 
-@interface CompeticionesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, ABPeoplePickerNavigationControllerDelegate>
+@interface CompeticionesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
+
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
--(IBAction)GuadarCompeticion:(UIStoryboardSegue *)segue;
-
-//@property (strong,nonatomic) Competicion* addCompeticion;
-//@property NSMutableArray *competiciones;
-
 
 @end

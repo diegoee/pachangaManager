@@ -12,11 +12,9 @@
 		F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1114EBC1CC9556B004D4719 /* Main.storyboard */; };
 		F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */; };
 		F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */; };
-		F1154CD81CEE390E00278EF2 /* CompeticionesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1154CD71CEE390E00278EF2 /* CompeticionesViewController.m */; };
-		F1154CDB1CEE3E7800278EF2 /* CompeticionesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1154CDA1CEE3E7800278EF2 /* CompeticionesTableViewCell.m */; };
-		F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1180B621CDF7E6000E5F070 /* Competicion.m */; };
 		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
-		F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */; };
+		F1543D5E1CEE675500D70DEE /* CompeticionesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1543D5D1CEE675500D70DEE /* CompeticionesViewController.m */; };
+		F1543D611CEE67B000D70DEE /* CompeticionesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1543D601CEE67B000D70DEE /* CompeticionesTableViewCell.m */; };
 		F1A3A2DE1CEE1B8F0065F0B6 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */; };
 		F1A3A2E51CEE205F0065F0B6 /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2E31CEE205F0065F0B6 /* Modelo.xcdatamodeld */; };
 		F1A3A2F21CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2E71CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m */; };
@@ -25,9 +23,6 @@
 		F1A3A2F51CEE22730065F0B6 /* CompeticionModelo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2ED1CEE22730065F0B6 /* CompeticionModelo.m */; };
 		F1A3A2F61CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2EF1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m */; };
 		F1A3A2F71CEE22730065F0B6 /* JugadorModelo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2F11CEE22730065F0B6 /* JugadorModelo.m */; };
-		F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */; };
-		F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */; };
-		F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,15 +55,11 @@
 		F1114ED41CC9556B004D4719 /* pachangaManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pachangaManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerUITests.m; sourceTree = "<group>"; };
 		F1114EDA1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1154CD61CEE390E00278EF2 /* CompeticionesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesViewController.h; sourceTree = "<group>"; };
-		F1154CD71CEE390E00278EF2 /* CompeticionesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesViewController.m; sourceTree = "<group>"; };
-		F1154CD91CEE3E7800278EF2 /* CompeticionesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesTableViewCell.h; sourceTree = "<group>"; };
-		F1154CDA1CEE3E7800278EF2 /* CompeticionesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesTableViewCell.m; sourceTree = "<group>"; };
-		F1180B611CDF7E6000E5F070 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
-		F1180B621CDF7E6000E5F070 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
 		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesTableViewController.h; sourceTree = "<group>"; };
-		F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesTableViewController.m; sourceTree = "<group>"; };
+		F1543D5C1CEE675500D70DEE /* CompeticionesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesViewController.h; sourceTree = "<group>"; };
+		F1543D5D1CEE675500D70DEE /* CompeticionesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesViewController.m; sourceTree = "<group>"; };
+		F1543D5F1CEE67B000D70DEE /* CompeticionesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesTableViewCell.h; sourceTree = "<group>"; };
+		F1543D601CEE67B000D70DEE /* CompeticionesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesTableViewCell.m; sourceTree = "<group>"; };
 		F1A3A2DC1CEE1B8F0065F0B6 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F1A3A2E41CEE205F0065F0B6 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
@@ -84,12 +75,6 @@
 		F1A3A2EF1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JugadorModelo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F1A3A2F01CEE22730065F0B6 /* JugadorModelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadorModelo.h; sourceTree = "<group>"; };
 		F1A3A2F11CEE22730065F0B6 /* JugadorModelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadorModelo.m; sourceTree = "<group>"; };
-		F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearCompeticionViewController.h; sourceTree = "<group>"; };
-		F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearCompeticionViewController.m; sourceTree = "<group>"; };
-		F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InicioViewController.h; sourceTree = "<group>"; };
-		F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InicioViewController.m; sourceTree = "<group>"; };
-		F1ECFE381CDF6E7D00185AAD /* MostrarCompeticionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostrarCompeticionViewController.h; sourceTree = "<group>"; };
-		F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostrarCompeticionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,20 +127,13 @@
 			children = (
 				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
 				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
+				F1A3A2DC1CEE1B8F0065F0B6 /* DataManager.h */,
+				F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */,
+				F1543D5C1CEE675500D70DEE /* CompeticionesViewController.h */,
+				F1543D5D1CEE675500D70DEE /* CompeticionesViewController.m */,
+				F1543D5F1CEE67B000D70DEE /* CompeticionesTableViewCell.h */,
+				F1543D601CEE67B000D70DEE /* CompeticionesTableViewCell.m */,
 				F1A3A2F81CEE22D80065F0B6 /* Modelo */,
-				F1A3A2F91CEE232B0065F0B6 /* MisClases */,
-				F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */,
-				F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */,
-				F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */,
-				F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */,
-				F1154CD61CEE390E00278EF2 /* CompeticionesViewController.h */,
-				F1154CD71CEE390E00278EF2 /* CompeticionesViewController.m */,
-				F1154CD91CEE3E7800278EF2 /* CompeticionesTableViewCell.h */,
-				F1154CDA1CEE3E7800278EF2 /* CompeticionesTableViewCell.m */,
-				F1ECFE381CDF6E7D00185AAD /* MostrarCompeticionViewController.h */,
-				F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */,
-				F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */,
-				F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */,
 				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
 				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
 				F1114EB31CC9556B004D4719 /* Supporting Files */,
@@ -208,17 +186,6 @@
 				F1A3A2E31CEE205F0065F0B6 /* Modelo.xcdatamodeld */,
 			);
 			name = Modelo;
-			sourceTree = "<group>";
-		};
-		F1A3A2F91CEE232B0065F0B6 /* MisClases */ = {
-			isa = PBXGroup;
-			children = (
-				F1A3A2DC1CEE1B8F0065F0B6 /* DataManager.h */,
-				F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */,
-				F1180B611CDF7E6000E5F070 /* Competicion.h */,
-				F1180B621CDF7E6000E5F070 /* Competicion.m */,
-			);
-			name = MisClases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,23 +317,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */,
-				F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */,
+				F1543D611CEE67B000D70DEE /* CompeticionesTableViewCell.m in Sources */,
 				F1A3A2F41CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.m in Sources */,
-				F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */,
 				F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */,
-				F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */,
 				F1A3A2F51CEE22730065F0B6 /* CompeticionModelo.m in Sources */,
 				F1A3A2DE1CEE1B8F0065F0B6 /* DataManager.m in Sources */,
 				F1A3A2F61CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m in Sources */,
-				F1154CD81CEE390E00278EF2 /* CompeticionesViewController.m in Sources */,
 				F1A3A2F71CEE22730065F0B6 /* JugadorModelo.m in Sources */,
 				F1A3A2F21CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m in Sources */,
 				F1A3A2E51CEE205F0065F0B6 /* Modelo.xcdatamodeld in Sources */,
 				F1A3A2F31CEE22730065F0B6 /* PachangaModelo.m in Sources */,
+				F1543D5E1CEE675500D70DEE /* CompeticionesViewController.m in Sources */,
 				F1114EB51CC9556B004D4719 /* main.m in Sources */,
-				F1154CDB1CEE3E7800278EF2 /* CompeticionesTableViewCell.m in Sources */,
-				F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
