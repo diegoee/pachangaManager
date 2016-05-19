@@ -9,7 +9,7 @@
         <scene sceneID="v0i-Z5-6kM">
             <objects>
                 <viewController id="SaO-90-58D" customClass="InicioViewController" customModule="Inicio" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I9U-lf-BTF" customClass="ViewControl">
+                    <view key="view" contentMode="scaleToFill" id="I9U-lf-BTF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -87,7 +87,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cth-c7-OHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7nM-1b-giG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-8083" y="-10271"/>
+            <point key="canvasLocation" x="-8091" y="-10050"/>
         </scene>
         <!--START-->
         <scene sceneID="Lrh-sK-GlU">
@@ -110,6 +110,7 @@
         <!--COMPETICIONES-->
         <scene sceneID="kde-xx-A5c">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztk-jZ-aqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYW-Bk-CxJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="COMPETICIONES" id="n8P-JZ-eYp"/>
                     <toolbarItems/>
@@ -119,68 +120,11 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZEV-03-4LA" kind="relationship" relationship="rootViewController" id="iNz-ju-ESe"/>
+                        <segue destination="riT-qh-FEC" kind="relationship" relationship="rootViewController" id="YTx-yg-Oqb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ztk-jZ-aqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-8974" y="-9645"/>
-        </scene>
-        <!--COMP. LISTAR-->
-        <scene sceneID="aFJ-UG-jxA">
-            <objects>
-                <tableViewController id="ZEV-03-4LA" customClass="CompeticionesTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ttr-jx-9uo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="celdaSubtitulo" textLabel="nkB-Dy-2o2" detailTextLabel="EPJ-bq-9t8" style="IBUITableViewCellStyleSubtitle" id="ejN-yy-dU4">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ejN-yy-dU4" id="tdO-BD-oel">
-                                    <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nkB-Dy-2o2">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EPJ-bq-9t8">
-                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="TCu-Qh-sYK" kind="push" identifier="segueDetalleCompeticion" id="VTv-JN-7oT"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ZEV-03-4LA" id="4sn-Zv-fvz"/>
-                            <outlet property="delegate" destination="ZEV-03-4LA" id="rtN-JZ-NkR"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="COMP. LISTAR" id="Sgn-An-xB5">
-                        <barButtonItem key="backBarButtonItem" title="Volver" id="S8B-CG-TD2"/>
-                        <barButtonItem key="rightBarButtonItem" title="Crear" id="dMQ-wL-0sz">
-                            <connections>
-                                <segue destination="nVu-kO-eS9" kind="push" identifier="segueAddCompeticion" id="LiP-N4-pLY"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="spi-2G-k1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-8521" y="-9983"/>
         </scene>
         <!--COMP. MOSTRAR-->
         <scene sceneID="tki-uO-baR">
@@ -217,7 +161,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zn2-id-S3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8083" y="-9645"/>
+            <point key="canvasLocation" x="-8091" y="-9429"/>
+        </scene>
+        <!--COMP. LISTAR-->
+        <scene sceneID="1D2-eR-IZm">
+            <objects>
+                <viewController id="riT-qh-FEC" customClass="CompeticionesViewController" customModule="Inicio" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bxf-JN-s3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ttr-jx-9uo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="515"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="celdaSubtitulo" textLabel="nkB-Dy-2o2" detailTextLabel="EPJ-bq-9t8" rowHeight="58" style="IBUITableViewCellStyleSubtitle" id="ejN-yy-dU4" userLabel="CompeticionesTableViewCell" customClass="CompeticionesTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ejN-yy-dU4" id="tdO-BD-oel">
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nkB-Dy-2o2">
+                                                    <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EPJ-bq-9t8">
+                                                    <rect key="frame" x="15" y="32" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deporte" destination="EPJ-bq-9t8" id="veb-gL-MiV"/>
+                                            <outlet property="nombre" destination="nkB-Dy-2o2" id="KhW-s3-fsg"/>
+                                            <segue destination="TCu-Qh-sYK" kind="push" identifier="segueDetalleCompeticion" id="VTv-JN-7oT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="COMPETICIONES" id="CeS-5t-qWD"/>
+                    <navigationItem key="navigationItem" title="COMP. LISTAR" id="kBh-4n-C0C">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="Dwo-fB-mgV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Crear" id="ef3-SZ-RlU">
+                            <connections>
+                                <segue destination="nVu-kO-eS9" kind="push" id="ZUM-uT-TAc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmR-by-3yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8549" y="-9645"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
