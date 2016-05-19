@@ -6,4 +6,4 @@ Exe: Iphone 5
 
 pachangaManager: FINAL
 
-pachangaManager_DIEGO_2016_05_19: BACK_UP
+pachangaManager_DIEGO_2016_05_19: BACKUP
