@@ -9,7 +9,7 @@
 #import "CompeticionesTableViewController.h"
 #import "MostrarCompeticionViewController.h"
 #import "CrearCompeticionViewController.h"
-#import "Competicion.h"
+#import "CompeticionModelo.h"
 /*
 @interface TableViewControllerCompeticion ()
 
@@ -58,7 +58,7 @@
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"celdaSubtitulo"];
     }
-    Competicion *competicion = [self.competiciones objectAtIndex:indexPath.row];
+    CompeticionModelo *competicion = [self.competiciones objectAtIndex:indexPath.row];
     cell.textLabel.text = competicion.nombre;
     cell.detailTextLabel.text = competicion.deporte;
     return cell;
@@ -149,7 +149,7 @@
     if ([[segue identifier] isEqualToString:@"segueAddCompeticion"])
     {
         CrearCompeticionViewController *v2 = [segue destinationViewController];
-        v2.competicionNueva = [[Competicion alloc]init];
+        v2.competicionNueva = [[CompeticionModelo alloc]init];
         NSLog(@"CompeticionesTableViewController: segueAddCompeticion");
     }
  

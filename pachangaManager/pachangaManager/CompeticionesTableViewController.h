@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Competicion.h"
+#import "CompeticionModelo.h"
 
 @interface CompeticionesTableViewController : UITableViewController
 
 -(IBAction)GuadarCompeticion:(UIStoryboardSegue *)segue;
 
-@property (strong,nonatomic) Competicion* addCompeticion;
+@property (strong,nonatomic) CompeticionModelo* addCompeticion;
 @property NSMutableArray *competiciones;
 
 @end
