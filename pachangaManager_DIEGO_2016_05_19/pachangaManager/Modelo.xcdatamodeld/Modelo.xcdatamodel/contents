@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="CompeticionModelo" representedClassName="CompeticionModelo" syncable="YES">
+        <attribute name="deporte" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="jugador" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JugadorModelo" inverseName="competicion" inverseEntity="JugadorModelo" syncable="YES"/>
+        <relationship name="pachanga" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PachangaModelo" inverseName="competcion" inverseEntity="PachangaModelo" syncable="YES"/>
+    </entity>
+    <entity name="JugadorModelo" representedClassName="JugadorModelo" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="competicion" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CompeticionModelo" inverseName="jugador" inverseEntity="CompeticionModelo" syncable="YES"/>
+        <relationship name="pachanga" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PachangaModelo" inverseName="jugador" inverseEntity="PachangaModelo" syncable="YES"/>
+    </entity>
+    <entity name="PachangaModelo" representedClassName="PachangaModelo" syncable="YES">
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="competcion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CompeticionModelo" inverseName="pachanga" inverseEntity="CompeticionModelo" syncable="YES"/>
+        <relationship name="jugador" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JugadorModelo" inverseName="pachanga" inverseEntity="JugadorModelo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PachangaModelo" positionX="-27" positionY="18" width="128" height="90"/>
+        <element name="JugadorModelo" positionX="18" positionY="63" width="128" height="105"/>
+        <element name="CompeticionModelo" positionX="63" positionY="126" width="128" height="105"/>
+    </elements>
+</model>

@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1114EB51CC9556B004D4719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114EB41CC9556B004D4719 /* main.m */; };
+		F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114EB71CC9556B004D4719 /* AppDelegate.m */; };
+		F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1114EBC1CC9556B004D4719 /* Main.storyboard */; };
+		F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */; };
+		F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */; };
+		F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1180B621CDF7E6000E5F070 /* Competicion.m */; };
+		F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C559E1CCD30D9001501E3 /* Images.xcassets */; };
+		F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */; };
+		F1A3A2DE1CEE1B8F0065F0B6 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */; };
+		F1A3A2E51CEE205F0065F0B6 /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2E31CEE205F0065F0B6 /* Modelo.xcdatamodeld */; };
+		F1A3A2F21CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2E71CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m */; };
+		F1A3A2F31CEE22730065F0B6 /* PachangaModelo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2E91CEE22730065F0B6 /* PachangaModelo.m */; };
+		F1A3A2F41CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2EB1CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.m */; };
+		F1A3A2F51CEE22730065F0B6 /* CompeticionModelo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2ED1CEE22730065F0B6 /* CompeticionModelo.m */; };
+		F1A3A2F61CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2EF1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m */; };
+		F1A3A2F71CEE22730065F0B6 /* JugadorModelo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A3A2F11CEE22730065F0B6 /* JugadorModelo.m */; };
+		F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */; };
+		F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */; };
+		F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1114ECA1CC9556B004D4719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1114EA81CC9556B004D4719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1114EAF1CC9556B004D4719;
+			remoteInfo = pachangaManager;
+		};
+		F1114ED51CC9556B004D4719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1114EA81CC9556B004D4719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1114EAF1CC9556B004D4719;
+			remoteInfo = pachangaManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1114EB01CC9556B004D4719 /* pachangaManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pachangaManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1114EB41CC9556B004D4719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1114EB61CC9556B004D4719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1114EB71CC9556B004D4719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1114EBD1CC9556B004D4719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1114EC41CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1114EC91CC9556B004D4719 /* pachangaManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pachangaManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerTests.m; sourceTree = "<group>"; };
+		F1114ECF1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1114ED41CC9556B004D4719 /* pachangaManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pachangaManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pachangaManagerUITests.m; sourceTree = "<group>"; };
+		F1114EDA1CC9556B004D4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1180B611CDF7E6000E5F070 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
+		F1180B621CDF7E6000E5F070 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
+		F14C559E1CCD30D9001501E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionesTableViewController.h; sourceTree = "<group>"; };
+		F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionesTableViewController.m; sourceTree = "<group>"; };
+		F1A3A2DC1CEE1B8F0065F0B6 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		F1A3A2E41CEE205F0065F0B6 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
+		F1A3A2E61CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PachangaModelo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1A3A2E71CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PachangaModelo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1A3A2E81CEE22730065F0B6 /* PachangaModelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaModelo.h; sourceTree = "<group>"; };
+		F1A3A2E91CEE22730065F0B6 /* PachangaModelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaModelo.m; sourceTree = "<group>"; };
+		F1A3A2EA1CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompeticionModelo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1A3A2EB1CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompeticionModelo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1A3A2EC1CEE22730065F0B6 /* CompeticionModelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionModelo.h; sourceTree = "<group>"; };
+		F1A3A2ED1CEE22730065F0B6 /* CompeticionModelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionModelo.m; sourceTree = "<group>"; };
+		F1A3A2EE1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JugadorModelo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1A3A2EF1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JugadorModelo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1A3A2F01CEE22730065F0B6 /* JugadorModelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadorModelo.h; sourceTree = "<group>"; };
+		F1A3A2F11CEE22730065F0B6 /* JugadorModelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadorModelo.m; sourceTree = "<group>"; };
+		F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearCompeticionViewController.h; sourceTree = "<group>"; };
+		F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearCompeticionViewController.m; sourceTree = "<group>"; };
+		F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InicioViewController.h; sourceTree = "<group>"; };
+		F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InicioViewController.m; sourceTree = "<group>"; };
+		F1ECFE381CDF6E7D00185AAD /* MostrarCompeticionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostrarCompeticionViewController.h; sourceTree = "<group>"; };
+		F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostrarCompeticionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1114EAD1CC9556B004D4719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1114EC61CC9556B004D4719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1114ED11CC9556B004D4719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1114EA71CC9556B004D4719 = {
+			isa = PBXGroup;
+			children = (
+				F1114EB21CC9556B004D4719 /* pachangaManager */,
+				F1114ECC1CC9556B004D4719 /* pachangaManagerTests */,
+				F1114ED71CC9556B004D4719 /* pachangaManagerUITests */,
+				F1114EB11CC9556B004D4719 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1114EB11CC9556B004D4719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1114EB01CC9556B004D4719 /* pachangaManager.app */,
+				F1114EC91CC9556B004D4719 /* pachangaManagerTests.xctest */,
+				F1114ED41CC9556B004D4719 /* pachangaManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1114EB21CC9556B004D4719 /* pachangaManager */ = {
+			isa = PBXGroup;
+			children = (
+				F1114EB61CC9556B004D4719 /* AppDelegate.h */,
+				F1114EB71CC9556B004D4719 /* AppDelegate.m */,
+				F1A3A2F81CEE22D80065F0B6 /* Modelo */,
+				F1A3A2F91CEE232B0065F0B6 /* MisClases */,
+				F1ECFE361CDF6E7D00185AAD /* InicioViewController.h */,
+				F1ECFE371CDF6E7D00185AAD /* InicioViewController.m */,
+				F18928D61CDF72EB00D3663A /* CompeticionesTableViewController.h */,
+				F18928D71CDF72EB00D3663A /* CompeticionesTableViewController.m */,
+				F1ECFE381CDF6E7D00185AAD /* MostrarCompeticionViewController.h */,
+				F1ECFE391CDF6E7D00185AAD /* MostrarCompeticionViewController.m */,
+				F1ECFE341CDF6E7D00185AAD /* CrearCompeticionViewController.h */,
+				F1ECFE351CDF6E7D00185AAD /* CrearCompeticionViewController.m */,
+				F1114EBC1CC9556B004D4719 /* Main.storyboard */,
+				F14C559E1CCD30D9001501E3 /* Images.xcassets */,
+				F1114EB31CC9556B004D4719 /* Supporting Files */,
+			);
+			path = pachangaManager;
+			sourceTree = "<group>";
+		};
+		F1114EB31CC9556B004D4719 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1114EC41CC9556B004D4719 /* Info.plist */,
+				F1114EB41CC9556B004D4719 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1114ECC1CC9556B004D4719 /* pachangaManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1114ECD1CC9556B004D4719 /* pachangaManagerTests.m */,
+				F1114ECF1CC9556B004D4719 /* Info.plist */,
+			);
+			path = pachangaManagerTests;
+			sourceTree = "<group>";
+		};
+		F1114ED71CC9556B004D4719 /* pachangaManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1114ED81CC9556B004D4719 /* pachangaManagerUITests.m */,
+				F1114EDA1CC9556B004D4719 /* Info.plist */,
+			);
+			path = pachangaManagerUITests;
+			sourceTree = "<group>";
+		};
+		F1A3A2F81CEE22D80065F0B6 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3A2EE1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.h */,
+				F1A3A2EF1CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m */,
+				F1A3A2F01CEE22730065F0B6 /* JugadorModelo.h */,
+				F1A3A2F11CEE22730065F0B6 /* JugadorModelo.m */,
+				F1A3A2E61CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.h */,
+				F1A3A2E71CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m */,
+				F1A3A2E81CEE22730065F0B6 /* PachangaModelo.h */,
+				F1A3A2E91CEE22730065F0B6 /* PachangaModelo.m */,
+				F1A3A2EA1CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.h */,
+				F1A3A2EB1CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.m */,
+				F1A3A2EC1CEE22730065F0B6 /* CompeticionModelo.h */,
+				F1A3A2ED1CEE22730065F0B6 /* CompeticionModelo.m */,
+				F1A3A2E31CEE205F0065F0B6 /* Modelo.xcdatamodeld */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
+		F1A3A2F91CEE232B0065F0B6 /* MisClases */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3A2DC1CEE1B8F0065F0B6 /* DataManager.h */,
+				F1A3A2DD1CEE1B8F0065F0B6 /* DataManager.m */,
+				F1180B611CDF7E6000E5F070 /* Competicion.h */,
+				F1180B621CDF7E6000E5F070 /* Competicion.m */,
+			);
+			name = MisClases;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1114EAF1CC9556B004D4719 /* pachangaManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1114EDD1CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManager" */;
+			buildPhases = (
+				F1114EAC1CC9556B004D4719 /* Sources */,
+				F1114EAD1CC9556B004D4719 /* Frameworks */,
+				F1114EAE1CC9556B004D4719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pachangaManager;
+			productName = pachangaManager;
+			productReference = F1114EB01CC9556B004D4719 /* pachangaManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1114EC81CC9556B004D4719 /* pachangaManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1114EE01CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManagerTests" */;
+			buildPhases = (
+				F1114EC51CC9556B004D4719 /* Sources */,
+				F1114EC61CC9556B004D4719 /* Frameworks */,
+				F1114EC71CC9556B004D4719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1114ECB1CC9556B004D4719 /* PBXTargetDependency */,
+			);
+			name = pachangaManagerTests;
+			productName = pachangaManagerTests;
+			productReference = F1114EC91CC9556B004D4719 /* pachangaManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1114ED31CC9556B004D4719 /* pachangaManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1114EE31CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManagerUITests" */;
+			buildPhases = (
+				F1114ED01CC9556B004D4719 /* Sources */,
+				F1114ED11CC9556B004D4719 /* Frameworks */,
+				F1114ED21CC9556B004D4719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1114ED61CC9556B004D4719 /* PBXTargetDependency */,
+			);
+			name = pachangaManagerUITests;
+			productName = pachangaManagerUITests;
+			productReference = F1114ED41CC9556B004D4719 /* pachangaManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1114EA81CC9556B004D4719 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Juan Angel y Diego Espínola";
+				TargetAttributes = {
+					F1114EAF1CC9556B004D4719 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F1114EC81CC9556B004D4719 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F1114EAF1CC9556B004D4719;
+					};
+					F1114ED31CC9556B004D4719 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F1114EAF1CC9556B004D4719;
+					};
+				};
+			};
+			buildConfigurationList = F1114EAB1CC9556B004D4719 /* Build configuration list for PBXProject "pachangaManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1114EA71CC9556B004D4719;
+			productRefGroup = F1114EB11CC9556B004D4719 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1114EAF1CC9556B004D4719 /* pachangaManager */,
+				F1114EC81CC9556B004D4719 /* pachangaManagerTests */,
+				F1114ED31CC9556B004D4719 /* pachangaManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1114EAE1CC9556B004D4719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14C559F1CCD30D9001501E3 /* Images.xcassets in Resources */,
+				F1114EBE1CC9556B004D4719 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1114EC71CC9556B004D4719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1114ED21CC9556B004D4719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1114EAC1CC9556B004D4719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ECFE3C1CDF6E7D00185AAD /* InicioViewController.m in Sources */,
+				F1ECFE3B1CDF6E7D00185AAD /* CrearCompeticionViewController.m in Sources */,
+				F1A3A2F41CEE22730065F0B6 /* CompeticionModelo+CoreDataProperties.m in Sources */,
+				F1180B631CDF7E6000E5F070 /* Competicion.m in Sources */,
+				F1114EB81CC9556B004D4719 /* AppDelegate.m in Sources */,
+				F1ECFE3D1CDF6E7D00185AAD /* MostrarCompeticionViewController.m in Sources */,
+				F1A3A2F51CEE22730065F0B6 /* CompeticionModelo.m in Sources */,
+				F1A3A2DE1CEE1B8F0065F0B6 /* DataManager.m in Sources */,
+				F1A3A2F61CEE22730065F0B6 /* JugadorModelo+CoreDataProperties.m in Sources */,
+				F1A3A2F71CEE22730065F0B6 /* JugadorModelo.m in Sources */,
+				F1A3A2F21CEE22730065F0B6 /* PachangaModelo+CoreDataProperties.m in Sources */,
+				F1A3A2E51CEE205F0065F0B6 /* Modelo.xcdatamodeld in Sources */,
+				F1A3A2F31CEE22730065F0B6 /* PachangaModelo.m in Sources */,
+				F1114EB51CC9556B004D4719 /* main.m in Sources */,
+				F18928D81CDF72EB00D3663A /* CompeticionesTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1114EC51CC9556B004D4719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1114ECE1CC9556B004D4719 /* pachangaManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1114ED01CC9556B004D4719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1114ED91CC9556B004D4719 /* pachangaManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1114ECB1CC9556B004D4719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1114EAF1CC9556B004D4719 /* pachangaManager */;
+			targetProxy = F1114ECA1CC9556B004D4719 /* PBXContainerItemProxy */;
+		};
+		F1114ED61CC9556B004D4719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1114EAF1CC9556B004D4719 /* pachangaManager */;
+			targetProxy = F1114ED51CC9556B004D4719 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1114EBC1CC9556B004D4719 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1114EBD1CC9556B004D4719 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1114EDB1CC9556B004D4719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1114EDC1CC9556B004D4719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1114EDE1CC9556B004D4719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = pachangaManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pachangaManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1114EDF1CC9556B004D4719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = pachangaManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pachangaManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1114EE11CC9556B004D4719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pachangaManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.um.ios.pachangaManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pachangaManager.app/pachangaManager";
+			};
+			name = Debug;
+		};
+		F1114EE21CC9556B004D4719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pachangaManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.um.ios.pachangaManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pachangaManager.app/pachangaManager";
+			};
+			name = Release;
+		};
+		F1114EE41CC9556B004D4719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = pachangaManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.um.ios.pachangaManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = pachangaManager;
+			};
+			name = Debug;
+		};
+		F1114EE51CC9556B004D4719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = pachangaManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.um.ios.pachangaManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = pachangaManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1114EAB1CC9556B004D4719 /* Build configuration list for PBXProject "pachangaManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1114EDB1CC9556B004D4719 /* Debug */,
+				F1114EDC1CC9556B004D4719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1114EDD1CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1114EDE1CC9556B004D4719 /* Debug */,
+				F1114EDF1CC9556B004D4719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1114EE01CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1114EE11CC9556B004D4719 /* Debug */,
+				F1114EE21CC9556B004D4719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1114EE31CC9556B004D4719 /* Build configuration list for PBXNativeTarget "pachangaManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1114EE41CC9556B004D4719 /* Debug */,
+				F1114EE51CC9556B004D4719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1A3A2E31CEE205F0065F0B6 /* Modelo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A3A2E41CEE205F0065F0B6 /* Modelo.xcdatamodel */,
+			);
+			currentVersion = F1A3A2E41CEE205F0065F0B6 /* Modelo.xcdatamodel */;
+			path = Modelo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1114EA81CC9556B004D4719 /* Project object */;
+}
