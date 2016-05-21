@@ -11,7 +11,6 @@
 
 @interface CompeticionesCrearViewController : UIViewController
 
-@property (strong, nonatomic) CompeticionModelo *competicionNueva;
 @property (strong, nonatomic) NSArray *pickerData;
 @property (strong, nonatomic) NSString *resultPickerData;
 @property (weak, nonatomic) IBOutlet UITextField *nombreEdit;

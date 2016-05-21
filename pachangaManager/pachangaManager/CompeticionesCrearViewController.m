@@ -9,10 +9,11 @@
 #import "CompeticionesCrearViewController.h"
 #import "CompeticionesViewController.h"
 
+/*
 @interface CompeticionesCrearViewController ()
 
 @end
-
+*/
 @implementation CompeticionesCrearViewController
 
 - (void)viewDidLoad {
@@ -57,13 +58,12 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    /*
+    
     CompeticionesViewController *vc = [segue destinationViewController];
-    self.competicionNueva.nombre=self.nombreEdit.text;
-    self.competicionNueva.deporte=_resultPickerData;
-    vc.addCompeticion = self.competicionNueva;
+    NSString *nombre=self.nombreEdit.text;
+    NSString *deporte=_resultPickerData;
+    [vc saveCompeticionWithNombre:nombre deporte:deporte];
     NSLog(@"CrearCompeticionViewController: exit");
-     */
 }
 
 

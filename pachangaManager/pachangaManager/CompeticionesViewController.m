@@ -7,6 +7,8 @@
 //
 
 #import "CompeticionesViewController.h"
+#import "CompeticionesCrearViewController.h"
+//#import "CompeticionesMostrarViewController.h"
 
 @interface CompeticionesViewController ()
 
@@ -29,9 +31,7 @@
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
     // Initialize Fetched Results Controller
-    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
-                                                                        managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil
-                                                                                   cacheName:nil];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
     // Configure Fetched Results Controller
     [self.fetchedResultsController setDelegate:self];
     // Perform Fetch
@@ -74,10 +74,10 @@
     return cell;
 }
 
--(void) saveJugadorWithNombre:(NSString*) name deporte:(NSString*)
+-(void) saveCompeticionWithNombre:(NSString*) name deporte:(NSString*)
 sport {
     // Inicializamos el tipo de entidad
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador"
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"CompeticionModelo"
                                               inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
     // Inicializamos al jugador con el tipo de entidad
     // Y lo insertamos en el contexto
@@ -134,7 +134,7 @@ sport {
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        CompeticionModelo *comp = [self getJugadorWithIndexPath:indexPath];
+        CompeticionModelo *comp = [self getCompeticionWithIndexPath:indexPath];
         [comp.managedObjectContext deleteObject:comp];
         NSError *deleteError = nil;
         if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
@@ -146,7 +146,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the
     } }
 
--(CompeticionModelo *) getJugadorWithIndexPath:(NSIndexPath*) indexPath {
+-(CompeticionModelo *) getCompeticionWithIndexPath:(NSIndexPath*) indexPath {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"CompeticionModelo" inManagedObjectContext:
                                    [[DataManager sharedDataManager] managedObjectContext]];
@@ -179,6 +179,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     // Make sure your segue name in storyboard is the same as this line
     if ([[segue identifier] isEqualToString:@"segueDetalleCompeticion"])
     {
+        
         /*
         UITableViewCell *cell = (UITableViewCell*) sender;
         // Get reference to the destination view controller
@@ -188,16 +189,13 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         vc.datoNombre = [NSString stringWithString:cell.textLabel.text];
         vc.datoDeporte = [NSString stringWithString:cell.detailTextLabel.text];
         */
-        
     }
     
-    if ([[segue identifier] isEqualToString:@"segueAddCompeticion"])
+    if ([[segue identifier] isEqualToString:@"segueAddCompeticion"])        
     {
-        /*
-        CompeticionCrearViewController *v2 = [segue destinationViewController];
-        v2.competicionNueva = [[Competicion alloc]init];
-        NSLog(@"CompeticionesTableViewController: segueAddCompeticion");
-         */
+        //CompeticionesCrearViewController *v2 = [segue destinationViewController];
+        //v2.competicionNueva = [[Competicion alloc]init];
+        //NSLog(@"CompeticionesTableViewController: segueAddCompeticion");
     }
     
 }

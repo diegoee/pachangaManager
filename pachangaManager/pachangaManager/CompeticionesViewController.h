@@ -14,6 +14,7 @@
 @interface CompeticionesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
 -(IBAction)GuadarCompeticion:(UIStoryboardSegue *)segue;
+-(void)saveCompeticionWithNombre:(NSString*) name deporte:(NSString*)sport;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
