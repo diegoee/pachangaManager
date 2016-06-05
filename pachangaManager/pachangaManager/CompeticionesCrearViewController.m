@@ -58,15 +58,32 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
+    /*
     CompeticionesViewController *vc = [segue destinationViewController];
     NSString *nombre=self.nombreEdit.text;
     NSString *deporte=_resultPickerData;
     [vc saveCompeticionWithNombre:nombre deporte:deporte];
     NSLog(@"CrearCompeticionViewController: exit");
+    */
 }
 
-
+- (IBAction)save:(id)sender {
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    NSManagedObject *newCompeticion = [NSEntityDescription insertNewObjectForEntityForName:@"CompeticionModelo" inManagedObjectContext:context];
+    [newCompeticion setValue:self.nombreEdit.text forKey:@"nombre"];
+    [newCompeticion setValue:_resultPickerData forKey:@"deporte"];
+    
+    NSError *error = nil;
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 /*
  #pragma mark - Navigation

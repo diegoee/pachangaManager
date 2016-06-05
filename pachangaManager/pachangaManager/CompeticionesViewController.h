@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "CompeticionesTableViewCell.h"
 #import "DataManager.h"
-#import "CompeticionModelo.h"
 
 @interface CompeticionesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
@@ -18,6 +17,8 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 
 @end
