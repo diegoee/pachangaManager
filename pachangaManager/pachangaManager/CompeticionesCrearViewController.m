@@ -24,7 +24,7 @@
     _resultPickerData=_pickerData[0];
     self.deporteSel.dataSource = self;
     self.deporteSel.delegate = self;
-    NSLog(@"CrearCompeticionViewController: viewDidLoad");
+    NSLog(@"CompeticionesCrearViewController: viewDidLoad");
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,7 +71,7 @@
     
     NSManagedObjectContext *context = [self managedObjectContext];
     
-    NSManagedObject *newCompeticion = [NSEntityDescription insertNewObjectForEntityForName:@"CompeticionModelo" inManagedObjectContext:context];
+    NSManagedObject *newCompeticion = [NSEntityDescription insertNewObjectForEntityForName:@"aa" inManagedObjectContext:context];
     [newCompeticion setValue:self.nombreEdit.text forKey:@"nombre"];
     [newCompeticion setValue:_resultPickerData forKey:@"deporte"];
     
