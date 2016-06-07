@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CompeticionCell.h
 //  pm
 //
 //  Created by Diego Espínola Espigares on 7/6/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CompeticionCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *nombre;
 
 @end
-

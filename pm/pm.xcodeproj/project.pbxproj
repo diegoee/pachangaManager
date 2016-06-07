@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		F18283981D074D5700626701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283971D074D5700626701 /* main.m */; };
 		F182839B1D074D5700626701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F182839A1D074D5700626701 /* AppDelegate.m */; };
-		F182839E1D074D5700626701 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F182839D1D074D5700626701 /* ViewController.m */; };
 		F18283A11D074D5700626701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F182839F1D074D5700626701 /* Main.storyboard */; };
 		F18283A31D074D5700626701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18283A21D074D5700626701 /* Assets.xcassets */; };
 		F18283A61D074D5700626701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18283A41D074D5700626701 /* LaunchScreen.storyboard */; };
+		F18283AF1D075B1800626701 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283AE1D075B1800626701 /* DataManager.m */; };
+		F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F18283B01D075CBF00626701 /* Modelo.xcdatamodeld */; };
+		F18283BF1D0760B900626701 /* Pachanga+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283B41D0760B900626701 /* Pachanga+CoreDataProperties.m */; };
+		F18283C01D0760B900626701 /* Pachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283B61D0760B900626701 /* Pachanga.m */; };
+		F18283C11D0760B900626701 /* Jugador+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283B81D0760B900626701 /* Jugador+CoreDataProperties.m */; };
+		F18283C21D0760B900626701 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283BA1D0760B900626701 /* Jugador.m */; };
+		F18283C31D0760B900626701 /* Competicion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283BC1D0760B900626701 /* Competicion+CoreDataProperties.m */; };
+		F18283C41D0760B900626701 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283BE1D0760B900626701 /* Competicion.m */; };
+		F18283CB1D0770E100626701 /* CompeticionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283CA1D0770E100626701 /* CompeticionCell.m */; };
+		F18283CE1D07710500626701 /* CompeticionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283CD1D07710500626701 /* CompeticionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +29,29 @@
 		F18283971D074D5700626701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F18283991D074D5700626701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F182839A1D074D5700626701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F182839C1D074D5700626701 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F182839D1D074D5700626701 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F18283A01D074D5700626701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F18283A21D074D5700626701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F18283A51D074D5700626701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F18283A71D074D5700626701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18283AD1D075B1800626701 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		F18283AE1D075B1800626701 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		F18283B11D075CBF00626701 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
+		F18283B31D0760B900626701 /* Pachanga+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pachanga+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F18283B41D0760B900626701 /* Pachanga+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pachanga+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F18283B51D0760B900626701 /* Pachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pachanga.h; sourceTree = "<group>"; };
+		F18283B61D0760B900626701 /* Pachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pachanga.m; sourceTree = "<group>"; };
+		F18283B71D0760B900626701 /* Jugador+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jugador+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F18283B81D0760B900626701 /* Jugador+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Jugador+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F18283B91D0760B900626701 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jugador.h; sourceTree = "<group>"; };
+		F18283BA1D0760B900626701 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jugador.m; sourceTree = "<group>"; };
+		F18283BB1D0760B900626701 /* Competicion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Competicion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F18283BC1D0760B900626701 /* Competicion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Competicion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F18283BD1D0760B900626701 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
+		F18283BE1D0760B900626701 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
+		F18283C91D0770E100626701 /* CompeticionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionCell.h; sourceTree = "<group>"; };
+		F18283CA1D0770E100626701 /* CompeticionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionCell.m; sourceTree = "<group>"; };
+		F18283CC1D07710500626701 /* CompeticionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionView.h; sourceTree = "<group>"; };
+		F18283CD1D07710500626701 /* CompeticionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +86,12 @@
 			children = (
 				F18283991D074D5700626701 /* AppDelegate.h */,
 				F182839A1D074D5700626701 /* AppDelegate.m */,
-				F182839C1D074D5700626701 /* ViewController.h */,
-				F182839D1D074D5700626701 /* ViewController.m */,
+				F18283CC1D07710500626701 /* CompeticionView.h */,
+				F18283CD1D07710500626701 /* CompeticionView.m */,
 				F182839F1D074D5700626701 /* Main.storyboard */,
+				F18283C91D0770E100626701 /* CompeticionCell.h */,
+				F18283CA1D0770E100626701 /* CompeticionCell.m */,
+				F18283C51D0760C800626701 /* Modelo */,
 				F18283A21D074D5700626701 /* Assets.xcassets */,
 				F18283A41D074D5700626701 /* LaunchScreen.storyboard */,
 				F18283A71D074D5700626701 /* Info.plist */,
@@ -77,6 +106,28 @@
 				F18283971D074D5700626701 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F18283C51D0760C800626701 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				F18283AD1D075B1800626701 /* DataManager.h */,
+				F18283AE1D075B1800626701 /* DataManager.m */,
+				F18283B31D0760B900626701 /* Pachanga+CoreDataProperties.h */,
+				F18283B01D075CBF00626701 /* Modelo.xcdatamodeld */,
+				F18283B41D0760B900626701 /* Pachanga+CoreDataProperties.m */,
+				F18283B51D0760B900626701 /* Pachanga.h */,
+				F18283B61D0760B900626701 /* Pachanga.m */,
+				F18283B71D0760B900626701 /* Jugador+CoreDataProperties.h */,
+				F18283B81D0760B900626701 /* Jugador+CoreDataProperties.m */,
+				F18283B91D0760B900626701 /* Jugador.h */,
+				F18283BA1D0760B900626701 /* Jugador.m */,
+				F18283BB1D0760B900626701 /* Competicion+CoreDataProperties.h */,
+				F18283BC1D0760B900626701 /* Competicion+CoreDataProperties.m */,
+				F18283BD1D0760B900626701 /* Competicion.h */,
+				F18283BE1D0760B900626701 /* Competicion.m */,
+			);
+			name = Modelo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F182839E1D074D5700626701 /* ViewController.m in Sources */,
+				F18283C41D0760B900626701 /* Competicion.m in Sources */,
+				F18283AF1D075B1800626701 /* DataManager.m in Sources */,
+				F18283C01D0760B900626701 /* Pachanga.m in Sources */,
 				F182839B1D074D5700626701 /* AppDelegate.m in Sources */,
+				F18283C21D0760B900626701 /* Jugador.m in Sources */,
+				F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */,
+				F18283CE1D07710500626701 /* CompeticionView.m in Sources */,
+				F18283BF1D0760B900626701 /* Pachanga+CoreDataProperties.m in Sources */,
+				F18283C11D0760B900626701 /* Jugador+CoreDataProperties.m in Sources */,
+				F18283C31D0760B900626701 /* Competicion+CoreDataProperties.m in Sources */,
 				F18283981D074D5700626701 /* main.m in Sources */,
+				F18283CB1D0770E100626701 /* CompeticionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +364,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F18283B01D075CBF00626701 /* Modelo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F18283B11D075CBF00626701 /* Modelo.xcdatamodel */,
+			);
+			currentVersion = F18283B11D075CBF00626701 /* Modelo.xcdatamodel */;
+			path = Modelo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F182838B1D074D5700626701 /* Project object */;
 }
