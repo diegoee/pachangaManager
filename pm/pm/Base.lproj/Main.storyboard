@@ -68,15 +68,15 @@
             </objects>
             <point key="canvasLocation" x="-7548" y="-10179"/>
         </scene>
-        <!--View Controller-->
+        <!--Competicion Crear View-->
         <scene sceneID="3TQ-NL-60R">
             <objects>
-                <viewController id="fak-v1-tJS" sceneMemberID="viewController">
+                <viewController id="fak-v1-tJS" customClass="CompeticionCrearView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vLI-Jn-btj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deporte de la competción:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UfJ-fs-ftf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deporte de la competición:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UfJ-fs-ftf">
                                 <rect key="frame" x="20" y="182" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -104,6 +104,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jAV-yA-sxN"/>
+                    <connections>
+                        <outlet property="deporteSel" destination="EvT-s3-THi" id="UUR-Ms-6eO"/>
+                        <outlet property="nombreEdit" destination="7L0-ml-rBZ" id="LaP-d9-ii0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlJ-Wc-8Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

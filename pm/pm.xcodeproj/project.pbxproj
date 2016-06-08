@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */; };
 		F18283981D074D5700626701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283971D074D5700626701 /* main.m */; };
 		F182839B1D074D5700626701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F182839A1D074D5700626701 /* AppDelegate.m */; };
 		F18283A11D074D5700626701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F182839F1D074D5700626701 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F17301CC1D08B98400BABC63 /* CompeticionCrearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionCrearView.h; sourceTree = "<group>"; };
+		F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionCrearView.m; sourceTree = "<group>"; };
 		F18283931D074D5700626701 /* pm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18283971D074D5700626701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F18283991D074D5700626701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,9 +89,11 @@
 			children = (
 				F18283991D074D5700626701 /* AppDelegate.h */,
 				F182839A1D074D5700626701 /* AppDelegate.m */,
+				F182839F1D074D5700626701 /* Main.storyboard */,
+				F17301CC1D08B98400BABC63 /* CompeticionCrearView.h */,
+				F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */,
 				F18283CC1D07710500626701 /* CompeticionView.h */,
 				F18283CD1D07710500626701 /* CompeticionView.m */,
-				F182839F1D074D5700626701 /* Main.storyboard */,
 				F18283C91D0770E100626701 /* CompeticionCell.h */,
 				F18283CA1D0770E100626701 /* CompeticionCell.m */,
 				F18283C51D0760C800626701 /* Modelo */,
@@ -204,6 +209,7 @@
 				F18283AF1D075B1800626701 /* DataManager.m in Sources */,
 				F18283C01D0760B900626701 /* Pachanga.m in Sources */,
 				F182839B1D074D5700626701 /* AppDelegate.m in Sources */,
+				F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */,
 				F18283C21D0760B900626701 /* Jugador.m in Sources */,
 				F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */,
 				F18283CE1D07710500626701 /* CompeticionView.m in Sources */,
@@ -362,6 +368,7 @@
 				F18283AC1D074D5700626701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
