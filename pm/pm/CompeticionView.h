@@ -16,6 +16,6 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
-- (IBAction)addCompeticion:(UIButton *)sender;
+-(void) saveCompeticionWithNombre:(NSString*) nombre deporte:(NSString*)deporte;
 
 @end

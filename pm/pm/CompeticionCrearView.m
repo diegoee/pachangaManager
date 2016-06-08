@@ -7,6 +7,7 @@
 //
 
 #import "CompeticionCrearView.h"
+#import "CompeticionView.h"
 
 @implementation CompeticionCrearView
 
@@ -19,7 +20,7 @@
     _resultPickerData=_pickerData[0];
     self.deporteSel.dataSource = self;
     self.deporteSel.delegate = self;
-    NSLog(@"CrearCompeticionViewController: viewDidLoad");
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,14 +52,15 @@
     _resultPickerData = _pickerData[row];
 }
 
-/*
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    CompeticionesTableViewController *vc = [segue destinationViewController];
-    self.competicionNueva.nombre=self.nombreEdit.text;
-    self.competicionNueva.deporte=_resultPickerData;
-    vc.addCompeticion = self.competicionNueva;
-    NSLog(@"CrearCompeticionViewController: exit");
+- (IBAction)addCompeticion:(UIButton *)save {
+    CompeticionView *vc = [[CompeticionView alloc]init];
+    NSString * nombre=self.nombreEdit.text;
+    NSString * deporte=_resultPickerData;
+    [vc saveCompeticionWithNombre:nombre deporte:deporte];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //NSLog(@"CompeticionesCrearView: addCompeticion");
 }
-*/
+
+
 
 @end

@@ -11,5 +11,6 @@
 @interface CompeticionCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *nombre;
+@property (strong, nonatomic) IBOutlet UILabel *deporte;
 
 @end

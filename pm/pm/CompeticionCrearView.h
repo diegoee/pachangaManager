@@ -11,11 +11,12 @@
 
 @interface CompeticionCrearView : UIViewController
 
-
 @property (strong, nonatomic) NSArray *pickerData;
 @property (strong, nonatomic) NSString *resultPickerData;
 
 @property (weak, nonatomic) IBOutlet UITextField *nombreEdit;
 @property (weak, nonatomic) IBOutlet UIPickerView *deporteSel;
+
+- (IBAction)addCompeticion:(UIButton *)save;
 
 @end

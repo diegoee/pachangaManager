@@ -8,6 +8,7 @@
 //
 
 #import "CompeticionView.h"
+#import "PachangaView.h"
 
 
 @implementation CompeticionView
@@ -67,6 +68,7 @@
     Competicion *competicion = [self.fetchedResultsController objectAtIndexPath:indexPath];
      // Establecemos el texto del label de la celda con el nombre del jugador
     [cell.nombre setText:competicion.nombre];
+    [cell.deporte setText:competicion.deporte];
 }
     
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -102,10 +104,6 @@
     [self.tableView endUpdates];
 }
 
-
-- (IBAction)addCompeticion:(UIButton *)sender {
-    [self saveCompeticionWithNombre:@"hacendado" deporte:@"tenis"];
-}
 
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
@@ -187,6 +185,31 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     Competicion *comp = (Competicion *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
     return comp;
 }
+
+
+-(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
+    //NSLog(@"CompeticionesView: prepareForUnwind");
+}
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"segueDetalleCompeticion"])
+    {
+        UITableViewCell *cell = (UITableViewCell*) sender;
+        PachangaView *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        vc.datoNombre = [NSString stringWithString:cell.textLabel.text];
+        vc.datoDeporte = [NSString stringWithString:cell.detailTextLabel.text];
+        
+    }
+    
+    
+}
+
 
 
 @end
