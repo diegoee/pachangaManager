@@ -16,7 +16,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [super viewDidLoad];
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Cargando"
+                                  message:nil
+                                  preferredStyle:UIAlertControllerStyleAlert];
+        
+    [self presentViewController:alert animated:YES completion:nil];
+    
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Competicion"];
     // Add Sort Descriptors
@@ -34,6 +40,9 @@
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
+    
+    [alert dismissViewControllerAnimated:YES completion:^{}];
+    NSLog(@"CompeticionesView: viewDidLoad");
     
 }
 
@@ -129,19 +138,48 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Competicion *comp = [self getCompeticionWithIndexPath:indexPath];
-        [comp.managedObjectContext deleteObject:comp];
-        NSError *deleteError = nil;
-        if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
-            NSLog(@"Unable to save managed object context.");
-            NSLog(@"%@, %@", deleteError, deleteError.localizedDescription);
-            return;
-        }
+        
+        
+        UIAlertController * view=   [UIAlertController
+                                     alertControllerWithTitle:@"Confirmar:"
+                                     message:@"¿Borrar Competición?"
+                                     preferredStyle:UIAlertControllerStyleActionSheet];
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 
+                                 Competicion *comp = [self getCompeticionWithIndexPath:indexPath];
+                                 [comp.managedObjectContext deleteObject:comp];
+                                 NSError *deleteError = nil;
+                                 if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
+                                     NSLog(@"Unable to save managed object context.");
+                                     NSLog(@"%@, %@", deleteError, deleteError.localizedDescription);
+                                     return;
+                                 }
+                                 
+                                 
+                             }];
+        UIAlertAction* cancel = [UIAlertAction
+                                 actionWithTitle:@"Cancel"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     [view dismissViewControllerAnimated:YES completion:nil];
+                                     
+                                 }];
+        
+        [view addAction:ok];
+        [view addAction:cancel];
+        [self presentViewController:view animated:YES completion:nil];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the
-    } }
+    }
+}
 
--(Jugador*) getCompeticionWithIndexPath:(NSIndexPath*) indexPath {
+-(Competicion *) getCompeticionWithIndexPath:(NSIndexPath*) indexPath {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Competicion" inManagedObjectContext:
                                    [[DataManager sharedDataManager] managedObjectContext]];
