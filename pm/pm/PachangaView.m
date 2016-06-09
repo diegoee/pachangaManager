@@ -25,7 +25,7 @@ NSString *id_competicion;
     id_competicion = [NSString stringWithFormat:@"%@ -- %@", self.datoNombre , self.datoDeporte];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_competicion == %@",id_competicion];
     
-    //[fetchRequest setPredicate:predicate];
+    [fetchRequest setPredicate:predicate];
     
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];

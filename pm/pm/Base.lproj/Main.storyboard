@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="auy-3F-Ni3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="m7Q-r6-5G4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -75,7 +75,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="1SW-ub-gzs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-7584" y="-9562"/>
+            <point key="canvasLocation" x="-8294" y="-10038"/>
         </scene>
         <!--Pachanga View-->
         <scene sceneID="DGe-O4-kIf">
@@ -177,7 +177,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHg-tV-M36" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rQx-zk-qz2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-7145" y="-9562"/>
+            <point key="canvasLocation" x="-7855" y="-10038"/>
         </scene>
         <!--Jugador View-->
         <scene sceneID="hSR-e1-Kbo">
@@ -308,7 +308,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uD5-8o-Yek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6714" y="-9562"/>
+            <point key="canvasLocation" x="-7424" y="-10038"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2rE-2R-XxW">
+            <objects>
+                <viewController id="Oyj-nD-GtU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ui-xm-xpo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="oE6-Or-vjx"/>
+                    <navigationItem key="navigationItem" id="o1r-QP-IAO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qav-pU-yuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8514" y="-10655"/>
         </scene>
         <!--Competicion Crear View-->
         <scene sceneID="3TQ-NL-60R">
@@ -365,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlJ-Wc-8Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7145" y="-10179"/>
+            <point key="canvasLocation" x="-7855" y="-10655"/>
         </scene>
         <!--Pachanga Crear View-->
         <scene sceneID="qVy-ct-a6C">
@@ -425,12 +441,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48R-xG-YHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6714" y="-10179"/>
+            <point key="canvasLocation" x="-7424" y="-10655"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="S1b-uc-4W4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="auy-3F-Ni3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="klU-2f-qQz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBM-Bw-exq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -443,7 +460,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVM-lp-mFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7994" y="-9562"/>
+            <point key="canvasLocation" x="-8714" y="-10038"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0IB-5Z-rTR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m7Q-r6-5G4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UzI-4b-pWq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="auy-3F-Ni3" kind="relationship" relationship="viewControllers" id="qkE-pw-0Qw"/>
+                        <segue destination="Oyj-nD-GtU" kind="relationship" relationship="viewControllers" id="ATR-Xj-W7T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gT-a1-L8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9156" y="-10393"/>
         </scene>
     </scenes>
 </document>
