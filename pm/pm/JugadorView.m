@@ -1,49 +1,33 @@
-
 //
-//  ViewController.m
+//  JugadorView.m
 //  pm
 //
-//  Created by Diego Espínola Espigares on 7/6/16.
+//  Created by Diego Espínola Espigares on 9/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 
-#import "CompeticionView.h"
+#import "JugadorView.h"
 #import "PachangaView.h"
 
-
-@implementation CompeticionView
+@implementation JugadorView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.labelNombre.text = [NSString stringWithFormat:self.datoNombre];
+    self.labelFecha.text = [NSString stringWithFormat:self.datoFecha];
     
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:@"Cargando"
-                                  message:nil
-                                  preferredStyle:UIAlertControllerStyleAlert];
-        
-    [self presentViewController:alert animated:YES completion:nil];
-    
-    // Initialize Fetch Request
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Competicion"];
-    // Add Sort Descriptors
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Jugador"];
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
-    // Initialize Fetched Results Controller
-    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
-                                                                        managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil
-                                                                                   cacheName:nil];
-    // Configure Fetched Results Controller
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
     [self.fetchedResultsController setDelegate:self];
-    // Perform Fetch
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
     if (error) {
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
-    
-    [alert dismissViewControllerAnimated:YES completion:^{}];
-    //NSLog(@"CompeticionesView: viewDidLoad");
+    //NSLog(@"JugadorView: viewDidLoad");
     
 }
 
@@ -63,38 +47,39 @@
     id<NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:section];
     return [sectionInfo numberOfObjects];
 }
-    
-- (void) configureCell:(CompeticionCell *)cell atIndexPath:(NSIndexPath *)indexPath { // Cogemos al jugador situado en un determinado indexPath
-    Competicion *competicion = [self.fetchedResultsController objectAtIndexPath:indexPath];
-     // Establecemos el texto del label de la celda con el nombre del jugador
-    [cell.nombre setText:competicion.nombre];
-    [cell.deporte setText:competicion.deporte];
+
+- (void) configureCell:(JugadorCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    Jugador *jug = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [cell.nombre setText:jug.nombre];
+    [cell.telefono setText:jug.telefono];
 }
-    
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Competicion *cell = [tableView dequeueReusableCellWithIdentifier:@"competicionCell" forIndexPath:indexPath];
+    Pachanga *cell = [tableView dequeueReusableCellWithIdentifier:@"jugadorCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
-    
--(void) saveCompeticionWithNombre:(NSString*) nombre deporte:(NSString*)deporte {
+
+-(void) saveJugadorWithNombre:(NSString*) nombre telefono:(NSDate*)telefono{
     // Inicializamos el tipo de entidad
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Competicion"
-                                              inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
+    
+    //NSEntityDescription *entity = [NSEntityDescription entityForName:@"Pachanga" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
     // Inicializamos al jugador con el tipo de entidad
     // Y lo insertamos en el contexto
-    Competicion *competicion =[[Competicion alloc] initWithEntity:entity insertIntoManagedObjectContext:
-                       [[DataManager sharedDataManager] managedObjectContext]];
-    competicion.nombre = nombre;
-    competicion.deporte = deporte;
+    //Pachanga *pachanga =[[Pachanga alloc] initWithEntity:entity insertIntoManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
+    //pachanga.nombre = nombre;
+    //pachanga.fecha = fecha;
     // Guardamos
-    NSError *error = nil;
+    //NSError *error = nil;
     
-    if ([[[DataManager sharedDataManager] managedObjectContext] save:&error]) {
-        [self dismissViewControllerAnimated:YES completion:nil];
-    } else if (error) {
-        NSLog(@"Unable to save record.\n%@, %@", error, error.localizedDescription);
-    } }
+    //if ([[[DataManager sharedDataManager] managedObjectContext] save:&error]) {
+    //    [self dismissViewControllerAnimated:YES completion:nil];
+    //} else if (error) {
+    //    NSLog(@"Unable to save record.\n%@, %@", error, error.localizedDescription);
+    //}
+    //NSLog(@"PachangaView: savePachangaWithNombre");
+    
+}
 
 -(void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
@@ -109,6 +94,7 @@
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
        atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
       newIndexPath:(NSIndexPath *)newIndexPath {
+    
     switch (type) {
         case NSFetchedResultsChangeInsert: {
             [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
@@ -121,7 +107,7 @@
             break;
         }
         case NSFetchedResultsChangeUpdate: {
-            [self configureCell:(CompeticionCell *)[self.tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            [self configureCell:(JugadorCell *)[self.tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
         }
         case NSFetchedResultsChangeMove: {
@@ -135,12 +121,13 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
         
         UIAlertController * view=   [UIAlertController
                                      alertControllerWithTitle:@"Confirmar:"
-                                     message:@"¿Borrar Competición?"
+                                     message:@"¿Borrar Pachanga?"
                                      preferredStyle:UIAlertControllerStyleActionSheet];
         UIAlertAction* ok = [UIAlertAction
                              actionWithTitle:@"OK"
@@ -148,8 +135,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                              handler:^(UIAlertAction * action)
                              {
                                  
-                                 Competicion *comp = [self getCompeticionWithIndexPath:indexPath];
-                                 [comp.managedObjectContext deleteObject:comp];
+                                 Jugador *jug = [self getJugadorWithIndexPath:indexPath];
+                                 [jug.managedObjectContext deleteObject:jug];
                                  NSError *deleteError = nil;
                                  if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
                                      NSLog(@"Unable to save managed object context.");
@@ -175,15 +162,17 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the
     }
+    
 }
 
--(Competicion *) getCompeticionWithIndexPath:(NSIndexPath*) indexPath {
+-(Pachanga *) getJugadorWithIndexPath:(NSIndexPath*) indexPath {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Competicion" inManagedObjectContext:
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:
                                    [[DataManager sharedDataManager] managedObjectContext]];
     [fetchRequest setEntity:entity];
-    Competicion *comp = (Competicion *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
-    return comp;
+    Pachanga *pach = (Pachanga *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
+    return pach;
+    
 }
 
 
@@ -193,25 +182,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    // Make sure your segue name in storyboard is the same as this line
-    if ([[segue identifier] isEqualToString:@"segueDetalleCompeticion"])
-    {
-        UITableViewCell *cell = (UITableViewCell*) sender;
-        PachangaView *vc = [segue destinationViewController];
-        
-        // Pass any objects to the view controller here, like...
-        vc.datoNombre = [NSString stringWithString:cell.textLabel.text];
-        vc.datoDeporte = [NSString stringWithString:cell.detailTextLabel.text];
-        
-    }
-    
-    
 }
 
 
-
 @end
-
-

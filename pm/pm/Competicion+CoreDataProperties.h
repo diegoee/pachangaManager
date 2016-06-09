@@ -2,7 +2,7 @@
 //  Competicion+CoreDataProperties.h
 //  pm
 //
-//  Created by Diego Espínola Espigares on 7/6/16.
+//  Created by Diego Espínola Espigares on 9/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *deporte;
 @property (nullable, nonatomic, retain) NSString *nombre;
-@property (nullable, nonatomic, retain) Pachanga *pachanga;
 @property (nullable, nonatomic, retain) NSSet<Jugador *> *jugador;
+@property (nullable, nonatomic, retain) Pachanga *pachanga;
 
 @end
 

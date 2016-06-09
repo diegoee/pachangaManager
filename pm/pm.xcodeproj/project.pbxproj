@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */; };
 		F17301D11D08CDD900BABC63 /* PachangaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301D01D08CDD900BABC63 /* PachangaView.m */; };
-		F17301E31D08E17400BABC63 /* PachangaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301E21D08E17400BABC63 /* PachangaCell.m */; };
 		F18283981D074D5700626701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283971D074D5700626701 /* main.m */; };
 		F182839B1D074D5700626701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F182839A1D074D5700626701 /* AppDelegate.m */; };
 		F18283A11D074D5700626701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F182839F1D074D5700626701 /* Main.storyboard */; };
@@ -17,14 +16,18 @@
 		F18283A61D074D5700626701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18283A41D074D5700626701 /* LaunchScreen.storyboard */; };
 		F18283AF1D075B1800626701 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283AE1D075B1800626701 /* DataManager.m */; };
 		F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F18283B01D075CBF00626701 /* Modelo.xcdatamodeld */; };
-		F18283BF1D0760B900626701 /* Pachanga+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283B41D0760B900626701 /* Pachanga+CoreDataProperties.m */; };
-		F18283C01D0760B900626701 /* Pachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283B61D0760B900626701 /* Pachanga.m */; };
-		F18283C11D0760B900626701 /* Jugador+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283B81D0760B900626701 /* Jugador+CoreDataProperties.m */; };
-		F18283C21D0760B900626701 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283BA1D0760B900626701 /* Jugador.m */; };
-		F18283C31D0760B900626701 /* Competicion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283BC1D0760B900626701 /* Competicion+CoreDataProperties.m */; };
-		F18283C41D0760B900626701 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283BE1D0760B900626701 /* Competicion.m */; };
 		F18283CB1D0770E100626701 /* CompeticionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283CA1D0770E100626701 /* CompeticionCell.m */; };
 		F18283CE1D07710500626701 /* CompeticionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283CD1D07710500626701 /* CompeticionView.m */; };
+		F1EC47951D096A0D009EF239 /* Jugador+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC478A1D096A0D009EF239 /* Jugador+CoreDataProperties.m */; };
+		F1EC47961D096A0D009EF239 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC478C1D096A0D009EF239 /* Jugador.m */; };
+		F1EC47971D096A0D009EF239 /* Pachanga+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC478E1D096A0D009EF239 /* Pachanga+CoreDataProperties.m */; };
+		F1EC47981D096A0D009EF239 /* Pachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47901D096A0D009EF239 /* Pachanga.m */; };
+		F1EC47991D096A0D009EF239 /* Competicion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47921D096A0D009EF239 /* Competicion+CoreDataProperties.m */; };
+		F1EC479A1D096A0D009EF239 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47941D096A0D009EF239 /* Competicion.m */; };
+		F1EC479D1D096DD1009EF239 /* PachangaCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */; };
+		F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479F1D097C3C009EF239 /* JugadorView.m */; };
+		F1EC47A31D097C54009EF239 /* JugadorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47A21D097C54009EF239 /* JugadorCell.m */; };
+		F1EC47A91D098B2A009EF239 /* PachangaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47A81D098B2A009EF239 /* PachangaCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +35,6 @@
 		F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionCrearView.m; sourceTree = "<group>"; };
 		F17301CF1D08CDD900BABC63 /* PachangaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaView.h; sourceTree = "<group>"; };
 		F17301D01D08CDD900BABC63 /* PachangaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaView.m; sourceTree = "<group>"; };
-		F17301E11D08E17400BABC63 /* PachangaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PachangaCell.h; path = ../PachangaCell.h; sourceTree = "<group>"; };
-		F17301E21D08E17400BABC63 /* PachangaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PachangaCell.m; path = ../PachangaCell.m; sourceTree = "<group>"; };
 		F18283931D074D5700626701 /* pm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18283971D074D5700626701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F18283991D074D5700626701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,22 +46,30 @@
 		F18283AD1D075B1800626701 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		F18283AE1D075B1800626701 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F18283B11D075CBF00626701 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
-		F18283B31D0760B900626701 /* Pachanga+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pachanga+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F18283B41D0760B900626701 /* Pachanga+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pachanga+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F18283B51D0760B900626701 /* Pachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pachanga.h; sourceTree = "<group>"; };
-		F18283B61D0760B900626701 /* Pachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pachanga.m; sourceTree = "<group>"; };
-		F18283B71D0760B900626701 /* Jugador+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jugador+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F18283B81D0760B900626701 /* Jugador+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Jugador+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F18283B91D0760B900626701 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jugador.h; sourceTree = "<group>"; };
-		F18283BA1D0760B900626701 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jugador.m; sourceTree = "<group>"; };
-		F18283BB1D0760B900626701 /* Competicion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Competicion+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F18283BC1D0760B900626701 /* Competicion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Competicion+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F18283BD1D0760B900626701 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
-		F18283BE1D0760B900626701 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
 		F18283C91D0770E100626701 /* CompeticionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionCell.h; sourceTree = "<group>"; };
 		F18283CA1D0770E100626701 /* CompeticionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionCell.m; sourceTree = "<group>"; };
 		F18283CC1D07710500626701 /* CompeticionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionView.h; sourceTree = "<group>"; };
 		F18283CD1D07710500626701 /* CompeticionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionView.m; sourceTree = "<group>"; };
+		F1EC47891D096A0D009EF239 /* Jugador+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jugador+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1EC478A1D096A0D009EF239 /* Jugador+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Jugador+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1EC478B1D096A0D009EF239 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jugador.h; sourceTree = "<group>"; };
+		F1EC478C1D096A0D009EF239 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jugador.m; sourceTree = "<group>"; };
+		F1EC478D1D096A0D009EF239 /* Pachanga+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pachanga+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1EC478E1D096A0D009EF239 /* Pachanga+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pachanga+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1EC478F1D096A0D009EF239 /* Pachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pachanga.h; sourceTree = "<group>"; };
+		F1EC47901D096A0D009EF239 /* Pachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pachanga.m; sourceTree = "<group>"; };
+		F1EC47911D096A0D009EF239 /* Competicion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Competicion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1EC47921D096A0D009EF239 /* Competicion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Competicion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1EC47931D096A0D009EF239 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
+		F1EC47941D096A0D009EF239 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
+		F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCrearView.h; sourceTree = "<group>"; };
+		F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaCrearView.m; sourceTree = "<group>"; };
+		F1EC479E1D097C3C009EF239 /* JugadorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadorView.h; sourceTree = "<group>"; };
+		F1EC479F1D097C3C009EF239 /* JugadorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadorView.m; sourceTree = "<group>"; };
+		F1EC47A11D097C54009EF239 /* JugadorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadorCell.h; sourceTree = "<group>"; };
+		F1EC47A21D097C54009EF239 /* JugadorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadorCell.m; sourceTree = "<group>"; };
+		F1EC47A71D098B2A009EF239 /* PachangaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCell.h; sourceTree = "<group>"; };
+		F1EC47A81D098B2A009EF239 /* PachangaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,21 +104,14 @@
 			children = (
 				F18283991D074D5700626701 /* AppDelegate.h */,
 				F182839A1D074D5700626701 /* AppDelegate.m */,
-				F18283C51D0760C800626701 /* Modelo */,
 				F182839F1D074D5700626701 /* Main.storyboard */,
-				F17301CF1D08CDD900BABC63 /* PachangaView.h */,
-				F17301D01D08CDD900BABC63 /* PachangaView.m */,
-				F17301E11D08E17400BABC63 /* PachangaCell.h */,
-				F17301E21D08E17400BABC63 /* PachangaCell.m */,
-				F17301CC1D08B98400BABC63 /* CompeticionCrearView.h */,
-				F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */,
-				F18283CC1D07710500626701 /* CompeticionView.h */,
-				F18283CD1D07710500626701 /* CompeticionView.m */,
-				F18283C91D0770E100626701 /* CompeticionCell.h */,
-				F18283CA1D0770E100626701 /* CompeticionCell.m */,
+				F1EC47A61D097D04009EF239 /* Jugador */,
+				F1EC47A51D097CFD009EF239 /* Pachanga */,
+				F1EC47A41D097CE3009EF239 /* Competicion */,
+				F18283C51D0760C800626701 /* Modelo */,
+				F18283A71D074D5700626701 /* Info.plist */,
 				F18283A21D074D5700626701 /* Assets.xcassets */,
 				F18283A41D074D5700626701 /* LaunchScreen.storyboard */,
-				F18283A71D074D5700626701 /* Info.plist */,
 				F18283961D074D5700626701 /* Supporting Files */,
 			);
 			path = pm;
@@ -128,21 +130,58 @@
 			children = (
 				F18283AD1D075B1800626701 /* DataManager.h */,
 				F18283AE1D075B1800626701 /* DataManager.m */,
-				F18283B31D0760B900626701 /* Pachanga+CoreDataProperties.h */,
 				F18283B01D075CBF00626701 /* Modelo.xcdatamodeld */,
-				F18283B41D0760B900626701 /* Pachanga+CoreDataProperties.m */,
-				F18283B51D0760B900626701 /* Pachanga.h */,
-				F18283B61D0760B900626701 /* Pachanga.m */,
-				F18283B71D0760B900626701 /* Jugador+CoreDataProperties.h */,
-				F18283B81D0760B900626701 /* Jugador+CoreDataProperties.m */,
-				F18283B91D0760B900626701 /* Jugador.h */,
-				F18283BA1D0760B900626701 /* Jugador.m */,
-				F18283BB1D0760B900626701 /* Competicion+CoreDataProperties.h */,
-				F18283BC1D0760B900626701 /* Competicion+CoreDataProperties.m */,
-				F18283BD1D0760B900626701 /* Competicion.h */,
-				F18283BE1D0760B900626701 /* Competicion.m */,
+				F1EC47891D096A0D009EF239 /* Jugador+CoreDataProperties.h */,
+				F1EC478A1D096A0D009EF239 /* Jugador+CoreDataProperties.m */,
+				F1EC478B1D096A0D009EF239 /* Jugador.h */,
+				F1EC478C1D096A0D009EF239 /* Jugador.m */,
+				F1EC478D1D096A0D009EF239 /* Pachanga+CoreDataProperties.h */,
+				F1EC478E1D096A0D009EF239 /* Pachanga+CoreDataProperties.m */,
+				F1EC478F1D096A0D009EF239 /* Pachanga.h */,
+				F1EC47901D096A0D009EF239 /* Pachanga.m */,
+				F1EC47911D096A0D009EF239 /* Competicion+CoreDataProperties.h */,
+				F1EC47921D096A0D009EF239 /* Competicion+CoreDataProperties.m */,
+				F1EC47931D096A0D009EF239 /* Competicion.h */,
+				F1EC47941D096A0D009EF239 /* Competicion.m */,
 			);
 			name = Modelo;
+			sourceTree = "<group>";
+		};
+		F1EC47A41D097CE3009EF239 /* Competicion */ = {
+			isa = PBXGroup;
+			children = (
+				F17301CC1D08B98400BABC63 /* CompeticionCrearView.h */,
+				F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */,
+				F18283CC1D07710500626701 /* CompeticionView.h */,
+				F18283CD1D07710500626701 /* CompeticionView.m */,
+				F18283C91D0770E100626701 /* CompeticionCell.h */,
+				F18283CA1D0770E100626701 /* CompeticionCell.m */,
+			);
+			name = Competicion;
+			sourceTree = "<group>";
+		};
+		F1EC47A51D097CFD009EF239 /* Pachanga */ = {
+			isa = PBXGroup;
+			children = (
+				F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */,
+				F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */,
+				F17301CF1D08CDD900BABC63 /* PachangaView.h */,
+				F17301D01D08CDD900BABC63 /* PachangaView.m */,
+				F1EC47A71D098B2A009EF239 /* PachangaCell.h */,
+				F1EC47A81D098B2A009EF239 /* PachangaCell.m */,
+			);
+			name = Pachanga;
+			sourceTree = "<group>";
+		};
+		F1EC47A61D097D04009EF239 /* Jugador */ = {
+			isa = PBXGroup;
+			children = (
+				F1EC479E1D097C3C009EF239 /* JugadorView.h */,
+				F1EC479F1D097C3C009EF239 /* JugadorView.m */,
+				F1EC47A11D097C54009EF239 /* JugadorCell.h */,
+				F1EC47A21D097C54009EF239 /* JugadorCell.m */,
+			);
+			name = Jugador;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,20 +254,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17301E31D08E17400BABC63 /* PachangaCell.m in Sources */,
-				F18283C41D0760B900626701 /* Competicion.m in Sources */,
+				F1EC47951D096A0D009EF239 /* Jugador+CoreDataProperties.m in Sources */,
 				F18283AF1D075B1800626701 /* DataManager.m in Sources */,
-				F18283C01D0760B900626701 /* Pachanga.m in Sources */,
 				F17301D11D08CDD900BABC63 /* PachangaView.m in Sources */,
 				F182839B1D074D5700626701 /* AppDelegate.m in Sources */,
+				F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */,
 				F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */,
-				F18283C21D0760B900626701 /* Jugador.m in Sources */,
+				F1EC47A91D098B2A009EF239 /* PachangaCell.m in Sources */,
+				F1EC47981D096A0D009EF239 /* Pachanga.m in Sources */,
 				F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */,
 				F18283CE1D07710500626701 /* CompeticionView.m in Sources */,
-				F18283BF1D0760B900626701 /* Pachanga+CoreDataProperties.m in Sources */,
-				F18283C11D0760B900626701 /* Jugador+CoreDataProperties.m in Sources */,
-				F18283C31D0760B900626701 /* Competicion+CoreDataProperties.m in Sources */,
+				F1EC479D1D096DD1009EF239 /* PachangaCrearView.m in Sources */,
+				F1EC47961D096A0D009EF239 /* Jugador.m in Sources */,
+				F1EC47A31D097C54009EF239 /* JugadorCell.m in Sources */,
 				F18283981D074D5700626701 /* main.m in Sources */,
+				F1EC47971D096A0D009EF239 /* Pachanga+CoreDataProperties.m in Sources */,
+				F1EC479A1D096A0D009EF239 /* Competicion.m in Sources */,
+				F1EC47991D096A0D009EF239 /* Competicion+CoreDataProperties.m in Sources */,
 				F18283CB1D0770E100626701 /* CompeticionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

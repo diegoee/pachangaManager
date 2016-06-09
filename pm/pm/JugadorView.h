@@ -1,5 +1,5 @@
 //
-//  PachangaView.h
+//  JugadorView.h
 //  pm
 //
 //  Created by Diego Espínola Espigares on 9/6/16.
@@ -8,24 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "PachangaCell.h"
+#import "JugadorCell.h"
 #import "DataManager.h"
-#import "Pachanga.h"
+#import "Jugador.h"
 
-@interface PachangaView: UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
+@interface JugadorView: UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *labelNombre;
-@property (strong, nonatomic) IBOutlet UILabel *labelDeporte;
+@property (strong, nonatomic) IBOutlet UILabel *labelFecha;
 
 @property (strong, nonatomic) NSString *datoNombre;
-@property (strong, nonatomic) NSString *datoDeporte;
-
+@property (strong, nonatomic) NSString *datoFecha;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
--(void) savePachangaWithNombre:(NSString*) nombre fecha:(NSDate*)fecha;
-
-
 
 @end

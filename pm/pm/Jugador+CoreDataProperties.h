@@ -2,7 +2,7 @@
 //  Jugador+CoreDataProperties.h
 //  pm
 //
-//  Created by Diego Espínola Espigares on 7/6/16.
+//  Created by Diego Espínola Espigares on 9/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -17,22 +17,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *nombre;
 @property (nullable, nonatomic, retain) NSString *telefono;
+@property (nullable, nonatomic, retain) NSSet<Competicion *> *competicion;
 @property (nullable, nonatomic, retain) NSSet<Pachanga *> *pachanga;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *competicion;
 
 @end
 
 @interface Jugador (CoreDataGeneratedAccessors)
 
+- (void)addCompeticionObject:(Competicion *)value;
+- (void)removeCompeticionObject:(Competicion *)value;
+- (void)addCompeticion:(NSSet<Competicion *> *)values;
+- (void)removeCompeticion:(NSSet<Competicion *> *)values;
+
 - (void)addPachangaObject:(Pachanga *)value;
 - (void)removePachangaObject:(Pachanga *)value;
 - (void)addPachanga:(NSSet<Pachanga *> *)values;
 - (void)removePachanga:(NSSet<Pachanga *> *)values;
-
-- (void)addCompeticionObject:(NSManagedObject *)value;
-- (void)removeCompeticionObject:(NSManagedObject *)value;
-- (void)addCompeticion:(NSSet<NSManagedObject *> *)values;
-- (void)removeCompeticion:(NSSet<NSManagedObject *> *)values;
 
 @end
 

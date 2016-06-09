@@ -2,7 +2,7 @@
 //  Competicion+CoreDataProperties.m
 //  pm
 //
-//  Created by Diego Espínola Espigares on 7/6/16.
+//  Created by Diego Espínola Espigares on 9/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,7 +15,7 @@
 
 @dynamic deporte;
 @dynamic nombre;
-@dynamic pachanga;
 @dynamic jugador;
+@dynamic pachanga;
 
 @end

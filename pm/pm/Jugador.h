@@ -2,14 +2,14 @@
 //  Jugador.h
 //  pm
 //
-//  Created by Diego Espínola Espigares on 7/6/16.
+//  Created by Diego Espínola Espigares on 9/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Pachanga;
+@class Competicion, Pachanga;
 
 NS_ASSUME_NONNULL_BEGIN
 
