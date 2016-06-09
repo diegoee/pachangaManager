@@ -213,7 +213,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="t2H-AQ-B2l" detailTextLabel="RJu-K6-j3B" rowHeight="47" style="IBUITableViewCellStyleSubtitle" id="yAx-X8-cEm" customClass="JugadorCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="jugadorCell" textLabel="t2H-AQ-B2l" detailTextLabel="RJu-K6-j3B" rowHeight="47" style="IBUITableViewCellStyleSubtitle" id="yAx-X8-cEm" customClass="JugadorCell">
                                         <rect key="frame" x="0.0" y="28" width="320" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yAx-X8-cEm" id="Vrs-rH-mmD">
@@ -237,11 +237,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nombre" destination="t2H-AQ-B2l" id="bGI-pY-GTD"/>
-                                            <outlet property="telefono" destination="RJu-K6-j3B" id="QxG-Fo-cr0"/>
+                                            <outlet property="nombre" destination="t2H-AQ-B2l" id="Mr4-rz-Lmg"/>
+                                            <outlet property="telefono" destination="RJu-K6-j3B" id="N28-DZ-7OF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eMf-ig-NrR" id="1bL-FT-g4n"/>
+                                    <outlet property="delegate" destination="eMf-ig-NrR" id="DbV-8i-Ilp"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Competicion:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RL6-rh-ngS">
                                 <rect key="frame" x="20" y="71" width="85" height="16"/>
@@ -288,6 +292,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addJugador:" destination="eMf-ig-NrR" eventType="touchUpInside" id="TWb-Og-xqq"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -296,7 +303,7 @@
                         <outlet property="labelDeporte" destination="Wyl-kF-vAg" id="gFJ-5Q-CVa"/>
                         <outlet property="labelFecha" destination="iec-hh-7ma" id="ts1-T4-Lfa"/>
                         <outlet property="labelPachanga" destination="QRm-i3-eRD" id="BKg-D8-F5e"/>
-                        <outlet property="tableView" destination="RXI-qZ-aO4" id="lcl-9Z-qhV"/>
+                        <outlet property="tableView" destination="RXI-qZ-aO4" id="s8O-HY-o3O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uD5-8o-Yek" userLabel="First Responder" sceneMemberID="firstResponder"/>

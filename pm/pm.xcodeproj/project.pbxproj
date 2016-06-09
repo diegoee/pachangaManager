@@ -28,6 +28,8 @@
 		F1EC47B91D09ACFF009EF239 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47B11D09ACFF009EF239 /* Jugador.m */; };
 		F1EC47BA1D09ACFF009EF239 /* Pachanga+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47B31D09ACFF009EF239 /* Pachanga+CoreDataProperties.m */; };
 		F1EC47BB1D09ACFF009EF239 /* Pachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47B51D09ACFF009EF239 /* Pachanga.m */; };
+		F1EC47BD1D09E7C8009EF239 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC47BC1D09E7C8009EF239 /* AddressBook.framework */; };
+		F1EC47BF1D09E7D0009EF239 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC47BE1D09E7D0009EF239 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		F1EC47B31D09ACFF009EF239 /* Pachanga+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pachanga+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F1EC47B41D09ACFF009EF239 /* Pachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pachanga.h; sourceTree = "<group>"; };
 		F1EC47B51D09ACFF009EF239 /* Pachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pachanga.m; sourceTree = "<group>"; };
+		F1EC47BC1D09E7C8009EF239 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		F1EC47BE1D09E7D0009EF239 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EC47BF1D09E7D0009EF239 /* AddressBookUI.framework in Frameworks */,
+				F1EC47BD1D09E7C8009EF239 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,8 @@
 		F182838A1D074D5700626701 = {
 			isa = PBXGroup;
 			children = (
+				F1EC47BE1D09E7D0009EF239 /* AddressBookUI.framework */,
+				F1EC47BC1D09E7C8009EF239 /* AddressBook.framework */,
 				F18283951D074D5700626701 /* pm */,
 				F18283941D074D5700626701 /* Products */,
 			);

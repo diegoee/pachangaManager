@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AddressBookUI/AddressBookUI.h>
 #import "JugadorCell.h"
 #import "DataManager.h"
+#import "Competicion.h"
+#import "Pachanga.h"
 #import "Jugador.h"
 
-@interface JugadorView: UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
+@interface JugadorView: UIViewController <UITableViewDataSource, UITableViewDelegate, UITableViewDelegate,ABPeoplePickerNavigationControllerDelegate,NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *labelCompeticion;
 @property (strong, nonatomic) IBOutlet UILabel *labelDeporte;
@@ -26,5 +29,7 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)addJugador:(UIButton *)sender;
 
 @end

@@ -25,19 +25,22 @@ NSString *id_pachanga;
     
     id_pachanga = [NSString stringWithFormat:@"%@ -- %@ -- %@ -- %@",self.datoCompeticion,self.datoDeporte,self.datoPachanga,self.datoFecha];
     //NSLog(@"%@", id_pachanga);
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
-    [fetchRequest setPredicate:predicate];
+    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
+    //[fetchRequest setPredicate:predicate];
+    
     
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
     [self.fetchedResultsController setDelegate:self];
+    
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
+    
     if (error) {
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
-    //NSLog(@"JugadorView: viewDidLoad");
+    NSLog(@"JugadorView: viewDidLoad");
     
 }
 
@@ -70,26 +73,26 @@ NSString *id_pachanga;
     return cell;
 }
 
--(void) saveJugadorWithNombre:(NSString*) nombre telefono:(NSDate*)telefono{
+-(void) saveJugadorWithNombre:(NSString*) nombre telefono:(NSString*)telefono{
     // Inicializamos el tipo de entidad
     
-    //NSEntityDescription *entity = [NSEntityDescription entityForName:@"Pachanga" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
-    // Inicializamos al jugador con el tipo de entidad
-    // Y lo insertamos en el contexto
-    //Pachanga *pachanga =[[Pachanga alloc] initWithEntity:entity insertIntoManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
-    //pachanga.nombre = nombre;
-    //pachanga.fecha = fecha;
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
+    Jugador *jug =[[Pachanga alloc] initWithEntity:entity insertIntoManagedObjectContext: [[DataManager sharedDataManager] managedObjectContext]];
+    jug.nombre = nombre;
+    jug.telefono = telefono;
+    jug.id_pachanga = id_pachanga;
     // Guardamos
-    //NSError *error = nil;
+    NSError *error = nil;
     
-    //if ([[[DataManager sharedDataManager] managedObjectContext] save:&error]) {
-    //    [self dismissViewControllerAnimated:YES completion:nil];
-    //} else if (error) {
-    //    NSLog(@"Unable to save record.\n%@, %@", error, error.localizedDescription);
-    //}
-    //NSLog(@"PachangaView: savePachangaWithNombre");
+    if ([[[DataManager sharedDataManager] managedObjectContext] save:&error]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else if (error) {
+        NSLog(@"Unable to save record.\n%@, %@", error, error.localizedDescription);
+    }
+    //NSLog(@"JugadorView: saveJugadorWithNombre");
     
 }
+
 
 -(void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
@@ -137,7 +140,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         
         UIAlertController * view=   [UIAlertController
                                      alertControllerWithTitle:@"Confirmar:"
-                                     message:@"¿Borrar Pachanga?"
+                                     message:@"¿Borrar Jugador?"
                                      preferredStyle:UIAlertControllerStyleActionSheet];
         UIAlertAction* ok = [UIAlertAction
                              actionWithTitle:@"OK"
@@ -192,6 +195,61 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+}
+
+// Save jugador y adressbook
+- (IBAction)addJugador:(UIButton *)sender {
+    [self saveJugadorWithNombre:@"Rodolfo" telefono:@"606505404"];
+    ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc]
+                                                  init];
+    picker.peoplePickerDelegate = self;
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef) person {
+    NSString *name = [self getNombreWithPerson:(ABRecordRef) person];
+    NSString *phone = [self getTelefonoWithPerson:(ABRecordRef) person];
+    NSString *mail = [self getCorreoWithPerson:(ABRecordRef) person];
+    [self saveJugadorWithNombre:name telefono:phone];
+    return NO;
+}
+
+- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker
+                         didSelectPerson:(ABRecordRef)person {
+    [self peoplePickerNavigationController:peoplePicker
+        shouldContinueAfterSelectingPerson:person];
+}
+
+-(NSString*) getCorreoWithPerson:(ABRecordRef) person {
+    NSString *correo = @"[None]";
+    ABMultiValueRef email = ABRecordCopyValue(person, kABPersonEmailProperty);
+    if (ABMultiValueGetCount(email) > 0) {
+        CFStringRef emailField = ABMultiValueCopyValueAtIndex(email, 0);
+        correo = (__bridge_transfer NSString *)emailField;
+    }
+    CFRelease(email);
+    return correo;
+}
+
+- (NSString*) getTelefonoWithPerson:(ABRecordRef) person {
+    NSString* phone = @"[None]";
+    ABMultiValueRef phoneNumbers = ABRecordCopyValue(person, kABPersonPhoneProperty);
+    if (ABMultiValueGetCount(phoneNumbers) > 0)
+        phone = (__bridge_transfer NSString*) ABMultiValueCopyValueAtIndex(phoneNumbers, 0);
+    CFRelease(phoneNumbers);
+    return phone;
+}
+
+- (NSString*) getNombreWithPerson:(ABRecordRef) person {
+    NSString *firstName = (__bridge_transfer NSString *)ABRecordCopyValue(person,
+                                                                          kABPersonFirstNameProperty);
+    NSString *middleName = (__bridge_transfer NSString*)ABRecordCopyValue(person,
+                                                                          kABPersonMiddleNameProperty);
+    NSString *lastName = (__bridge_transfer NSString *)ABRecordCopyValue(person,
+                                                                         kABPersonLastNameProperty);
+    return [NSString stringWithFormat:@"%@%@%@",(firstName?firstName:@""),(middleName?[NSString
+                                                                                       stringWithFormat:@" %@", middleName]:@""),(lastName?[NSString stringWithFormat:@" %@",
+                                                                                                                                            lastName]:@"")];
 }
 
 
