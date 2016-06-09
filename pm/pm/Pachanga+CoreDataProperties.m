@@ -15,7 +15,6 @@
 
 @dynamic fecha;
 @dynamic nombre;
-@dynamic competicion;
-@dynamic jugador;
+@dynamic id_competicion;
 
 @end

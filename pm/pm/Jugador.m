@@ -7,8 +7,6 @@
 //
 
 #import "Jugador.h"
-#import "Competicion.h"
-#import "Pachanga.h"
 
 @implementation Jugador
 

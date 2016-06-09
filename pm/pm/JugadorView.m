@@ -9,15 +9,25 @@
 #import "JugadorView.h"
 #import "PachangaView.h"
 
+NSString *id_pachanga;
+
 @implementation JugadorView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.labelNombre.text = [NSString stringWithFormat:self.datoNombre];
+    self.labelPachanga.text = [NSString stringWithFormat:self.datoPachanga];
     self.labelFecha.text = [NSString stringWithFormat:self.datoFecha];
+    self.labelCompeticion.text = [NSString stringWithFormat:self.datoCompeticion];
+    self.labelDeporte.text = [NSString stringWithFormat:self.datoDeporte];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Jugador"];
+    
+    id_pachanga = [NSString stringWithFormat:@"%@ -- %@ -- %@ -- %@",self.datoCompeticion,self.datoDeporte,self.datoPachanga,self.datoFecha];
+    //NSLog(@"%@", id_pachanga);
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
+    [fetchRequest setPredicate:predicate];
+    
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
     [self.fetchedResultsController setDelegate:self];

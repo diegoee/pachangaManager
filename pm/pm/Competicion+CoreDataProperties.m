@@ -15,7 +15,5 @@
 
 @dynamic deporte;
 @dynamic nombre;
-@dynamic jugador;
-@dynamic pachanga;
 
 @end

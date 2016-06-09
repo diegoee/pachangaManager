@@ -17,17 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, retain) NSString *deporte;
 @property (nullable, nonatomic, retain) NSString *nombre;
-@property (nullable, nonatomic, retain) NSSet<Jugador *> *jugador;
-@property (nullable, nonatomic, retain) Pachanga *pachanga;
-
-@end
-
-@interface Competicion (CoreDataGeneratedAccessors)
-
-- (void)addJugadorObject:(Jugador *)value;
-- (void)removeJugadorObject:(Jugador *)value;
-- (void)addJugador:(NSSet<Jugador *> *)values;
-- (void)removeJugador:(NSSet<Jugador *> *)values;
 
 @end
 

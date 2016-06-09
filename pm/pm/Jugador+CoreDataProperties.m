@@ -15,7 +15,6 @@
 
 @dynamic nombre;
 @dynamic telefono;
-@dynamic competicion;
-@dynamic pachanga;
+@dynamic id_pachanga;
 
 @end

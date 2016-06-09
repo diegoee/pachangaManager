@@ -12,6 +12,8 @@
 
 @implementation PachangaView
 
+NSString *id_competicion;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -21,12 +23,13 @@
     
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Pachanga"];
+    id_competicion = [NSString stringWithFormat:@"%@ -- %@", self.datoNombre , self.datoDeporte];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_competicion == %@",id_competicion];
+    //[fetchRequest setPredicate:predicate];
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
     // Initialize Fetched Results Controller
-    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
-                                                                        managedObjectContext:[[DataManager sharedDataManager] managedObjectContext] sectionNameKeyPath:nil
-                                                                                   cacheName:nil];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[[DataManager sharedDataManager]managedObjectContext] sectionNameKeyPath:nil cacheName:nil];
     // Configure Fetched Results Controller
     [self.fetchedResultsController setDelegate:self];
     // Perform Fetch
@@ -85,6 +88,9 @@
                                [[DataManager sharedDataManager] managedObjectContext]];
     pachanga.nombre = nombre;
     pachanga.fecha = fecha;
+    pachanga.id_competicion = id_competicion;
+    //NSLog(@"ID_COMPETICION = %@",pachanga.id_competicion);
+    
     // Guardamos
     NSError *error = nil;
     
@@ -93,7 +99,7 @@
     } else if (error) {
         NSLog(@"Unable to save record.\n%@, %@", error, error.localizedDescription);
     }
-    NSLog(@"PachangaView: savePachangaWithNombre");
+    //NSLog(@"PachangaView: savePachangaWithNombre");
      
 }
 
@@ -202,8 +208,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     {
         UITableViewCell *cell = (UITableViewCell*) sender;
         JugadorView *vc = [segue destinationViewController];
-        vc.datoNombre = [NSString stringWithString:cell.textLabel.text];
-        vc.datoFecha  = [NSString stringWithString:cell.detailTextLabel.text];
+        vc.datoPachanga = [NSString stringWithString:cell.textLabel.text];
+        vc.datoFecha  = [NSString stringWithString:cell.detailTextLabel.text];        
+        vc.datoCompeticion = self.labelNombre.text;
+        vc.datoDeporte  = self.labelDeporte.text;
         //NSLog(@"PachangaView: segueDetallePachanga");
     }
 }

@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Jugador, Pachanga;
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Competicion : NSManagedObject

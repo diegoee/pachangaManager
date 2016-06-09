@@ -3,24 +3,20 @@
     <entity name="Competicion" representedClassName="Competicion" syncable="YES">
         <attribute name="deporte" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="jugador" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Jugador" inverseName="competicion" inverseEntity="Jugador" syncable="YES"/>
-        <relationship name="pachanga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pachanga" inverseName="competicion" inverseEntity="Pachanga" syncable="YES"/>
     </entity>
     <entity name="Jugador" representedClassName="Jugador" syncable="YES">
+        <attribute name="id_pachanga" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="competicion" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Competicion" inverseName="jugador" inverseEntity="Competicion" syncable="YES"/>
-        <relationship name="pachanga" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pachanga" inverseName="jugador" inverseEntity="Pachanga" syncable="YES"/>
     </entity>
     <entity name="Pachanga" representedClassName="Pachanga" syncable="YES">
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id_competicion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="competicion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Competicion" inverseName="pachanga" inverseEntity="Competicion" syncable="YES"/>
-        <relationship name="jugador" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Jugador" inverseName="pachanga" inverseEntity="Jugador" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Competicion" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="Jugador" positionX="-36" positionY="9" width="128" height="105"/>
-        <element name="Pachanga" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="Competicion" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Jugador" positionX="-36" positionY="9" width="128" height="90"/>
+        <element name="Pachanga" positionX="-54" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

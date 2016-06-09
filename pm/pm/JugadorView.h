@@ -14,10 +14,14 @@
 
 @interface JugadorView: UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
-@property (strong, nonatomic) IBOutlet UILabel *labelNombre;
+@property (strong, nonatomic) IBOutlet UILabel *labelCompeticion;
+@property (strong, nonatomic) IBOutlet UILabel *labelDeporte;
+@property (strong, nonatomic) IBOutlet UILabel *labelPachanga;
 @property (strong, nonatomic) IBOutlet UILabel *labelFecha;
 
-@property (strong, nonatomic) NSString *datoNombre;
+@property (strong, nonatomic) NSString *datoCompeticion;
+@property (strong, nonatomic) NSString *datoDeporte;
+@property (strong, nonatomic) NSString *datoPachanga;
 @property (strong, nonatomic) NSString *datoFecha;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
