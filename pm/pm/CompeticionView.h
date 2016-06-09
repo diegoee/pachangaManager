@@ -10,6 +10,8 @@
 #import "CompeticionCell.h"
 #import "DataManager.h"
 #import "Competicion.h"
+#import "Pachanga.h"
+#import "Jugador.h"
 
 @interface CompeticionView : UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
@@ -17,5 +19,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 -(void) saveCompeticionWithNombre:(NSString*) nombre deporte:(NSString*)deporte;
+-(void) clearPachangaAndJugador:(NSString*) nombre deporte:(NSString*)deporte;
 
 @end

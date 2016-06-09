@@ -18,14 +18,15 @@ NSString *id_competicion;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.labelNombre.text = [NSString stringWithFormat:self.datoNombre];
-    self.labelDeporte.text = [NSString stringWithFormat:self.datoDeporte];
-    
+    self.labelDeporte.text = [NSString stringWithFormat:self.datoDeporte];    
     
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Pachanga"];
     id_competicion = [NSString stringWithFormat:@"%@ -- %@", self.datoNombre , self.datoDeporte];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_competicion == %@",id_competicion];
-    //[fetchRequest setPredicate:predicate];
+    
+    //OJOOOOOOO//[fetchRequest setPredicate:predicate];
+    
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
     // Initialize Fetched Results Controller
@@ -159,6 +160,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                                  
                                  Pachanga *pac = [self getPachangaWithIndexPath:indexPath];
                                  [pac.managedObjectContext deleteObject:pac];
+                                 
+                                 [self clearJugador:pac.nombre fecha:pac.fecha ];
+                                                                  
                                  NSError *deleteError = nil;
                                  if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
                                      NSLog(@"Unable to save managed object context.");
@@ -214,6 +218,29 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         vc.datoDeporte  = self.labelDeporte.text;
         //NSLog(@"PachangaView: segueDetallePachanga");
     }
+}
+
+- (void)clearJugador:(NSString*)nombre fecha:(NSString*)fecha {
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    
+    
+    NSString *id_pachanga = [NSString stringWithFormat:@"%@ -- %@ -- %@",id_competicion,nombre,fecha];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
+    [fetchRequest setPredicate:predicate];
+    
+    NSError *error = nil;
+    NSArray *fetchedObjects = [[[DataManager sharedDataManager] managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        NSLog(@"Could not delete Entity Objects");
+    }
+    
+    for (Pachanga *currentObject in fetchedObjects) {
+        [[[DataManager sharedDataManager] managedObjectContext] deleteObject:currentObject];
+    }
+    
 }
 
 

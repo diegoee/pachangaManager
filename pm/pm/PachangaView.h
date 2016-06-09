@@ -10,7 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "PachangaCell.h"
 #import "DataManager.h"
+#import "Competicion.h"
 #import "Pachanga.h"
+#import "Jugador.h"
 
 @interface PachangaView: UIViewController<UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
