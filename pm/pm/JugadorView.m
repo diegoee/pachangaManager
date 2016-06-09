@@ -25,7 +25,7 @@ NSString *id_pachanga;
     
     id_pachanga = [NSString stringWithFormat:@"%@ -- %@ -- %@ -- %@",self.datoCompeticion,self.datoDeporte,self.datoPachanga,self.datoFecha];
     //NSLog(@"%@", id_pachanga);
-    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
     //[fetchRequest setPredicate:predicate];
     
     
@@ -199,7 +199,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 // Save jugador y adressbook
 - (IBAction)addJugador:(UIButton *)sender {
-    [self saveJugadorWithNombre:@"Rodolfo" telefono:@"606505404"];
+    //[self saveJugadorWithNombre:@"Rodolfo" telefono:@"606505404"];
     ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc]
                                                   init];
     picker.peoplePickerDelegate = self;

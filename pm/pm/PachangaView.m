@@ -25,7 +25,7 @@ NSString *id_competicion;
     id_competicion = [NSString stringWithFormat:@"%@ -- %@", self.datoNombre , self.datoDeporte];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_competicion == %@",id_competicion];
     
-    [fetchRequest setPredicate:predicate];
+    //[fetchRequest setPredicate:predicate];
     
     // Add Sort Descriptors
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"nombre" ascending:YES]]];
@@ -161,7 +161,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                                  Pachanga *pac = [self getPachangaWithIndexPath:indexPath];
                                  [pac.managedObjectContext deleteObject:pac];
                                  
-                                 [self clearJugador:pac.nombre fecha:pac.fecha ];
+                                 NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                                 [formatter setDateFormat: @"dd-MM-yyyy HH:mm"];
+                                 NSString *fechaString = [formatter stringFromDate:pac.fecha];
+                                 
+                                 [self clearJugador:pac.nombre fecha:fechaString ];
                                                                   
                                  NSError *deleteError = nil;
                                  if (![[[DataManager sharedDataManager] managedObjectContext] save:&deleteError]) {
