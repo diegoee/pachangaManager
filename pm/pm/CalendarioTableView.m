@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    for (Pachanga *currentObject in self.pachangasArray){
-        NSLog(@"Nombre = %@",currentObject.nombre);
-    }
+    //for (Pachanga *currentObject in self.pachangasArray){
+    //    NSLog(@"Nombre = %@",currentObject.nombre);
+    //}
     //NSLog(@"CalendarioTableView: viewDidLoad");
 }
 
