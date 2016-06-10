@@ -47,8 +47,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"calendarioCell"];
     }
     Pachanga *pachanga = [self.pachangasArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = pachanga.id_competicion;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Nombre: %@ Fecha:%@/%@", pachanga.nombre, pachanga.nombre];
+    cell.detailTextLabel.text  = [NSString stringWithFormat:@"Competición: %@", pachanga.id_competicion];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"dd-MM-yyyy HH:mm"];
+    NSString *fecha = [formatter stringFromDate:pachanga.fecha];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", pachanga.nombre, fecha];
     return cell;
 }
 
