@@ -150,7 +150,7 @@ NSMutableArray *fechasCalendarioPachangas;
     if ([[segue identifier] isEqualToString:@"segueDetalleCalendario"])
     {
         NSMutableArray *pachangasDetalle = [NSMutableArray array];;
-        NSLog(@"Date: %@", fechaSel);
+        //NSLog(@"Date: %@", fechaSel);
         CalendarioTableView *vc = [segue destinationViewController];
         
         //NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -178,7 +178,7 @@ NSMutableArray *fechasCalendarioPachangas;
         }
         
         vc.pachangasArray = pachangasDetalle;
-        NSLog(@"Calendario: segueDetalleCalendario");
+        //NSLog(@"Calendario: segueDetalleCalendario");
     }
 }
 

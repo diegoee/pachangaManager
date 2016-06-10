@@ -322,12 +322,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="chv-Qs-Fxf" customClass="JTCalendarMenuView">
-                                <rect key="frame" x="20" y="67" width="280" height="50"/>
+                                <rect key="frame" x="0.0" y="67" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="XGt-pc-f9Y" customClass="JTCalendarContentView">
-                                <rect key="frame" x="20" y="125" width="280" height="240"/>
+                                <rect key="frame" x="0.0" y="125" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>

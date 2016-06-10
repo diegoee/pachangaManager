@@ -40,7 +40,7 @@ NSString *id_pachanga;
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
-    NSLog(@"JugadorView: viewDidLoad");
+    //NSLog(@"JugadorView: viewDidLoad");
     
 }
 

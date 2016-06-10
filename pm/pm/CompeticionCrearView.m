@@ -16,7 +16,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _pickerData = @[@"Fútbol", @"Basket", @"Tenis", @"Padel"];
+    _pickerData = @[@"Futbito", @"Fútbol7",@"Basket", @"Tenis", @"Padel"];
     _resultPickerData=_pickerData[0];
     self.deporteSel.dataSource = self;
     self.deporteSel.delegate = self;

@@ -21,7 +21,7 @@
     for (Pachanga *currentObject in self.pachangasArray){
         NSLog(@"Nombre = %@",currentObject.nombre);
     }
-    NSLog(@"CalendarioTableView: viewDidLoad");
+    //NSLog(@"CalendarioTableView: viewDidLoad");
 }
 
 - (void)didReceiveMemoryWarning {
