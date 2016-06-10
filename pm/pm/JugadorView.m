@@ -16,10 +16,10 @@ NSString *id_pachanga;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.labelPachanga.text = [NSString stringWithFormat:self.datoPachanga];
-    self.labelFecha.text = [NSString stringWithFormat:self.datoFecha];
-    self.labelCompeticion.text = [NSString stringWithFormat:self.datoCompeticion];
-    self.labelDeporte.text = [NSString stringWithFormat:self.datoDeporte];
+    self.labelPachanga.text = self.datoPachanga;//[NSString stringWithFormat:self.datoPachanga];
+    self.labelFecha.text = self.datoFecha; //[NSString stringWithFormat:self.datoFecha];
+    self.labelCompeticion.text = self.datoCompeticion; //[NSString stringWithFormat:self.datoCompeticion];
+    self.labelDeporte.text = self.datoDeporte; //[NSString stringWithFormat:self.datoDeporte];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Jugador"];
     
@@ -209,7 +209,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 - (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef) person {
     NSString *name = [self getNombreWithPerson:(ABRecordRef) person];
     NSString *phone = [self getTelefonoWithPerson:(ABRecordRef) person];
-    NSString *mail = [self getCorreoWithPerson:(ABRecordRef) person];
     [self saveJugadorWithNombre:name telefono:phone];
     return NO;
 }

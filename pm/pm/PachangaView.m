@@ -17,8 +17,8 @@ NSString *id_competicion;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.labelNombre.text = [NSString stringWithFormat:self.datoNombre];
-    self.labelDeporte.text = [NSString stringWithFormat:self.datoDeporte];    
+    self.labelNombre.text = self.datoNombre; //[NSString stringWithFormat:self.datoNombre];
+    self.labelDeporte.text = self.datoDeporte; //[NSString stringWithFormat:self.datoDeporte];
     
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Pachanga"];
