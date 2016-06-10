@@ -25,7 +25,7 @@
 }
 
 - (IBAction)addPachanga:(UIButton *)save {
-    NSLog(@"%@",_fechaSel.date);
+    //NSLog(@"%@",_fechaSel.date);
     PachangaView *vc = [[PachangaView alloc]init];
     [vc savePachangaWithNombre:self.nombreEdit.text fecha:_fechaSel.date];
     [self dismissViewControllerAnimated:YES completion:nil];

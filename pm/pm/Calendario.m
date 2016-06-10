@@ -7,13 +7,18 @@
 //
 
 #import "Calendario.h"
+#import "CalendarioTableView.h"
 
 @implementation Calendario
 
+NSDate * fechaSel;
+NSMutableArray *fechasCalendarioPachangas;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    fechasCalendarioPachangas = [NSMutableArray array];
     
     self.calendar = [JTCalendar new];
     
@@ -28,13 +33,22 @@
     [self.calendar setMenuMonthsView:self.calendarMenuView];
     [self.calendar setContentView:self.calendarContentView];
     [self.calendar setDataSource:self];
+    fechaSel = [NSDate date];
+    
+    [self reloadEvent];
+    
+    //NSLog(@"Calendario: viewDidLoad");
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     [self.calendar reloadData]; // Must be call in viewDidAppear
+    
+    [self reloadEvent];
+    
+    //NSLog(@"Calendario: viewDidAppear");
+    
 }
 
 #pragma mark - Buttons callback
@@ -55,12 +69,26 @@
 
 - (BOOL)calendarHaveEvent:(JTCalendar *)calendar date:(NSDate *)date
 {
-    return (rand() % 10) == 1;
+    BOOL *show = false;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"dd-MM-yyyy"];
+    
+    NSString *fechaCalendar = [formatter stringFromDate:date];
+    NSString *fechaArray;
+    for (NSDate *currentObject in fechasCalendarioPachangas) {
+        fechaArray = [formatter stringFromDate:currentObject];
+        if([fechaArray caseInsensitiveCompare:fechaCalendar] == NSOrderedSame){
+            show = true;
+        }
+    }
+    //NSLog(@"calendarHaveEvent: %@", date);
+    return show;
 }
 
 - (void)calendarDidDateSelected:(JTCalendar *)calendar date:(NSDate *)date
 {
-    NSLog(@"Date: %@", date);
+    fechaSel=date;
+    //NSLog(@"Date: %@", fechaSel);
 }
 
 #pragma mark - Transition examples
@@ -90,6 +118,68 @@
                                               self.calendarContentView.layer.opacity = 1;
                                           }];
                      }];
+}
+
+- (void)reloadEvent {
+    //NSLog(@"reloadEvent");
+    fechasCalendarioPachangas = [NSMutableArray array];
+    // Initialize Fetch Request
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Pachanga"];
+
+    NSError *error = nil;
+    NSArray *fetchedObjects = [[[DataManager sharedDataManager] managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        NSLog(@"Calendario: Could not Load Entity Objects");
+    }
+
+    for (Pachanga *currentObject in fetchedObjects) {
+        [fechasCalendarioPachangas addObject:currentObject.fecha];
+    }
+    /*
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"dd-MM-yyyy HH:mm"];
+    for (NSDate *currentObject in fechasCalendarioPachangas) {
+        NSString *fecha = [formatter stringFromDate:currentObject];
+        NSLog(fecha);
+    }*/
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"segueDetalleCalendario"])
+    {
+        NSMutableArray *pachangasDetalle = [NSMutableArray array];;
+        NSLog(@"Date: %@", fechaSel);
+        CalendarioTableView *vc = [segue destinationViewController];
+        
+        //NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        //[formatter setDateFormat: @"dd-MM-yyyy HH:mm"];
+        //NSString *fecha = [formatter stringFromDate:fechaSel];
+        
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Pachanga" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
+        [fetchRequest setEntity:entity];
+        
+        NSError *error = nil;
+        NSArray *fetchedObjects = [[[DataManager sharedDataManager] managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat: @"dd-MM-yyyy"];
+        
+        NSString *fechaCalendar = [formatter stringFromDate:fechaSel];
+        NSString *fechaArray;
+                
+        for (Pachanga *currentObject in fetchedObjects){
+            fechaArray = [formatter stringFromDate:currentObject.fecha];
+            if([fechaArray caseInsensitiveCompare:fechaCalendar] == NSOrderedSame){
+                [pachangasDetalle addObject:currentObject];
+            }
+        }
+        
+        vc.pachangasArray = pachangasDetalle;
+        NSLog(@"Calendario: segueDetalleCalendario");
+    }
 }
 
 

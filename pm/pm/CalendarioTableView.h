@@ -1,5 +1,5 @@
 //
-//  CalendarioCell.h
+//  CalendarioTableView.h
 //  pm
 //
 //  Created by Diego Espínola Espigares on 10/6/16.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pachanga.h"
 
-@interface CalendarioCell : UITableViewCell
+@interface CalendarioTableView : UITableViewController
+
+@property NSMutableArray *pachangasArray;
 
 @end

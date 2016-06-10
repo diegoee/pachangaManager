@@ -319,21 +319,21 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="chv-Qs-Fxf" customClass="JTCalendarMenuView">
-                                <rect key="frame" x="20" y="76" width="280" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="67" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="XGt-pc-f9Y" customClass="JTCalendarContentView">
-                                <rect key="frame" x="20" y="134" width="280" height="342"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="125" width="280" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48Q-ss-kiD">
-                                <rect key="frame" x="20" y="484" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="373" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <state key="normal" title="Detalle"/>
                                 <connections>
-                                    <segue destination="RIk-YI-Alt" kind="push" id="0Bx-XX-Hik"/>
+                                    <segue destination="uh5-ec-2z1" kind="push" identifier="segueDetalleCalendario" id="CLA-fw-rjx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -349,18 +349,48 @@
             </objects>
             <point key="canvasLocation" x="-10026" y="-11279"/>
         </scene>
-        <!--Calendario-->
-        <scene sceneID="LaM-iR-gir">
+        <!--Calendario Table View-->
+        <scene sceneID="Ijd-nD-udy">
             <objects>
-                <viewController id="RIk-YI-Alt" customClass="Calendario" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gTL-uZ-GAA">
+                <tableViewController id="uh5-ec-2z1" customClass="CalendarioTableView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="R5w-ir-smz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ub4-qV-ZGG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I4q-vY-i9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="calendarioCell" textLabel="eSy-oY-cml" detailTextLabel="xHI-3R-bsp" rowHeight="101" style="IBUITableViewCellStyleSubtitle" id="eaq-lM-erV">
+                                <rect key="frame" x="0.0" y="92" width="320" height="101"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eaq-lM-erV" id="9US-cT-tJl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eSy-oY-cml">
+                                            <rect key="frame" x="15" y="33" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xHI-3R-bsp">
+                                            <rect key="frame" x="15" y="53" width="41" height="14"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uh5-ec-2z1" id="2VW-ph-uwa"/>
+                            <outlet property="delegate" destination="uh5-ec-2z1" id="MKw-vH-OjL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="HfY-wY-azM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hw7-dC-WVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-9606" y="-11279"/>
         </scene>

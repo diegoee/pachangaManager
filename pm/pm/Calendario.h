@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "JTCalendar.h"
+#import "DataManager.h"
+#import "Competicion.h"
+#import "Pachanga.h"
+#import "Jugador.h"
 
 @interface Calendario : UIViewController<JTCalendarDataSource>
 
 @property (weak, nonatomic) IBOutlet JTCalendarMenuView *calendarMenuView;
 @property (weak, nonatomic) IBOutlet JTCalendarContentView *calendarContentView;
 
-//@property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarContentViewHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarContentViewHeight;
 
 @property (strong, nonatomic) JTCalendar *calendar;
 

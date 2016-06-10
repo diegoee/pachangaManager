@@ -29,8 +29,7 @@
 		F1B7E2EE1D0ACE79006EFA2D /* JTCalendarMonthWeekDaysView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E11D0ACE78006EFA2D /* JTCalendarMonthWeekDaysView.m */; };
 		F1B7E2EF1D0ACE79006EFA2D /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E41D0ACE79006EFA2D /* JTCalendarWeekView.m */; };
 		F1B7E2F01D0ACE79006EFA2D /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E61D0ACE79006EFA2D /* JTCircleView.m */; };
-		F1B7E2F41D0AD770006EFA2D /* CalendarioView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2F31D0AD770006EFA2D /* CalendarioView.m */; };
-		F1B7E2F71D0AD7B2006EFA2D /* CalendarioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2F61D0AD7B2006EFA2D /* CalendarioCell.m */; };
+		F1B7E3031D0B091C006EFA2D /* CalendarioTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */; };
 		F1EC479D1D096DD1009EF239 /* PachangaCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */; };
 		F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479F1D097C3C009EF239 /* JugadorView.m */; };
 		F1EC47A31D097C54009EF239 /* JugadorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47A21D097C54009EF239 /* JugadorCell.m */; };
@@ -88,10 +87,8 @@
 		F1B7E2E41D0ACE79006EFA2D /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTCalendarWeekView.m; path = pm/JTCalendar/JTCalendarWeekView.m; sourceTree = "<group>"; };
 		F1B7E2E51D0ACE79006EFA2D /* JTCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTCircleView.h; path = pm/JTCalendar/JTCircleView.h; sourceTree = "<group>"; };
 		F1B7E2E61D0ACE79006EFA2D /* JTCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTCircleView.m; path = pm/JTCalendar/JTCircleView.m; sourceTree = "<group>"; };
-		F1B7E2F21D0AD770006EFA2D /* CalendarioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioView.h; sourceTree = "<group>"; };
-		F1B7E2F31D0AD770006EFA2D /* CalendarioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioView.m; sourceTree = "<group>"; };
-		F1B7E2F51D0AD7B2006EFA2D /* CalendarioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioCell.h; sourceTree = "<group>"; };
-		F1B7E2F61D0AD7B2006EFA2D /* CalendarioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioCell.m; sourceTree = "<group>"; };
+		F1B7E3011D0B091B006EFA2D /* CalendarioTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioTableView.h; sourceTree = "<group>"; };
+		F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioTableView.m; sourceTree = "<group>"; };
 		F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCrearView.h; sourceTree = "<group>"; };
 		F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaCrearView.m; sourceTree = "<group>"; };
 		F1EC479E1D097C3C009EF239 /* JugadorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JugadorView.h; sourceTree = "<group>"; };
@@ -202,10 +199,8 @@
 			children = (
 				F1B7E2CC1D0AC657006EFA2D /* Calendario.h */,
 				F1B7E2CD1D0AC657006EFA2D /* Calendario.m */,
-				F1B7E2F21D0AD770006EFA2D /* CalendarioView.h */,
-				F1B7E2F31D0AD770006EFA2D /* CalendarioView.m */,
-				F1B7E2F51D0AD7B2006EFA2D /* CalendarioCell.h */,
-				F1B7E2F61D0AD7B2006EFA2D /* CalendarioCell.m */,
+				F1B7E3011D0B091B006EFA2D /* CalendarioTableView.h */,
+				F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */,
 			);
 			name = Calendario;
 			sourceTree = "<group>";
@@ -349,12 +344,12 @@
 				F1EC47B91D09ACFF009EF239 /* Jugador.m in Sources */,
 				F18283AF1D075B1800626701 /* DataManager.m in Sources */,
 				F1B7E2EA1D0ACE79006EFA2D /* JTCalendarDayView.m in Sources */,
+				F1B7E3031D0B091C006EFA2D /* CalendarioTableView.m in Sources */,
 				F17301D11D08CDD900BABC63 /* PachangaView.m in Sources */,
 				F182839B1D074D5700626701 /* AppDelegate.m in Sources */,
 				F1EC47BA1D09ACFF009EF239 /* Pachanga+CoreDataProperties.m in Sources */,
 				F1B7E2EF1D0ACE79006EFA2D /* JTCalendarWeekView.m in Sources */,
 				F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */,
-				F1B7E2F41D0AD770006EFA2D /* CalendarioView.m in Sources */,
 				F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */,
 				F1B7E2F01D0ACE79006EFA2D /* JTCircleView.m in Sources */,
 				F1EC47B81D09ACFF009EF239 /* Jugador+CoreDataProperties.m in Sources */,
@@ -370,7 +365,6 @@
 				F1B7E2ED1D0ACE79006EFA2D /* JTCalendarMonthView.m in Sources */,
 				F1B7E2E71D0ACE79006EFA2D /* JTCalendar.m in Sources */,
 				F1B7E2EB1D0ACE79006EFA2D /* JTCalendarMenuMonthView.m in Sources */,
-				F1B7E2F71D0AD7B2006EFA2D /* CalendarioCell.m in Sources */,
 				F18283981D074D5700626701 /* main.m in Sources */,
 				F1B7E2EC1D0ACE79006EFA2D /* JTCalendarMenuView.m in Sources */,
 				F1EC47BB1D09ACFF009EF239 /* Pachanga.m in Sources */,

@@ -230,7 +230,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
     [fetchRequest setEntity:entity];
     
-    
     NSString *id_pachanga = [NSString stringWithFormat:@"%@ -- %@ -- %@",id_competicion,nombre,fecha];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id_pachanga == %@",id_pachanga];
     [fetchRequest setPredicate:predicate];
