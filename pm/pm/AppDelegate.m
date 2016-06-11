@@ -15,9 +15,23 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self updateSettings];
     return YES;
+}
+- (void) updateSettings{
+    NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+    NSString *buildVersion = [[[NSBundle mainBundle] infoDictionary]objectForKey:@"BuildVersion"];
+    NSDate *buildDate = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"BuildDate"];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"dd-MM-yyyy"];
+    NSString *buildDateString = [formatter stringFromDate:buildDate];
+    
+    [settings setObject:buildVersion forKey:@"version"];
+    [settings setObject:buildDateString forKey:@"buildDate"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

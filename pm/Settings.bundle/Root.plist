@@ -16,11 +16,21 @@
 			<key>Type</key>
 			<string>PSTitleValueSpecifier</string>
 			<key>Title</key>
-			<string>Versión</string>
+			<string>Version</string>
 			<key>DefaultValue</key>
-			<string>1.0</string>
+			<string>2.0</string>
 			<key>Key</key>
-			<string>info</string>
+			<string>version</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Build Date</string>
+			<key>Key</key>
+			<string>buildDate</string>
+			<key>DefaultValue</key>
+			<string>hoy</string>
 		</dict>
 		<dict>
 			<key>Type</key>

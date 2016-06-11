@@ -10,4 +10,7 @@
 
 @interface LoginView : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *login;
+@property (strong, nonatomic) IBOutlet UITextField *pass;
+
 @end

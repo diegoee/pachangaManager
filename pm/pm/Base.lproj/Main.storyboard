@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="m7Q-r6-5G4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IHj-c7-fQL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CompeticionView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pr9-ot-uvn"/>
-                        <viewControllerLayoutGuide type="bottom" id="xlJ-kX-WP3"/>
+                        <viewControllerLayoutGuide type="top" id="zjW-LC-Lqx"/>
+                        <viewControllerLayoutGuide type="bottom" id="P4K-fz-LCq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -86,8 +86,8 @@
             <objects>
                 <viewController id="QVd-4v-U4l" customClass="PachangaView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tvZ-JV-3nX"/>
-                        <viewControllerLayoutGuide type="bottom" id="ugw-mG-mb8"/>
+                        <viewControllerLayoutGuide type="top" id="Mdj-MC-kLt"/>
+                        <viewControllerLayoutGuide type="bottom" id="qGE-dn-mt3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z5D-jB-vI7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -188,8 +188,8 @@
             <objects>
                 <viewController id="eMf-ig-NrR" customClass="JugadorView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1OP-bN-san"/>
-                        <viewControllerLayoutGuide type="bottom" id="RhT-gj-jfT"/>
+                        <viewControllerLayoutGuide type="top" id="ZXr-Xi-Rwt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nl4-BX-RlB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C5v-9w-64y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -315,8 +315,8 @@
             <objects>
                 <viewController id="Oyj-nD-GtU" customClass="Calendario" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="C4H-aA-Zpq"/>
-                        <viewControllerLayoutGuide type="bottom" id="drz-GR-chi"/>
+                        <viewControllerLayoutGuide type="top" id="jsx-ry-e4H"/>
+                        <viewControllerLayoutGuide type="bottom" id="wl3-f8-f7F"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Prl-gQ-GI3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -406,8 +406,8 @@
             <objects>
                 <viewController id="fak-v1-tJS" customClass="CompeticionCrearView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pC7-PL-yX8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yzy-fd-gc3"/>
+                        <viewControllerLayoutGuide type="top" id="sQG-1x-z61"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tys-i9-1u1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vLI-Jn-btj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -464,8 +464,8 @@
             <objects>
                 <viewController id="eQl-2M-jrA" customClass="PachangaCrearView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GZ0-Er-5sO"/>
-                        <viewControllerLayoutGuide type="bottom" id="AzE-R9-RA7"/>
+                        <viewControllerLayoutGuide type="top" id="lYC-md-0HO"/>
+                        <viewControllerLayoutGuide type="bottom" id="GfR-iS-YLW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t9I-RN-2AI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -539,13 +539,13 @@
             </objects>
             <point key="canvasLocation" x="-10026" y="-10662"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View-->
         <scene sceneID="mfd-B1-Rqy">
             <objects>
-                <viewController id="IHj-c7-fQL" sceneMemberID="viewController">
+                <viewController id="IHj-c7-fQL" customClass="LoginView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9bn-CP-s39"/>
-                        <viewControllerLayoutGuide type="bottom" id="6gr-EY-818"/>
+                        <viewControllerLayoutGuide type="top" id="Lqn-hL-q7G"/>
+                        <viewControllerLayoutGuide type="bottom" id="k1J-4K-RRT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KDi-HD-paP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -571,15 +571,22 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6AV-Xu-CYn">
                                 <rect key="frame" x="20" y="116" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1M-BO-D3Z">
                                 <rect key="frame" x="20" y="154" width="280" height="30"/>
                                 <state key="normal" title="Entrar"/>
+                                <connections>
+                                    <segue destination="m7Q-r6-5G4" kind="modal" id="Ssc-wy-QfH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="login" destination="Ewi-Ul-i0x" id="3Ny-Y5-QUI"/>
+                        <outlet property="pass" destination="6AV-Xu-CYn" id="xlk-SU-J1M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlP-yp-pAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -588,7 +595,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="0IB-5Z-rTR">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m7Q-r6-5G4" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarMenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m7Q-r6-5G4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="gux-Wf-SSB"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UzI-4b-pWq">

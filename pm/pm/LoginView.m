@@ -8,15 +8,11 @@
 
 #import "LoginView.h"
 
-@interface LoginView ()
-
-@end
-
 @implementation LoginView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //NSLog(@"LoginView: viewDidLoad");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,10 +20,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-   
-   
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([self.login.text isEqualToString:@"a"]&&[self.pass.text isEqualToString:@"a"])
+    {
+        return true;
+    }
+    else{
+        UIAlertController * view;
+        view=   [UIAlertController alertControllerWithTitle:@"Pachanga Manager:" message:@"Error de Usuario o Contraseña" preferredStyle:UIAlertControllerStyleActionSheet];
+        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+                             {
+                                 [view dismissViewControllerAnimated:YES completion:nil];
+                             }];
+        [view addAction:ok];
+        [self presentViewController:view animated:YES completion:nil];
+        return false;
+    }
+    return true;
 }
+
 
 @end

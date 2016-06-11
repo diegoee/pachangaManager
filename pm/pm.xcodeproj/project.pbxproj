@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F118DE981D0C41540095AD70 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F118DE971D0C41540095AD70 /* Settings.bundle */; };
 		F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */; };
 		F17301D11D08CDD900BABC63 /* PachangaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301D01D08CDD900BABC63 /* PachangaView.m */; };
 		F18283981D074D5700626701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283971D074D5700626701 /* main.m */; };
@@ -29,7 +30,6 @@
 		F1B7E2EF1D0ACE79006EFA2D /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E41D0ACE79006EFA2D /* JTCalendarWeekView.m */; };
 		F1B7E2F01D0ACE79006EFA2D /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E61D0ACE79006EFA2D /* JTCircleView.m */; };
 		F1B7E3031D0B091C006EFA2D /* CalendarioTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */; };
-		F1B7E3071D0B395C006EFA2D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1B7E3061D0B395C006EFA2D /* Settings.bundle */; };
 		F1E1BCA01D0B8647007B1E61 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E1BC9F1D0B8647007B1E61 /* LoginView.m */; };
 		F1EC479D1D096DD1009EF239 /* PachangaCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */; };
 		F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479F1D097C3C009EF239 /* JugadorView.m */; };
@@ -46,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F118DE971D0C41540095AD70 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		F17301CC1D08B98400BABC63 /* CompeticionCrearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompeticionCrearView.h; sourceTree = "<group>"; };
 		F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionCrearView.m; sourceTree = "<group>"; };
 		F17301CF1D08CDD900BABC63 /* PachangaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaView.h; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		F1B7E2E61D0ACE79006EFA2D /* JTCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTCircleView.m; path = pm/JTCalendar/JTCircleView.m; sourceTree = "<group>"; };
 		F1B7E3011D0B091B006EFA2D /* CalendarioTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioTableView.h; sourceTree = "<group>"; };
 		F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioTableView.m; sourceTree = "<group>"; };
-		F1B7E3061D0B395C006EFA2D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		F1E1BC9E1D0B8647007B1E61 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		F1E1BC9F1D0B8647007B1E61 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCrearView.h; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				F18283C51D0760C800626701 /* Modelo */,
 				F1B7E2F11D0ACE82006EFA2D /* JTCalendar */,
 				F18283A21D074D5700626701 /* Assets.xcassets */,
-				F1B7E3061D0B395C006EFA2D /* Settings.bundle */,
+				F118DE971D0C41540095AD70 /* Settings.bundle */,
 				F18283A71D074D5700626701 /* Info.plist */,
 				F18283961D074D5700626701 /* Supporting Files */,
 			);
@@ -286,6 +286,7 @@
 				F182838F1D074D5700626701 /* Sources */,
 				F18283901D074D5700626701 /* Frameworks */,
 				F18283911D074D5700626701 /* Resources */,
+				F118DE991D0C41D40095AD70 /* Update Build Date Script */,
 			);
 			buildRules = (
 			);
@@ -334,12 +335,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18283A31D074D5700626701 /* Assets.xcassets in Resources */,
-				F1B7E3071D0B395C006EFA2D /* Settings.bundle in Resources */,
+				F118DE981D0C41540095AD70 /* Settings.bundle in Resources */,
 				F18283A11D074D5700626701 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F118DE991D0C41D40095AD70 /* Update Build Date Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Date Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "infoPlist=${INFOPLIST_FILE}\n\nbuildDate=$(date)\n\n/usr/libexec/PlistBuddy -c \"Set:BuildDate $buildDate\" $infoPlist";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F182838F1D074D5700626701 /* Sources */ = {

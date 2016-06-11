@@ -15,8 +15,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
+    UIAlertController * view;
+    view=   [UIAlertController alertControllerWithTitle:@"Pachanga Manager:" message:@"¡Bienvenido a la App!" preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+                         {
+                             [view dismissViewControllerAnimated:YES completion:nil];
+                         }];
+    [view addAction:ok];
+    [self presentViewController:view animated:YES completion:nil];
+    
+    // Do any additional setup after loading the view, typically from a nib.
     UIAlertController * alert=   [UIAlertController
                                   alertControllerWithTitle:@"Cargando"
                                   message:nil
@@ -38,14 +47,15 @@
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
     if (error) {
-        NSLog(@"Unable to perform fetch.");
+        NSLog(@"CompeticionesView: Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
-    }
+    }    
     
-    //[alert dismissViewControllerAnimated:YES completion:^{}];
+    //[alert dismissViewControllerAnimated:YES completion:nil];
     //NSLog(@"CompeticionesView: viewDidLoad");
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
