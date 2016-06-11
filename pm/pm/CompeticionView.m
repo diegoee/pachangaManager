@@ -22,7 +22,7 @@
                                   message:nil
                                   preferredStyle:UIAlertControllerStyleAlert];
         
-    [self presentViewController:alert animated:YES completion:nil];
+    //[self presentViewController:alert animated:YES completion:nil];
     
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Competicion"];
@@ -42,7 +42,7 @@
         NSLog(@"%@, %@", error, error.localizedDescription);
     }
     
-    [alert dismissViewControllerAnimated:YES completion:^{}];
+    //[alert dismissViewControllerAnimated:YES completion:^{}];
     //NSLog(@"CompeticionesView: viewDidLoad");
     
 }
