@@ -22,7 +22,8 @@
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
-    if ([self.login.text isEqualToString:@"a"]&&[self.pass.text isEqualToString:@"a"])
+    /*
+    if ([self.login.text isEqualToString:@"admin"]&&[self.pass.text isEqualToString:@"pass"])
     {
         return true;
     }
@@ -37,6 +38,7 @@
         [self presentViewController:view animated:YES completion:nil];
         return false;
     }
+    */
     return true;
 }
 

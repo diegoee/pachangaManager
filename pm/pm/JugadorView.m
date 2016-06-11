@@ -68,7 +68,7 @@ NSString *id_pachanga;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Pachanga *cell = [tableView dequeueReusableCellWithIdentifier:@"jugadorCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jugadorCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -77,7 +77,7 @@ NSString *id_pachanga;
     // Inicializamos el tipo de entidad
     
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:[[DataManager sharedDataManager] managedObjectContext]];
-    Jugador *jug =[[Pachanga alloc] initWithEntity:entity insertIntoManagedObjectContext: [[DataManager sharedDataManager] managedObjectContext]];
+    Jugador *jug =[[Jugador alloc] initWithEntity:entity insertIntoManagedObjectContext: [[DataManager sharedDataManager] managedObjectContext]];
     jug.nombre = nombre;
     jug.telefono = telefono;
     jug.id_pachanga = id_pachanga;
@@ -178,23 +178,14 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     
 }
 
--(Pachanga *) getJugadorWithIndexPath:(NSIndexPath*) indexPath {
+-(Jugador *) getJugadorWithIndexPath:(NSIndexPath*) indexPath {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Jugador" inManagedObjectContext:
                                    [[DataManager sharedDataManager] managedObjectContext]];
     [fetchRequest setEntity:entity];
-    Pachanga *pach = (Pachanga *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
-    return pach;
+    Jugador *jug = (Jugador *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
+    return jug;
     
-}
-
-
--(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
-    //NSLog(@"CompeticionesView: prepareForUnwind");
-}
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 }
 
 // Save jugador y adressbook

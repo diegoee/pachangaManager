@@ -8,7 +8,7 @@
         <!--Competiciones-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CompeticionView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompeticionView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CompeticionView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zjW-LC-Lqx"/>
                         <viewControllerLayoutGuide type="bottom" id="P4K-fz-LCq"/>
@@ -61,7 +61,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Competiciones" id="d5J-I2-CyU">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="7bd-Ve-MhZ"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Vhp-cd-Zsi">
+                        <barButtonItem key="rightBarButtonItem" id="Vhp-cd-Zsi">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y0C-bq-nef">
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,7 +77,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="1SW-ub-gzs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-9606" y="-10662"/>
         </scene>
@@ -161,7 +160,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pachangas" id="TzY-IJ-5gt">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="zFO-dm-FAz"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="S3G-sU-EDx">
+                        <barButtonItem key="rightBarButtonItem" id="S3G-sU-EDx">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4he-o4-wiT">
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,7 +178,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHg-tV-M36" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="rQx-zk-qz2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-9167" y="-10662"/>
         </scene>
@@ -286,7 +284,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Jugadores" id="EYC-5M-8wP">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="LYn-9V-UVb"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="FHs-B4-2dE">
+                        <barButtonItem key="rightBarButtonItem" id="FHs-B4-2dE">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2nT-CD-V2T">
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -333,7 +331,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Q-ss-kiD">
                                 <rect key="frame" x="20" y="373" width="280" height="83"/>
                                 <state key="normal" title="Detalle">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="uh5-ec-2z1" kind="push" identifier="segueDetalleCalendario" id="CLA-fw-rjx"/>
@@ -374,14 +372,14 @@
                                             <rect key="frame" x="15" y="38" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xHI-3R-bsp">
                                             <rect key="frame" x="15" y="58" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -438,14 +436,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Crear Competición" id="jAV-yA-sxN">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="ppY-9n-GQA"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="kAe-fF-WNU">
+                        <barButtonItem key="rightBarButtonItem" id="kAe-fF-WNU">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xcr-SM-N3J">
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="addCompeticion:" destination="fak-v1-tJS" eventType="touchUpInside" id="lge-1a-jfx"/>
-                                    <segue destination="1SW-ub-gzs" kind="unwind" unwindAction="prepareForUnwind:" id="kcf-ae-A0T"/>
+                                    <segue destination="2Ga-ZZ-PlX" kind="unwind" identifier="unwindCompeticion" unwindAction="unwindCompeticion:" id="OTc-aO-odg"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -456,6 +454,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlJ-Wc-8Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Ga-ZZ-PlX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-9167" y="-11279"/>
         </scene>
@@ -499,14 +498,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Crear Pachanga" id="YMp-rM-Q1K">
                         <barButtonItem key="backBarButtonItem" title="Volver" id="Kd2-vM-DNu"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="1ta-kS-uzW">
+                        <barButtonItem key="rightBarButtonItem" id="1ta-kS-uzW">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xmc-3b-wne">
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="addPachanga:" destination="eQl-2M-jrA" eventType="touchUpInside" id="Zvi-9U-LDw"/>
-                                    <segue destination="rQx-zk-qz2" kind="unwind" unwindAction="prepareForUnwind:" id="Ncg-0D-KPj"/>
+                                    <segue destination="Dg2-T3-kFc" kind="unwind" identifier="unwindPachanga" unwindAction="unwindPachanga:" id="9u7-60-Ull"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -517,6 +516,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48R-xG-YHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Dg2-T3-kFc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-8736" y="-11279"/>
         </scene>
@@ -554,13 +554,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-cQ-ABQ">
                                 <rect key="frame" x="20" y="20" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-TV-TyQ">
                                 <rect key="frame" x="20" y="87" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ewi-Ul-i0x">
@@ -577,9 +577,15 @@
                                 <rect key="frame" x="20" y="154" width="280" height="30"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
-                                    <segue destination="m7Q-r6-5G4" kind="modal" id="Ssc-wy-QfH"/>
+                                    <segue destination="m7Q-r6-5G4" kind="modal" id="wKE-W2-kIb"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Login: admin Password: pass" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mq4-OY-mem">
+                                <rect key="frame" x="20" y="192" width="280" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

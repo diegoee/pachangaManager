@@ -69,7 +69,6 @@ NSMutableArray *fechasCalendarioPachangas;
 
 - (BOOL)calendarHaveEvent:(JTCalendar *)calendar date:(NSDate *)date
 {
-    BOOL *show = false;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat: @"dd-MM-yyyy"];
     
@@ -78,11 +77,11 @@ NSMutableArray *fechasCalendarioPachangas;
     for (NSDate *currentObject in fechasCalendarioPachangas) {
         fechaArray = [formatter stringFromDate:currentObject];
         if([fechaArray caseInsensitiveCompare:fechaCalendar] == NSOrderedSame){
-            show = true;
+            return true;
         }
     }
     //NSLog(@"calendarHaveEvent: %@", date);
-    return show;
+    return false;
 }
 
 - (void)calendarDidDateSelected:(JTCalendar *)calendar date:(NSDate *)date

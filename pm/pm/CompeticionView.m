@@ -25,14 +25,6 @@
     [view addAction:ok];
     [self presentViewController:view animated:YES completion:nil];
     
-    // Do any additional setup after loading the view, typically from a nib.
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:@"Cargando"
-                                  message:nil
-                                  preferredStyle:UIAlertControllerStyleAlert];
-        
-    //[self presentViewController:alert animated:YES completion:nil];
-    
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Competicion"];
     // Add Sort Descriptors
@@ -51,7 +43,6 @@
         NSLog(@"%@, %@", error, error.localizedDescription);
     }    
     
-    //[alert dismissViewControllerAnimated:YES completion:nil];
     //NSLog(@"CompeticionesView: viewDidLoad");
     
 }
@@ -82,7 +73,7 @@
 }
     
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Competicion *cell = [tableView dequeueReusableCellWithIdentifier:@"competicionCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"competicionCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -196,8 +187,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 
--(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
-    //NSLog(@"CompeticionesView: prepareForUnwind");
+-(IBAction)unwindCompeticion:(UIStoryboardSegue *)segue {
+    //NSLog(@"CompeticionesView: Unwind");
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

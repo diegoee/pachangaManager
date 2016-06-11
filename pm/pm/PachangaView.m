@@ -73,7 +73,7 @@ NSString *id_competicion;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Pachanga *cell = [tableView dequeueReusableCellWithIdentifier:@"pachangaCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pachangaCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -206,8 +206,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 
--(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
-    //NSLog(@"CompeticionesView: prepareForUnwind");
+-(IBAction)unwindPachanga:(UIStoryboardSegue *)segue {
+    //NSLog(@"PachangaView: Unwind");
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

@@ -16,8 +16,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _pickerData = @[@"Futbito", @"Fútbol7",@"Basket", @"Tenis", @"Padel"];
-    _resultPickerData=_pickerData[0];
+    self.pickerData = @[@"Futbito", @"Fútbol7",@"Basket", @"Tenis", @"Padel"];
+    self.resultPickerData=self.pickerData[0];
     self.deporteSel.dataSource = self;
     self.deporteSel.delegate = self;
     
@@ -38,7 +38,7 @@
 // The number of rows of data
 - (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return _pickerData.count;
+    return self.pickerData.count;
 }
 
 // The data to return for the row and component (column) that's being passed in
@@ -57,7 +57,6 @@
     NSString * nombre=self.nombreEdit.text;
     NSString * deporte=_resultPickerData;
     [vc saveCompeticionWithNombre:nombre deporte:deporte];
-    [self dismissViewControllerAnimated:YES completion:nil];
     //NSLog(@"CompeticionesCrearView: addCompeticion");
 }
 

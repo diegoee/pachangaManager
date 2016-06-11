@@ -28,7 +28,6 @@
     //NSLog(@"%@",_fechaSel.date);
     PachangaView *vc = [[PachangaView alloc]init];
     [vc savePachangaWithNombre:self.nombreEdit.text fecha:_fechaSel.date];
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
