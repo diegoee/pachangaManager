@@ -73,7 +73,7 @@
 }
     
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"competicionCell" forIndexPath:indexPath];
+    CompeticionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"competicionCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }

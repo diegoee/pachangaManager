@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9606" y="-10662"/>
+            <point key="canvasLocation" x="-9722" y="-10692"/>
         </scene>
         <!--Pachangas-->
         <scene sceneID="DGe-O4-kIf">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHg-tV-M36" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9167" y="-10662"/>
+            <point key="canvasLocation" x="-9274" y="-10308"/>
         </scene>
         <!--Jugadores-->
         <scene sceneID="hSR-e1-Kbo">
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uD5-8o-Yek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8736" y="-10662"/>
+            <point key="canvasLocation" x="-8842" y="-10062"/>
         </scene>
         <!--Calendario de Pachangas-->
         <scene sceneID="2rE-2R-XxW">
@@ -350,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qav-pU-yuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10026" y="-11279"/>
+            <point key="canvasLocation" x="-9708" y="-11579"/>
         </scene>
         <!--Detalle Calendario-->
         <scene sceneID="Ijd-nD-udy">
@@ -397,7 +397,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hw7-dC-WVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9606" y="-11279"/>
+            <point key="canvasLocation" x="-9274" y="-11579"/>
         </scene>
         <!--Crear Competición-->
         <scene sceneID="3TQ-NL-60R">
@@ -430,6 +430,10 @@
                             </textField>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-s3-THi">
                                 <rect key="frame" x="0.0" y="187" width="320" height="114"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fak-v1-tJS" id="1Jl-gw-RYI"/>
+                                    <outlet property="delegate" destination="fak-v1-tJS" id="yjG-Tz-Pbq"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -456,7 +460,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlJ-Wc-8Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="2Ga-ZZ-PlX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-9167" y="-11279"/>
+            <point key="canvasLocation" x="-9274" y="-10943"/>
+        </scene>
+        <!--Pachanga Crear Mapa View-->
+        <scene sceneID="PDL-Gq-tky">
+            <objects>
+                <viewController id="aYu-vt-cX9" customClass="PachangaCrearMapaView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ni8-x2-WLX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ngo-mP-cx4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hdc-Vg-JsL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcY-54-CZj">
+                                <rect key="frame" x="0.0" y="117" width="320" height="402"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona la ubicaciónde la Pachanga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIa-2l-mbu">
+                                <rect key="frame" x="20" y="72" width="280" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V4b-IX-oSB"/>
+                    <connections>
+                        <outlet property="mapView" destination="bcY-54-CZj" id="gQ5-1n-8eu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZn-Cg-riF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8452" y="-10692"/>
         </scene>
         <!--Crear Pachanga-->
         <scene sceneID="qVy-ct-a6C">
@@ -488,11 +525,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="lxx-9a-kcl">
-                                <rect key="frame" x="0.0" y="189" width="320" height="327"/>
+                                <rect key="frame" x="0.0" y="189" width="320" height="242"/>
                                 <date key="date" timeIntervalSinceReferenceDate="487155601.43892801">
                                     <!--2016-06-09 09:00:01 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVU-jP-pJo">
+                                <rect key="frame" x="20" y="439" width="280" height="30"/>
+                                <state key="normal" title="Ubicación"/>
+                                <connections>
+                                    <segue destination="aYu-vt-cX9" kind="push" id="zR4-n3-Kp3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -518,7 +562,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48R-xG-YHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Dg2-T3-kFc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-8736" y="-11279"/>
+            <point key="canvasLocation" x="-8842" y="-10692"/>
         </scene>
         <!--Competiciones-->
         <scene sceneID="S1b-uc-4W4">
@@ -537,7 +581,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVM-lp-mFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10026" y="-10662"/>
+            <point key="canvasLocation" x="-10142" y="-10692"/>
         </scene>
         <!--Login View-->
         <scene sceneID="mfd-B1-Rqy">
@@ -596,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlP-yp-pAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10900" y="-10662"/>
+            <point key="canvasLocation" x="-11047" y="-11002"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0IB-5Z-rTR">
@@ -615,7 +659,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gT-a1-L8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10476" y="-10662"/>
+            <point key="canvasLocation" x="-10580" y="-11002"/>
         </scene>
         <!--Calendario-->
         <scene sceneID="vJw-RQ-VE0">
@@ -634,7 +678,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgT-Gc-Irz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10476" y="-11279"/>
+            <point key="canvasLocation" x="-10142" y="-11579"/>
         </scene>
     </scenes>
     <resources>

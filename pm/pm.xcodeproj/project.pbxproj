@@ -10,6 +10,8 @@
 		F118DE981D0C41540095AD70 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F118DE971D0C41540095AD70 /* Settings.bundle */; };
 		F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */; };
 		F17301D11D08CDD900BABC63 /* PachangaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17301D01D08CDD900BABC63 /* PachangaView.m */; };
+		F17D04BD1D0C87D1002F02E6 /* PachangaCrearMapaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17D04BC1D0C87D1002F02E6 /* PachangaCrearMapaView.m */; };
+		F17D04BF1D0C8B1C002F02E6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17D04BE1D0C8B1C002F02E6 /* MapKit.framework */; };
 		F18283981D074D5700626701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F18283971D074D5700626701 /* main.m */; };
 		F182839B1D074D5700626701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F182839A1D074D5700626701 /* AppDelegate.m */; };
 		F18283A11D074D5700626701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F182839F1D074D5700626701 /* Main.storyboard */; };
@@ -51,6 +53,9 @@
 		F17301CD1D08B98400BABC63 /* CompeticionCrearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompeticionCrearView.m; sourceTree = "<group>"; };
 		F17301CF1D08CDD900BABC63 /* PachangaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaView.h; sourceTree = "<group>"; };
 		F17301D01D08CDD900BABC63 /* PachangaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaView.m; sourceTree = "<group>"; };
+		F17D04BB1D0C87D1002F02E6 /* PachangaCrearMapaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCrearMapaView.h; sourceTree = "<group>"; };
+		F17D04BC1D0C87D1002F02E6 /* PachangaCrearMapaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaCrearMapaView.m; sourceTree = "<group>"; };
+		F17D04BE1D0C8B1C002F02E6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F18283931D074D5700626701 /* pm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18283971D074D5700626701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F18283991D074D5700626701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17D04BF1D0C8B1C002F02E6 /* MapKit.framework in Frameworks */,
 				F1EC47BF1D09E7D0009EF239 /* AddressBookUI.framework in Frameworks */,
 				F1EC47BD1D09E7C8009EF239 /* AddressBook.framework in Frameworks */,
 			);
@@ -132,6 +138,7 @@
 		F182838A1D074D5700626701 = {
 			isa = PBXGroup;
 			children = (
+				F17D04BE1D0C8B1C002F02E6 /* MapKit.framework */,
 				F1EC47BE1D09E7D0009EF239 /* AddressBookUI.framework */,
 				F1EC47BC1D09E7C8009EF239 /* AddressBook.framework */,
 				F18283951D074D5700626701 /* pm */,
@@ -255,6 +262,8 @@
 		F1EC47A51D097CFD009EF239 /* Pachanga */ = {
 			isa = PBXGroup;
 			children = (
+				F17D04BB1D0C87D1002F02E6 /* PachangaCrearMapaView.h */,
+				F17D04BC1D0C87D1002F02E6 /* PachangaCrearMapaView.m */,
 				F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */,
 				F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */,
 				F17301CF1D08CDD900BABC63 /* PachangaView.h */,
@@ -376,6 +385,7 @@
 				F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */,
 				F1B7E2F01D0ACE79006EFA2D /* JTCircleView.m in Sources */,
 				F1EC47B81D09ACFF009EF239 /* Jugador+CoreDataProperties.m in Sources */,
+				F17D04BD1D0C87D1002F02E6 /* PachangaCrearMapaView.m in Sources */,
 				F1B7E2E81D0ACE79006EFA2D /* JTCalendarAppearance.m in Sources */,
 				F1EC47A91D098B2A009EF239 /* PachangaCell.m in Sources */,
 				F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */,

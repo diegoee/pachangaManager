@@ -68,7 +68,7 @@ NSString *id_pachanga;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jugadorCell" forIndexPath:indexPath];
+    JugadorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"jugadorCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }

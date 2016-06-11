@@ -73,7 +73,7 @@ NSString *id_competicion;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pachangaCell" forIndexPath:indexPath];
+    PachangaCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pachangaCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }

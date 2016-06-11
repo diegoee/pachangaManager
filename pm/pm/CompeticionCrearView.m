@@ -14,13 +14,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    self.pickerData = @[@"Futbito", @"Fútbol7",@"Basket", @"Tenis", @"Padel"];
+    // Do any additional setup after loading the view.    
+    self.pickerData = @[@"Futbito",@"Fútbol7",@"Basket",@"Tenis",@"Padel"];
     self.resultPickerData=self.pickerData[0];
-    self.deporteSel.dataSource = self;
-    self.deporteSel.delegate = self;
-    
 }
 
 - (void)didReceiveMemoryWarning
