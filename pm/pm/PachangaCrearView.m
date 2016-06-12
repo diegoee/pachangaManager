@@ -31,7 +31,7 @@
         PachangaCrearMapaView *vc = [segue destinationViewController];
         vc.nombre = self.nombreEdit.text;
         vc.fecha = self.fechaSel.date;
-        NSLog(@"PachangaCrearView: %@ - %@", vc.nombre, vc.fecha);
+        //NSLog(@"PachangaCrearView: %@ - %@", vc.nombre, vc.fecha);
     }
 }
 

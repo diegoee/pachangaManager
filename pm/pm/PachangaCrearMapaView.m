@@ -53,7 +53,7 @@ CLLocationCoordinate2D finalLocation;
     [self.mapView addAnnotation:annotation];
     
     //Centramos el mapa en la localización proporcionada
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(tapLocation.coordinate, 5000, 5000);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(tapLocation.coordinate, 2000, 2000);
     
     finalLocation.latitude  = tapLocation.coordinate.latitude;
     finalLocation.longitude = tapLocation.coordinate.longitude;
