@@ -70,6 +70,18 @@
      // Establecemos el texto del label de la celda con el nombre del jugador
     [cell.nombre setText:competicion.nombre];
     [cell.deporte setText:competicion.deporte];
+    
+    if ([competicion.deporte isEqualToString:@"Fútbol7"]||[competicion.deporte isEqualToString:@"Futbito"]){
+        cell.imageView.image=[UIImage imageNamed: @"soccer"];
+    }
+    if ([competicion.deporte isEqualToString:@"Tenis"]||[competicion.deporte isEqualToString:@"Padel"]){
+        cell.imageView.image=[UIImage imageNamed: @"tennis"];
+    }
+    if ([competicion.deporte isEqualToString:@"Basket"]){
+        cell.imageView.image=[UIImage imageNamed: @"basket"];
+    }
+    
+    
 }
     
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

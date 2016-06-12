@@ -51,7 +51,7 @@
     [formatter setDateFormat: @"dd-MM-yyyy HH:mm"];
     NSString *fecha = [formatter stringFromDate:pachanga.fecha];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", pachanga.nombre, fecha];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ -- %@", pachanga.nombre, fecha];
     
     cell.accessibilityElements = @[pachanga.lat, pachanga.lon];
     return cell;

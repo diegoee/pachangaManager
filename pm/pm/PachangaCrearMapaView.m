@@ -19,7 +19,7 @@ CLLocationCoordinate2D finalLocation;
     finalLocation.latitude = 37.992485;
     finalLocation.longitude= -1.130641;
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(finalLocation, 5000, 5000);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(finalLocation, 2000, 2000);
     [self.mapView setRegion:region animated:YES];
     
     CGFloat newLat = finalLocation.latitude;

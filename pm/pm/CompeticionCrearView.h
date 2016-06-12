@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nombreEdit;
 @property (weak, nonatomic) IBOutlet UIPickerView *deporteSel;
+@property (weak, nonatomic) IBOutlet UIImageView *deporteImage;
 
 - (IBAction)addCompeticion:(UIButton *)save;
 

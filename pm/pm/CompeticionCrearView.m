@@ -15,8 +15,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.    
-    self.pickerData = @[@"Futbito",@"Fútbol7",@"Basket",@"Tenis",@"Padel"];
+    self.pickerData = @[@"Fútbol7",@"Basket",@"Tenis",@"Futbito",@"Padel"];
     self.resultPickerData=self.pickerData[0];
+    self.deporteImage.image=[UIImage imageNamed: @"soccer"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,8 +46,29 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    _resultPickerData = _pickerData[row];
+    self.resultPickerData = self.pickerData[row];
+    //NSLog(@"Selected Row %d", row);
+    switch(row)
+    {
+        case 0:
+            self.deporteImage.image=[UIImage imageNamed: @"soccer"];
+            break;
+        case 1:
+            self.deporteImage.image=[UIImage imageNamed: @"basket"];
+            break;
+        case 2:
+            self.deporteImage.image=[UIImage imageNamed: @"tennis"];
+            break;
+        case 3:
+            self.deporteImage.image=[UIImage imageNamed: @"soccer"];
+            break;
+        case 4:
+            self.deporteImage.image=[UIImage imageNamed: @"tennis"];
+            break;
+    }
+    
 }
+
 
 - (IBAction)addCompeticion:(UIButton *)save {
     CompeticionView *vc = [[CompeticionView alloc]init];
