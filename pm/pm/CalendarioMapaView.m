@@ -16,8 +16,9 @@
     
     CLLocationCoordinate2D finalLocation;
     
-    finalLocation.latitude = 37.992485;
-    finalLocation.longitude= -1.130641;
+    NSLog(@"CalendarioMapaView: %@ - %@",self.lat,self.lon);
+    finalLocation.latitude = [self.lat doubleValue];
+    finalLocation.longitude= [self.lon doubleValue];
         
     //finalLocation.latitude = self.lat;
     //finalLocation.longitude= self.lon;

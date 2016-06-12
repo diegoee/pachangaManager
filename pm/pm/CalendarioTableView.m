@@ -52,7 +52,8 @@
     NSString *fecha = [formatter stringFromDate:pachanga.fecha];
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", pachanga.nombre, fecha];
-    //cell.lat = pachanga.lat;
+    
+    cell.accessibilityElements = @[pachanga.lat, pachanga.lon];
     return cell;
 }
 
@@ -64,6 +65,8 @@
         CalendarioMapaView *vc = [segue destinationViewController];
         vc.tit = [NSString stringWithString:cell.textLabel.text];
         vc.subTit  = [NSString stringWithString:cell.detailTextLabel.text];
+        vc.lat = [cell.accessibilityElements objectAtIndex: 0];
+        vc.lon = [cell.accessibilityElements objectAtIndex: 1];
         //[NSNumber numberWithFloat: finalLocation.latitude]
         //NSLog(@"PachangaView: segueDetallePachanga");
     }
