@@ -62,7 +62,7 @@ NSMutableArray *fechasCalendarioPachangas;
 {
     self.calendar.calendarAppearance.isWeekMode = !self.calendar.calendarAppearance.isWeekMode;
     
-    [self transitionExample];
+    //[self transitionExample];
 }
 
 #pragma mark - JTCalendarDataSource
@@ -90,6 +90,7 @@ NSMutableArray *fechasCalendarioPachangas;
     //NSLog(@"Date: %@", fechaSel);
 }
 
+/*
 #pragma mark - Transition examples
 
 - (void)transitionExample
@@ -118,6 +119,7 @@ NSMutableArray *fechasCalendarioPachangas;
                                           }];
                      }];
 }
+*/
 
 - (void)reloadEvent {
     //NSLog(@"reloadEvent");

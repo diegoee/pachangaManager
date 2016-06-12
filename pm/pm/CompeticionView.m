@@ -107,7 +107,8 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     } else if (error) {
         NSLog(@"Unable to save record.\n%@, %@", error, error.localizedDescription);
-    } }
+    }
+}
 
 -(void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];

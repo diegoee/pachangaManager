@@ -66,7 +66,7 @@ CLLocationCoordinate2D finalLocation;
     //NSLog(@"%@",_fechaSel.date);
     PachangaView *vc = [[PachangaView alloc]init];
     [vc savePachangaWithNombre:self.nombre fecha:self.fecha lat:[NSNumber numberWithFloat: finalLocation.latitude] lon:[NSNumber numberWithFloat: finalLocation.longitude]];    
-    NSLog(@"PachangaCrearMapaView: %@ - %@ - %@ - %@", self.nombre, self.fecha,[NSNumber numberWithFloat: finalLocation.latitude],[NSNumber numberWithFloat: finalLocation.longitude]);
+    //NSLog(@"PachangaCrearMapaView: %@ - %@ - %@ - %@", self.nombre, self.fecha,[NSNumber numberWithFloat: finalLocation.latitude],[NSNumber numberWithFloat: finalLocation.longitude]);
 }
 
 
