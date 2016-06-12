@@ -26,7 +26,7 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
--(void) savePachangaWithNombre:(NSString*) nombre fecha:(NSDate*)fecha;
+-(void) savePachangaWithNombre:(NSString *) nombre fecha:(NSDate *)fecha lat:(NSNumber *)lat lon:(NSNumber *)lon;
 
 
 

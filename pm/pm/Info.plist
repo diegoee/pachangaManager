@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<date>2016-06-11T18:12:30Z</date>
+	<date>2016-06-12T00:29:01Z</date>
 	<key>BuildVersion</key>
 	<string>1.0</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -35,8 +35,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

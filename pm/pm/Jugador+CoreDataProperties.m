@@ -2,7 +2,7 @@
 //  Jugador+CoreDataProperties.m
 //  pm
 //
-//  Created by Diego Espínola Espigares on 9/6/16.
+//  Created by Diego Espínola Espigares on 12/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,8 +13,8 @@
 
 @implementation Jugador (CoreDataProperties)
 
+@dynamic id_pachanga;
 @dynamic nombre;
 @dynamic telefono;
-@dynamic id_pachanga;
 
 @end

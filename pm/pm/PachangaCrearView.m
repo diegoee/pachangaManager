@@ -7,7 +7,6 @@
 //
 
 #import "PachangaCrearView.h"
-#import "PachangaView.h"
 
 @implementation PachangaCrearView
 
@@ -24,11 +23,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)addPachanga:(UIButton *)save {
-    //NSLog(@"%@",_fechaSel.date);
-    PachangaView *vc = [[PachangaView alloc]init];
-    [vc savePachangaWithNombre:self.nombreEdit.text fecha:_fechaSel.date];
-}
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"segueDetallePachangaMapa"])
+    {
+        PachangaCrearMapaView *vc = [segue destinationViewController];
+        vc.nombre = self.nombreEdit.text;
+        vc.fecha = self.fechaSel.date;
+        NSLog(@"PachangaCrearView: %@ - %@", vc.nombre, vc.fecha);
+    }
+}
 
 @end

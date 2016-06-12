@@ -2,7 +2,7 @@
 //  Pachanga+CoreDataProperties.m
 //  pm
 //
-//  Created by Diego Espínola Espigares on 9/6/16.
+//  Created by Diego Espínola Espigares on 12/6/16.
 //  Copyright © 2016 Diego Espínola. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,7 +14,9 @@
 @implementation Pachanga (CoreDataProperties)
 
 @dynamic fecha;
-@dynamic nombre;
 @dynamic id_competicion;
+@dynamic nombre;
+@dynamic lon;
+@dynamic lat;
 
 @end

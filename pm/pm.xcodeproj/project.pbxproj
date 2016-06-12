@@ -32,17 +32,19 @@
 		F1B7E2EF1D0ACE79006EFA2D /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E41D0ACE79006EFA2D /* JTCalendarWeekView.m */; };
 		F1B7E2F01D0ACE79006EFA2D /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E2E61D0ACE79006EFA2D /* JTCircleView.m */; };
 		F1B7E3031D0B091C006EFA2D /* CalendarioTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */; };
+		F1D85B231D0CB837009F6809 /* PachangaPin.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B221D0CB837009F6809 /* PachangaPin.m */; };
+		F1D85B301D0CD06B009F6809 /* Pachanga+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B251D0CD06B009F6809 /* Pachanga+CoreDataProperties.m */; };
+		F1D85B311D0CD06B009F6809 /* Pachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B271D0CD06B009F6809 /* Pachanga.m */; };
+		F1D85B321D0CD06B009F6809 /* Jugador+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B291D0CD06B009F6809 /* Jugador+CoreDataProperties.m */; };
+		F1D85B331D0CD06B009F6809 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B2B1D0CD06B009F6809 /* Jugador.m */; };
+		F1D85B341D0CD06B009F6809 /* Competicion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B2D1D0CD06B009F6809 /* Competicion+CoreDataProperties.m */; };
+		F1D85B351D0CD06B009F6809 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B2F1D0CD06B009F6809 /* Competicion.m */; };
+		F1D85B3B1D0CDB39009F6809 /* CalendarioMapaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D85B3A1D0CDB39009F6809 /* CalendarioMapaView.m */; };
 		F1E1BCA01D0B8647007B1E61 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E1BC9F1D0B8647007B1E61 /* LoginView.m */; };
 		F1EC479D1D096DD1009EF239 /* PachangaCrearView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479C1D096DD1009EF239 /* PachangaCrearView.m */; };
 		F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC479F1D097C3C009EF239 /* JugadorView.m */; };
 		F1EC47A31D097C54009EF239 /* JugadorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47A21D097C54009EF239 /* JugadorCell.m */; };
 		F1EC47A91D098B2A009EF239 /* PachangaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47A81D098B2A009EF239 /* PachangaCell.m */; };
-		F1EC47B61D09ACFF009EF239 /* Competicion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47AB1D09ACFF009EF239 /* Competicion+CoreDataProperties.m */; };
-		F1EC47B71D09ACFF009EF239 /* Competicion.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47AD1D09ACFF009EF239 /* Competicion.m */; };
-		F1EC47B81D09ACFF009EF239 /* Jugador+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47AF1D09ACFF009EF239 /* Jugador+CoreDataProperties.m */; };
-		F1EC47B91D09ACFF009EF239 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47B11D09ACFF009EF239 /* Jugador.m */; };
-		F1EC47BA1D09ACFF009EF239 /* Pachanga+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47B31D09ACFF009EF239 /* Pachanga+CoreDataProperties.m */; };
-		F1EC47BB1D09ACFF009EF239 /* Pachanga.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EC47B51D09ACFF009EF239 /* Pachanga.m */; };
 		F1EC47BD1D09E7C8009EF239 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC47BC1D09E7C8009EF239 /* AddressBook.framework */; };
 		F1EC47BF1D09E7D0009EF239 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EC47BE1D09E7D0009EF239 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +97,22 @@
 		F1B7E2E61D0ACE79006EFA2D /* JTCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTCircleView.m; path = pm/JTCalendar/JTCircleView.m; sourceTree = "<group>"; };
 		F1B7E3011D0B091B006EFA2D /* CalendarioTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioTableView.h; sourceTree = "<group>"; };
 		F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioTableView.m; sourceTree = "<group>"; };
+		F1D85B211D0CB837009F6809 /* PachangaPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaPin.h; sourceTree = "<group>"; };
+		F1D85B221D0CB837009F6809 /* PachangaPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaPin.m; sourceTree = "<group>"; };
+		F1D85B241D0CD06B009F6809 /* Pachanga+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pachanga+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1D85B251D0CD06B009F6809 /* Pachanga+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pachanga+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1D85B261D0CD06B009F6809 /* Pachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pachanga.h; sourceTree = "<group>"; };
+		F1D85B271D0CD06B009F6809 /* Pachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pachanga.m; sourceTree = "<group>"; };
+		F1D85B281D0CD06B009F6809 /* Jugador+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jugador+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1D85B291D0CD06B009F6809 /* Jugador+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Jugador+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1D85B2A1D0CD06B009F6809 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jugador.h; sourceTree = "<group>"; };
+		F1D85B2B1D0CD06B009F6809 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jugador.m; sourceTree = "<group>"; };
+		F1D85B2C1D0CD06B009F6809 /* Competicion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Competicion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F1D85B2D1D0CD06B009F6809 /* Competicion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Competicion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F1D85B2E1D0CD06B009F6809 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
+		F1D85B2F1D0CD06B009F6809 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
+		F1D85B391D0CDB39009F6809 /* CalendarioMapaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarioMapaView.h; sourceTree = "<group>"; };
+		F1D85B3A1D0CDB39009F6809 /* CalendarioMapaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarioMapaView.m; sourceTree = "<group>"; };
 		F1E1BC9E1D0B8647007B1E61 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		F1E1BC9F1D0B8647007B1E61 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCrearView.h; sourceTree = "<group>"; };
@@ -105,18 +123,6 @@
 		F1EC47A21D097C54009EF239 /* JugadorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JugadorCell.m; sourceTree = "<group>"; };
 		F1EC47A71D098B2A009EF239 /* PachangaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PachangaCell.h; sourceTree = "<group>"; };
 		F1EC47A81D098B2A009EF239 /* PachangaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PachangaCell.m; sourceTree = "<group>"; };
-		F1EC47AA1D09ACFF009EF239 /* Competicion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Competicion+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F1EC47AB1D09ACFF009EF239 /* Competicion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Competicion+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F1EC47AC1D09ACFF009EF239 /* Competicion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Competicion.h; sourceTree = "<group>"; };
-		F1EC47AD1D09ACFF009EF239 /* Competicion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competicion.m; sourceTree = "<group>"; };
-		F1EC47AE1D09ACFF009EF239 /* Jugador+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jugador+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F1EC47AF1D09ACFF009EF239 /* Jugador+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Jugador+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F1EC47B01D09ACFF009EF239 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jugador.h; sourceTree = "<group>"; };
-		F1EC47B11D09ACFF009EF239 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jugador.m; sourceTree = "<group>"; };
-		F1EC47B21D09ACFF009EF239 /* Pachanga+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pachanga+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F1EC47B31D09ACFF009EF239 /* Pachanga+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pachanga+CoreDataProperties.m"; sourceTree = "<group>"; };
-		F1EC47B41D09ACFF009EF239 /* Pachanga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pachanga.h; sourceTree = "<group>"; };
-		F1EC47B51D09ACFF009EF239 /* Pachanga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pachanga.m; sourceTree = "<group>"; };
 		F1EC47BC1D09E7C8009EF239 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		F1EC47BE1D09E7D0009EF239 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -187,21 +193,21 @@
 		F18283C51D0760C800626701 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
-				F1EC47AA1D09ACFF009EF239 /* Competicion+CoreDataProperties.h */,
-				F1EC47AB1D09ACFF009EF239 /* Competicion+CoreDataProperties.m */,
-				F1EC47AC1D09ACFF009EF239 /* Competicion.h */,
-				F1EC47AD1D09ACFF009EF239 /* Competicion.m */,
-				F1EC47AE1D09ACFF009EF239 /* Jugador+CoreDataProperties.h */,
-				F1EC47AF1D09ACFF009EF239 /* Jugador+CoreDataProperties.m */,
-				F1EC47B01D09ACFF009EF239 /* Jugador.h */,
-				F1EC47B11D09ACFF009EF239 /* Jugador.m */,
-				F1EC47B21D09ACFF009EF239 /* Pachanga+CoreDataProperties.h */,
-				F1EC47B31D09ACFF009EF239 /* Pachanga+CoreDataProperties.m */,
-				F1EC47B41D09ACFF009EF239 /* Pachanga.h */,
-				F1EC47B51D09ACFF009EF239 /* Pachanga.m */,
 				F18283AD1D075B1800626701 /* DataManager.h */,
 				F18283AE1D075B1800626701 /* DataManager.m */,
 				F18283B01D075CBF00626701 /* Modelo.xcdatamodeld */,
+				F1D85B241D0CD06B009F6809 /* Pachanga+CoreDataProperties.h */,
+				F1D85B251D0CD06B009F6809 /* Pachanga+CoreDataProperties.m */,
+				F1D85B261D0CD06B009F6809 /* Pachanga.h */,
+				F1D85B271D0CD06B009F6809 /* Pachanga.m */,
+				F1D85B281D0CD06B009F6809 /* Jugador+CoreDataProperties.h */,
+				F1D85B291D0CD06B009F6809 /* Jugador+CoreDataProperties.m */,
+				F1D85B2A1D0CD06B009F6809 /* Jugador.h */,
+				F1D85B2B1D0CD06B009F6809 /* Jugador.m */,
+				F1D85B2C1D0CD06B009F6809 /* Competicion+CoreDataProperties.h */,
+				F1D85B2D1D0CD06B009F6809 /* Competicion+CoreDataProperties.m */,
+				F1D85B2E1D0CD06B009F6809 /* Competicion.h */,
+				F1D85B2F1D0CD06B009F6809 /* Competicion.m */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -213,6 +219,8 @@
 				F1B7E2CD1D0AC657006EFA2D /* Calendario.m */,
 				F1B7E3011D0B091B006EFA2D /* CalendarioTableView.h */,
 				F1B7E3021D0B091B006EFA2D /* CalendarioTableView.m */,
+				F1D85B391D0CDB39009F6809 /* CalendarioMapaView.h */,
+				F1D85B3A1D0CDB39009F6809 /* CalendarioMapaView.m */,
 			);
 			name = Calendario;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 		F1EC47A51D097CFD009EF239 /* Pachanga */ = {
 			isa = PBXGroup;
 			children = (
+				F1D85B211D0CB837009F6809 /* PachangaPin.h */,
+				F1D85B221D0CB837009F6809 /* PachangaPin.m */,
 				F17D04BB1D0C87D1002F02E6 /* PachangaCrearMapaView.h */,
 				F17D04BC1D0C87D1002F02E6 /* PachangaCrearMapaView.m */,
 				F1EC479B1D096DD1009EF239 /* PachangaCrearView.h */,
@@ -373,38 +383,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1EC47B91D09ACFF009EF239 /* Jugador.m in Sources */,
+				F1D85B341D0CD06B009F6809 /* Competicion+CoreDataProperties.m in Sources */,
 				F18283AF1D075B1800626701 /* DataManager.m in Sources */,
 				F1B7E2EA1D0ACE79006EFA2D /* JTCalendarDayView.m in Sources */,
 				F1B7E3031D0B091C006EFA2D /* CalendarioTableView.m in Sources */,
 				F17301D11D08CDD900BABC63 /* PachangaView.m in Sources */,
 				F182839B1D074D5700626701 /* AppDelegate.m in Sources */,
-				F1EC47BA1D09ACFF009EF239 /* Pachanga+CoreDataProperties.m in Sources */,
+				F1D85B231D0CB837009F6809 /* PachangaPin.m in Sources */,
+				F1D85B331D0CD06B009F6809 /* Jugador.m in Sources */,
 				F1B7E2EF1D0ACE79006EFA2D /* JTCalendarWeekView.m in Sources */,
 				F1EC47A01D097C3C009EF239 /* JugadorView.m in Sources */,
 				F17301CE1D08B98400BABC63 /* CompeticionCrearView.m in Sources */,
 				F1B7E2F01D0ACE79006EFA2D /* JTCircleView.m in Sources */,
-				F1EC47B81D09ACFF009EF239 /* Jugador+CoreDataProperties.m in Sources */,
+				F1D85B351D0CD06B009F6809 /* Competicion.m in Sources */,
+				F1D85B301D0CD06B009F6809 /* Pachanga+CoreDataProperties.m in Sources */,
 				F17D04BD1D0C87D1002F02E6 /* PachangaCrearMapaView.m in Sources */,
 				F1B7E2E81D0ACE79006EFA2D /* JTCalendarAppearance.m in Sources */,
 				F1EC47A91D098B2A009EF239 /* PachangaCell.m in Sources */,
 				F18283B21D075CBF00626701 /* Modelo.xcdatamodeld in Sources */,
+				F1D85B311D0CD06B009F6809 /* Pachanga.m in Sources */,
 				F1B7E2EE1D0ACE79006EFA2D /* JTCalendarMonthWeekDaysView.m in Sources */,
 				F18283CE1D07710500626701 /* CompeticionView.m in Sources */,
-				F1EC47B61D09ACFF009EF239 /* Competicion+CoreDataProperties.m in Sources */,
 				F1EC479D1D096DD1009EF239 /* PachangaCrearView.m in Sources */,
-				F1EC47B71D09ACFF009EF239 /* Competicion.m in Sources */,
 				F1EC47A31D097C54009EF239 /* JugadorCell.m in Sources */,
+				F1D85B321D0CD06B009F6809 /* Jugador+CoreDataProperties.m in Sources */,
 				F1B7E2ED1D0ACE79006EFA2D /* JTCalendarMonthView.m in Sources */,
 				F1B7E2E71D0ACE79006EFA2D /* JTCalendar.m in Sources */,
 				F1B7E2EB1D0ACE79006EFA2D /* JTCalendarMenuMonthView.m in Sources */,
 				F18283981D074D5700626701 /* main.m in Sources */,
 				F1B7E2EC1D0ACE79006EFA2D /* JTCalendarMenuView.m in Sources */,
-				F1EC47BB1D09ACFF009EF239 /* Pachanga.m in Sources */,
 				F1B7E2CE1D0AC657006EFA2D /* Calendario.m in Sources */,
 				F1B7E2E91D0ACE79006EFA2D /* JTCalendarContentView.m in Sources */,
 				F1E1BCA01D0B8647007B1E61 /* LoginView.m in Sources */,
 				F18283CB1D0770E100626701 /* CompeticionCell.m in Sources */,
+				F1D85B3B1D0CDB39009F6809 /* CalendarioMapaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

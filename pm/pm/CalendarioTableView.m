@@ -52,7 +52,22 @@
     NSString *fecha = [formatter stringFromDate:pachanga.fecha];
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", pachanga.nombre, fecha];
+    //cell.lat = pachanga.lat;
     return cell;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"segueDetalleCalendarioMapa"])
+    {
+        UITableViewCell *cell = (UITableViewCell*) sender;
+        CalendarioMapaView *vc = [segue destinationViewController];
+        vc.tit = [NSString stringWithString:cell.textLabel.text];
+        vc.subTit  = [NSString stringWithString:cell.detailTextLabel.text];
+        //[NSNumber numberWithFloat: finalLocation.latitude]
+        //NSLog(@"PachangaView: segueDetallePachanga");
+    }
+}
+
 
 @end

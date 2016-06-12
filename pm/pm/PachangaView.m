@@ -78,7 +78,7 @@ NSString *id_competicion;
     return cell;
 }
 
--(void) savePachangaWithNombre:(NSString*) nombre fecha:(NSDate*)fecha {
+-(void) savePachangaWithNombre:(NSString *) nombre fecha:(NSDate *)fecha lat:(NSNumber *)lat lon:(NSNumber *)lon{
     // Inicializamos el tipo de entidad
     
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Pachanga"
@@ -90,6 +90,8 @@ NSString *id_competicion;
     pachanga.nombre = nombre;
     pachanga.fecha = fecha;
     pachanga.id_competicion = id_competicion;
+    pachanga.lat = lat;
+    pachanga.lon = lon;
     //NSLog(@"ID_COMPETICION = %@",pachanga.id_competicion);
     
     // Guardamos

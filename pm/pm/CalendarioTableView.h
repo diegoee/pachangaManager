@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Pachanga.h"
+#import "CalendarioMapaView.h"
 
 @interface CalendarioTableView : UITableViewController
 
 @property NSMutableArray *pachangasArray;
+
+@property (strong, nonatomic) IBOutlet UILabel *lat;
+@property (strong, nonatomic) IBOutlet UILabel *lon;
 
 @end

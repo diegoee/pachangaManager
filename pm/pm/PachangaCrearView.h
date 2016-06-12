@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "PachangaView.h"
+#import "PachangaCrearMapaView.h"
 
 @interface PachangaCrearView : UIViewController
 
@@ -17,6 +19,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *nombreEdit;
 @property (weak, nonatomic) IBOutlet UIDatePicker *fechaSel;
 
-- (IBAction)addPachanga:(UIButton *)save;
 
 @end

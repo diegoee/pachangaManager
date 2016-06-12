@@ -15,7 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    /*
     UIAlertController * view;
     view=   [UIAlertController alertControllerWithTitle:@"Pachanga Manager:" message:@"¡Bienvenido a la App!" preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
@@ -24,7 +24,7 @@
                          }];
     [view addAction:ok];
     [self presentViewController:view animated:YES completion:nil];
-    
+    */
     // Initialize Fetch Request
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Competicion"];
     // Add Sort Descriptors
